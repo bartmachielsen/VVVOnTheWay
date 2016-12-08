@@ -25,6 +25,7 @@ namespace VVVOnTheWay
         public MainPage()
         {
             this.InitializeComponent();
+            //testline
         }
     }
 }
