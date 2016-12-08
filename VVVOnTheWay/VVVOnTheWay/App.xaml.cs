@@ -30,6 +30,7 @@ namespace VVVOnTheWay
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            //Harmen test
             //testcode
         }
 
