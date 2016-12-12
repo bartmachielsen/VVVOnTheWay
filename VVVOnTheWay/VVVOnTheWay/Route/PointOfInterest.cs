@@ -50,7 +50,7 @@ namespace VVVOnTheWay.Route
         /// <param name="audioPath">sets <seealso cref="AudioPath"/></param>
         /// <param name="imagePath">sets <seealso cref="ImagePath"/></param>
         /// <param name="location">sets <seealso cref="Location"/></param>
-        public PointOfInterest(string[] title, string[] description, bool isVisited, string[] audioPath, string imagePath, Geoposition location)
+        public PointOfInterest(string[] title, string[] description, bool isVisited, string[] audioPath, string imagePath, Geopoint location)
         {
             Title = title;
             Description = description;
