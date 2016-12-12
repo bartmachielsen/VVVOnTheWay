@@ -11,14 +11,14 @@ namespace VVVOnTheWay.Route
         /// <summary>
         /// The list of POI that are on this route.
         /// </summary>
-        public List<PointOfInterest> PointOfInterests { get; set; }
+        public List<PointOfInterest> PointsOfInterest { get; set; }
         /// <summary>
         /// Default constructor.
         /// </summary>
-        /// <param name="pointOfInterests">sets <seealso cref="PointOfInterests"/></param>
-        public Route(List<PointOfInterest> pointOfInterests)
+        /// <param name="pointsOfInterest">sets <seealso cref="PointsOfInterest"/></param>
+        public Route(List<PointOfInterest> pointsOfInterest)
         {
-            PointOfInterests = pointOfInterests;
+            PointsOfInterest = pointsOfInterest;
         }
         /// <summary>
         /// Saves the route into a file located at the specified location.
