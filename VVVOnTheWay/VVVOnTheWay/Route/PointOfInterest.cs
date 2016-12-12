@@ -42,7 +42,7 @@ namespace VVVOnTheWay.Route
         public Geoposition Location { get; set; }
 
         /// <summary>
-        /// Default contstructor.
+        /// Default constructor.
         /// </summary>
         /// <param name="title">sets <seealso cref="Title"/></param>
         /// <param name="description">sets <seealso cref="Description"/></param>
