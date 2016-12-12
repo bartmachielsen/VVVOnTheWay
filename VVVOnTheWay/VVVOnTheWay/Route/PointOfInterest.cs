@@ -7,13 +7,25 @@ using Windows.Devices.Geolocation;
 
 namespace VVVOnTheWay.Route
 {
+    class Point
+    {
+        /// <summary>
+        /// The Geoposition from the POI's location.
+        /// </summary>
+        public Geopoint Location { get; set; }
+
+        public Point(Geopoint location)
+        {
+            Location = location;
+        }
+    }
     /// <summary>
     /// - Point on the route with data about this point.
     /// - Title, Description, Audiofile, Imagefile and Location.
     /// - If the point has been visited or not.
     /// - Get a notification with the information.
     /// </summary>
-    class PointOfInterest
+    class PointOfInterest : Point
     {
         /// <summary>
         /// Title of the POI in 2 language's.
@@ -36,10 +48,7 @@ namespace VVVOnTheWay.Route
         /// The path to get the image file associated with the POI.
         /// </summary>
         public string ImagePath { get; set; }
-        /// <summary>
-        /// The Geoposition from the POI's location.
-        /// </summary>
-        public Geoposition Location { get; set; }
+        
 
         /// <summary>
         /// Default constructor.
@@ -49,15 +58,14 @@ namespace VVVOnTheWay.Route
         /// <param name="isVisited">sets <seealso cref="IsVisited"/></param>
         /// <param name="audioPath">sets <seealso cref="AudioPath"/></param>
         /// <param name="imagePath">sets <seealso cref="ImagePath"/></param>
-        /// <param name="location">sets <seealso cref="Location"/></param>
-        public PointOfInterest(string[] title, string[] description, bool isVisited, string[] audioPath, string imagePath, Geopoint location)
+        /// <param name="location">sets <seealso cref="Point.Location"/></param>
+        public PointOfInterest(string[] title, string[] description, bool isVisited, string[] audioPath, string imagePath, Geopoint location) : base(location)
         {
             Title = title;
             Description = description;
             IsVisited = isVisited;
             AudioPath = audioPath;
             ImagePath = imagePath;
-            Location = location;
         }
 
         /// <summary>
