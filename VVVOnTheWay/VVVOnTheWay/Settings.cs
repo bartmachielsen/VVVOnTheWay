@@ -7,25 +7,23 @@ using System.Threading.Tasks;
 namespace VVVOnTheWay
 {
    /// <summary>
-   /// Settings for the application
-   /// - Language for the application
-   /// - Progresspath of not finished routes
-   /// - Password for login in application
+   /// Settings for the application that are generally used.
    /// </summary>
     class Settings
    {
-
        ///  <value>
        ///  Default language is set to ENGLISH
        /// </value>
        ///  <summary>
        ///  The preferred language for the application in which the text is shown.
        ///  <type name="Language"/>
+       ///  <seealso cref="Language"/>
        ///  </summary>
        public static Language Language = Language.ENGLISH;
 
         /// <summary>
-        /// 
+        /// The correct password that is needed to login, 
+        /// must completely match to correctly login.
         /// </summary>
        public static string Password = "";
         
@@ -33,13 +31,25 @@ namespace VVVOnTheWay
         /// The path to saved progress, progress of a Route that has not been finished.
         /// </summary>
        public static string ProgressPath = "";
+
+       
    }
 
     /// <summary>
-    /// 
+    /// Language enum that represents the languages that are available to translate the textcontent.
     /// </summary>
     enum Language
     {
-        ENGLISH, DUTCH
+        /// <summary>
+        /// Translation in the English Language
+        /// Represents the value 0
+        /// </summary>
+        ENGLISH,
+
+        /// <summary>
+        /// Translation in the Dutch Language
+        /// Represents the value 1
+        /// </summary>
+        DUTCH
     }
 }
