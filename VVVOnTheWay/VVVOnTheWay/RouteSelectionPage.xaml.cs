@@ -20,22 +20,32 @@ namespace VVVOnTheWay
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class LanguageSelectionPage : Page
+    public sealed partial class RouteSelectionPage : Page
     {
-        public LanguageSelectionPage()
+        public RouteSelectionPage()
         {
             this.InitializeComponent();
         }
 
         private void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
-            LanguageSelectionFrame.Navigate(typeof(MainPage));
+            RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage));
         }
 
         private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            LanguageSelectionFrame.Navigate(typeof(MainPage));
+            RouteSelectionFrame.Navigate(typeof(MainPage));
             //#TODO: Make GuidePage
+        }
+
+        private void English_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Dutch_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

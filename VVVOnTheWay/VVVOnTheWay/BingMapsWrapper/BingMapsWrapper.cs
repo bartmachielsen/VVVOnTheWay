@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
+using Windows.Foundation;
 using Windows.Services.Maps;
 using VVVOnTheWay.Route;
 
@@ -21,12 +22,32 @@ namespace LocationSystem
         private static uint Accuracy = 10;
 
         /// <summary>
+        /// Double which represents the movementthreshold in meters
+        /// </summary>
+        private static double MovementThreshold = 0.5;
+
+        /// <summary>
         /// Method for checking if the GPS receiver in the windows phone is reachable
         /// </summary>
         /// <returns>returns boolean which represents the accessibility</returns>
         private static async Task<bool> checkGPSAccessibility()
         {
-            return (await Geolocator.RequestAccessAsync()) == GeolocationAccessStatus.Allowed;
+            return (await Geolocator.RequestAccessAsync()) == GeolocationAccessStatus.Allowed 
+                && new Geolocator().LocationStatus != PositionStatus.NotAvailable;
+        }
+
+        /// <summary>
+        /// Method for listening to changes from the gps locator
+        /// </summary>
+        /// <exception cref="GPSNotAllowed">Exception when system has deactivated GPS or user does not allow GPS to this application</exception>
+        /// <param name="method"></param>
+        public static async void notifyOnLocationUpdate(Func<Geoposition,object> method)
+        {
+            if (!await checkGPSAccessibility())
+                throw new GPSNotAllowed();
+           Geolocator locator = new Geolocator() {DesiredAccuracyInMeters = Accuracy, MovementThreshold = MovementThreshold};
+            locator.PositionChanged +=
+                (Geolocator sender, PositionChangedEventArgs args) => { method.Invoke(args.Position); };
         }
 
         ///<summary>
@@ -49,9 +70,11 @@ namespace LocationSystem
         /// <returns> double as distance in meters between the two positions</returns>
         public static async Task<double> getDistanceTo(Geoposition source, Geoposition target)
         {
+            
             return (await MapRouteFinder.GetWalkingRouteAsync(source.Coordinate.Point, target.Coordinate.Point)).Route.LengthInMeters;
         }
 
+        
 
         /// <summary>
         /// Method for checking if the user has lost the route.
@@ -64,6 +87,8 @@ namespace LocationSystem
         {
             if (!await checkGPSAccessibility())
                 throw new GPSNotAllowed();
+
+            new Geopoint(new BasicGeoposition() {});
             throw new NotImplementedException();
         }
 

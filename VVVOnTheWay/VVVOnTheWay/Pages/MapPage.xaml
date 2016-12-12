@@ -1,0 +1,31 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VVVOnTheWay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="VVVOnTheWay.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+           <Maps:MapControl 
+               x:Name="Map"
+               MapServiceToken="DypxObTyzkWM3QVKqeOV~qPZIp3xC8DUMt_rrBW2qCA~At8UUC81s3n5IDAcdRyQftV2iN4zdJraRdCON4mCrwGC9lZ_YLbBJldJh486D9TR"/>
+
+        <Button 
+                    Style="{StaticResource RoundButtonStyle}"
+                    Click="HelpButton_Click" Margin="270,550,0,10"
+                    >
+            <Image Source="Assets/help.png" Stretch="Uniform"/>
+        </Button>
+
+        <Button 
+                    Style="{StaticResource RoundButtonStyle}"
+                    Click="SettingsButton_Click" Margin="0,-550,0,10"
+                    >
+            <Image Source="Assets/settings.png" Stretch="Uniform"/>
+        </Button>
+
+    </Grid>
+</Page>
