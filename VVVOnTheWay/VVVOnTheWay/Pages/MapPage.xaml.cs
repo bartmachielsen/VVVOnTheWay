@@ -8,8 +8,10 @@ using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Maps;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -29,7 +31,26 @@ namespace VVVOnTheWay
         public MapPage()
         {
             this.InitializeComponent();
-            
+
+            GetUserLocation();
+
+        }
+
+        private async Task GetUserLocation()
+        {
+            try
+            {
+                var location = await BingMapsWrapper.getCurrentPosition();
+                Map.Center = location.Coordinate.Point;
+                Map.ZoomLevel = 15;
+                await UpdateUserLocation(location);
+            }
+            catch (GPSNotAllowed)
+            {
+                await new MessageDialog("No GPS Access!", "GPS not functional!").ShowAsync();
+                // TODO take action when no gps
+                // TODO show in language which is chosen
+            }
             BingMapsWrapper.notifyOnLocationUpdate(UpdateUserLocation);
         }
 
@@ -37,7 +58,13 @@ namespace VVVOnTheWay
         {
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
-                Map.Center = geoposition.Coordinate.Point;
+                MapIcon icon = new MapIcon()
+                {
+                    Title = "YOU",
+                    Location = geoposition.Coordinate.Point
+                };
+                Map.MapElements.Clear();
+                Map.MapElements.Add(icon);
             });
             
             return null;
@@ -58,9 +85,10 @@ namespace VVVOnTheWay
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage));
+            Frame.Navigate(typeof(MapPage));
             //#TODO: Make GuidePage
         }
 
+       
     }
 }
