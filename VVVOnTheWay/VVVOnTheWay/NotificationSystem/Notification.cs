@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Popups;
 
 namespace VVVOnTheWay.NotificationSystem
 {
@@ -11,11 +12,18 @@ namespace VVVOnTheWay.NotificationSystem
     /// </summary>
     class Notification : INotification
     {
+        public string Title { get; }
+        public string Description { get; }
+
         /// <summary>
-        /// Title: The property containing the tile for this notification
-        /// Text: A property that contains thet text for notification, when applicable
+        /// Creates a notification
         /// </summary>
-        public string Title { get; set; }
-        public string Text { get; set; }
+        /// <param name="title">The name of the notification</param>
+        /// <param name="text">The text of the notification</param>
+        public Notification(string title, string text)
+        {
+            this.Title = title;
+            this.Description = text;
+        }
     }
 }

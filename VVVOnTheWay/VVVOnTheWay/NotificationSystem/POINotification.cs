@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace VVVOnTheWay.NotificationSystem
 {
@@ -19,11 +20,24 @@ namespace VVVOnTheWay.NotificationSystem
         /// Image: The image this notification should display.
         /// Description: A description to be used with this notification.
         /// </summary>
-        public string Title { get; set; }
-        public string AudioPath { get; set; }
-        public Image Image { get; set; }
-        public string Description { get; set; }
+        public string Title { get; }
+        public string AudioPath { get; }
+        public string ImagePath { get; }
+        public string Description { get; }
 
-        
+        /// <summary>
+        /// Creates a Poi notification
+        /// </summary>
+        /// <param name="title">The name of the notification</param>
+        /// <param name="audio">The path to the audio file that needs to be played</param>
+        /// <param name="imagePath">The path to the image file that needs to be shown</param>
+        /// <param name="description">The description of the POI</param>
+        public PoiNotification(string title, string audio, string imagePath, string description)
+        {
+            Title = title;
+            AudioPath = audio;
+            ImagePath = imagePath;
+            Description = description;
+        }
     }
 }
