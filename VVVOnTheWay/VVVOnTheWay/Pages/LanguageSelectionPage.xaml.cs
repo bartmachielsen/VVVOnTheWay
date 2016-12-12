@@ -29,12 +29,12 @@ namespace VVVOnTheWay
 
         private void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
-            LanguageSelectionFrame.Navigate(typeof(MainPage));
+            LanguageSelectionFrame.Navigate(typeof(MapPage));
         }
 
         private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            LanguageSelectionFrame.Navigate(typeof(MainPage));
+            LanguageSelectionFrame.Navigate(typeof(MapPage));
             //#TODO: Make GuidePage
         }
 

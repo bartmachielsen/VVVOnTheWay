@@ -24,9 +24,9 @@ namespace VVVOnTheWay
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MapPage : Page
     {
-        public MainPage()
+        public MapPage()
         {
             this.InitializeComponent();
             
@@ -52,7 +52,7 @@ namespace VVVOnTheWay
 
         private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage));
+            Frame.Navigate(typeof(MapPage));
             //#TODO: Make GuidePage
         }
 

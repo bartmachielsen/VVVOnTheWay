@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -34,7 +34,7 @@ namespace VVVOnTheWay
 
         private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            RouteSelectionFrame.Navigate(typeof(MainPage));
+            RouteSelectionFrame.Navigate(typeof(MapPage));
             //#TODO: Make GuidePage
         }
 

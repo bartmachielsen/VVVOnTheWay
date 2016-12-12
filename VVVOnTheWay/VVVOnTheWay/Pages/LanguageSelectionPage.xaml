@@ -23,14 +23,14 @@
                 Style="{StaticResource ChooseMenuStyle}"
                 Click="English_Click"
                 >
-                <Image Source="Assets/England.png" Stretch="Fill"/>
+                <Image Source="..\Assets/England.png" Stretch="Fill"/>
             </Button>
             <Button
                 Grid.Row="1"
                 Style="{StaticResource ChooseMenuStyle}"
                 Click="Dutch_Click"
                 >
-                <Image Source="Assets/Netherlands.png" Stretch="Fill"/>
+                <Image Source="..\Assets/Netherlands.png" Stretch="Fill"/>
             </Button>
             <TextBlock
                 Grid.Row="2"
@@ -52,7 +52,7 @@
                     Style="{StaticResource RoundButtonStyle}"
                     Click="HelpButton_Click"
                     >
-                    <Image Source="Assets/help.png" Stretch="Uniform"/>
+                    <Image Source="..\Assets/help.png" Stretch="Uniform"/>
                 </Button>
             </StackPanel>
         </Grid>
