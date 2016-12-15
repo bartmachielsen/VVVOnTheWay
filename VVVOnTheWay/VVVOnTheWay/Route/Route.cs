@@ -15,7 +15,7 @@ namespace VVVOnTheWay.Route
         /// <summary>
         /// Default constructor.
         /// </summary>
-        /// <param name="pointsOfInterest">sets <seealso cref="PointsOfInterest"/></param>
+        /// <param name="routePoints">sets <seealso cref="RoutePoints"/></param>
         public Route(List<Point> routePoints)
         {
             RoutePoints = routePoints;
