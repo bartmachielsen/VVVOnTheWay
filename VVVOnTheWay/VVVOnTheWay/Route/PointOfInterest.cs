@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,18 @@ namespace VVVOnTheWay.Route
         /// <summary>
         /// The Geoposition from the POI's location.
         /// </summary>
-        public Geopoint Location { get; set; }
+        
+        [JsonIgnore]
+        public Geopoint Location { get { return new Geopoint(new BasicGeoposition() { Latitude = jsonPosition[0], Longitude = jsonPosition[1] }); } set {jsonPosition = new double[] { Location.Position.Latitude, Location.Position.Longitude } ; } }
+      
+        public double[] jsonPosition { get; set; }
+
+        //This constructor is needed for JSON
+        public Point() { }
 
         public Point(Geopoint location)
         {
+            jsonPosition = new double[] { location.Position.Latitude, location.Position.Longitude };
             Location = location;
         }
     }
@@ -27,6 +36,9 @@ namespace VVVOnTheWay.Route
     /// </summary>
     class PointOfInterest : Point
     {
+        //JSON loves this
+        public PointOfInterest() { }
+
         /// <summary>
         /// Title of the POI in 2 language's.
         /// </summary>
