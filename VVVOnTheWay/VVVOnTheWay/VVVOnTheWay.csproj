@@ -89,6 +89,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\HistoricalKilometerFullRoute.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +158,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Storage\" />
+    <Folder Include="Route\Storage\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

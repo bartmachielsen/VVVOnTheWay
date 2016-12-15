@@ -17,23 +17,25 @@ namespace VVVOnTheWay.FileIO
     class FullRouteIOTest
     {
         private JsonSerializerSettings settings = new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.All };
+        public Route.Route RetrievedRoute { get; set; }
 
         public FullRouteIOTest()
         {
-            TestMethod(new RouteTest().PointsOfInterest);
+            TestMethod(new RouteTest().HistoricRoute);
         }
 
-        public void TestMethod(List<Point> totest)
+        public async void TestMethod(Route.Route totest)
         {
             string s = JsonConvert.SerializeObject(totest, settings);
             WriteJson(s);
             ReadJson();
+            Route.Route route = await FullRouteIO.LoadHistoricalKilometerRoute();
         }
 
         public async void WriteJson(string s)
         {
             StorageFolder localFolder = ApplicationData.Current.LocalFolder;
-            StorageFile sampleFile = await localFolder.CreateFileAsync($"jsontest.json", CreationCollisionOption.ReplaceExisting);
+            StorageFile sampleFile = await localFolder.CreateFileAsync($"{FullRouteIO.HistoricalKilometerFileName}.json", CreationCollisionOption.ReplaceExisting);
             await Windows.Storage.FileIO.WriteTextAsync(sampleFile, s);
         }
 
@@ -42,9 +44,10 @@ namespace VVVOnTheWay.FileIO
             try
             {
                 StorageFolder localFolder = ApplicationData.Current.LocalFolder;
-                StorageFile sampleFile = await localFolder.GetFileAsync("jsontest.json");
+                StorageFile sampleFile = await localFolder.GetFileAsync("historicalkilometer.json");
                 string json = await Windows.Storage.FileIO.ReadTextAsync(sampleFile);
-                List<Point> list = JsonConvert.DeserializeObject<List<Point>>(json, settings);
+                //List<Point> list = JsonConvert.DeserializeObject<List<Point>>(json, settings);
+                RetrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, settings);
             } 
             catch (Exception e)
             {

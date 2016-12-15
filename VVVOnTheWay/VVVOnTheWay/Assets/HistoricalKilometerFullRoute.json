@@ -1,0 +1,641 @@
+﻿{
+	"$type": "VVVOnTheWay.Route.Route, VVVOnTheWay",
+	"RoutePoints": {
+		"$type": "System.Collections.Generic.List`1[[VVVOnTheWay.Route.Point, VVVOnTheWay]], mscorlib",
+		"$values": [{
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["VVV", "VVV"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.594119, 4.779405]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Liefdezuster", "Liefdezuster"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5932783, 4.7793883]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Nassau Baronie Monument", "Nassau Baronie Monument"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5925, 4.779695]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5925, 4.7793883]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["The Light House", "The Light House"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5928333, 4.7784717]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5926667, 4.7779167]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5906117, 4.777]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Castle of Breda", "Kasteel van Breda"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5906117, 4.7761667]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Regentgate", "Stadshouderspoort"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.589695, 4.7761383]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5903333, 4.776]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5903883, 4.775]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Huis van Brecht", "Huis van Brecht"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.589695, 4.7761383]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Spanjaardsgat", "Spanjaardsgat"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.589695, 4.7761383]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Vismarkt", "Vismarkt"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5898333, 4.7733333]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Havermarkt", "Havermarkt"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5893617, 4.774445]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5887783, 4.7748883]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Grote kerk", "Grote kerk"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5888333, 4.7752783]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5887783, 4.7748883]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Het Poortje", "Het Poortje"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.588195, 4.7751383]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Ridderstraat", "Ridderstraat"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5870833, 4.77575]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Grote Markt", "Grote Markt"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5874167, 4.776555]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Bevrijdingsmonument", "Bevrijdingsmonument"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5880283, 4.7763333]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Stadshuis", "Stadshuis"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.58875, 4.7761117]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5879717, 4.7763617]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5875, 4.776555]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Antonius van Paduakerk", "Antonius van Paduakerk"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5876383, 4.77725]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5882783, 4.7785]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Library", "Bibliotheek"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.588, 4.778945]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5873617, 4.7802217]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Kloosterkazerne", "Kloosterkazerne"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5877217, 4.7810283]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Chasse theater", "Chasse theater"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.58775, 4.782]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.58775, 4.78125]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Binding van Isaac", "Binding van Isaac"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5886117, 4.7808883]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5895, 4.780445]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Beyerd", "Beyerd"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5896667, 4.781]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5895, 4.780445]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Gasthuispoort", "Gasthuispoort"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.589555, 4.78]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5894167, 4.7798617]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5890283, 4.779695]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.588555, 4.7783333]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Willem Merkxtuin", "Willem Merkxtuin"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5891117, 4.777945]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5896667, 4.777805]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["Begijnenhof", "Begijnenhof"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.589695, 4.7783617]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.Point, VVVOnTheWay",
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5896667, 4.777805]
+			}
+		}, {
+			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+			"Title": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["End point", "Einde punt"]
+			},
+			"Description": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["", ""]
+			},
+			"IsVisited": false,
+			"AudioPath": {
+				"$type": "System.String[], mscorlib",
+				"$values": ["null", "null"]
+			},
+			"ImagePath": null,
+			"jsonPosition": {
+				"$type": "System.Double[], mscorlib",
+				"$values": [51.5895, 4.77625]
+			}
+		}]
+	}
+}
