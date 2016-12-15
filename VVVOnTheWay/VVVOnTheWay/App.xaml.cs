@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -75,13 +76,13 @@ namespace VVVOnTheWay
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(RouteSelectionPage), e.Arguments);
+                    rootFrame.Navigate(typeof(PasswordPage), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
             }
         }
-
+        
         /// <summary>
         /// Invoked when Navigation to a certain page fails
         /// </summary>

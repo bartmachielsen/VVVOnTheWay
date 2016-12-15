@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -12,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using VVVOnTheWay.Pages;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,23 +31,34 @@ namespace VVVOnTheWay
 
         private void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
+            if (HistoricalKmButton.BorderBrush == new SolidColorBrush(Colors.Black))
+            {
+                //choose historical km route
+            } 
+            //choose blind walls route
             RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage));
         }
 
-        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            RouteSelectionFrame.Navigate(typeof(MapPage));
-            //#TODO: Make GuidePage
+            var g = new GuidePage();
+            await g.ShowAsync();
         }
 
-        private void English_Click(object sender, RoutedEventArgs e)
+        private void BlindWallsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            BlindWallsButton.BorderBrush = new SolidColorBrush(Colors.Black);
+            BlindWallsButton.BorderThickness = new Thickness(3);
+            HistoricalKmButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
+            HistoricalKmButton.BorderThickness = new Thickness(1);
         }
 
-        private void Dutch_Click(object sender, RoutedEventArgs e)
+        private void HistoricalKmButton_Click(object sender, RoutedEventArgs e)
         {
-
+            HistoricalKmButton.BorderBrush = new SolidColorBrush(Colors.Black);
+            HistoricalKmButton.BorderThickness = new Thickness(3);
+            BlindWallsButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
+            BlindWallsButton.BorderThickness = new Thickness(1);
         }
     }
 }

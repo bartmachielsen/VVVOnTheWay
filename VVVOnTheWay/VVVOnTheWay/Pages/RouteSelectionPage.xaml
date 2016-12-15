@@ -20,16 +20,19 @@
             </Grid.RowDefinitions>
 
             <Button
+                x:Name="BlindWallsButton"
                 Style="{StaticResource ChooseMenuStyle}"
-                Click="English_Click"
-                
+                BorderBrush="Black"
+                BorderThickness="3"
+                Click="BlindWallsButton_Click"
                 >
                 <Image Source="..\Assets/England.png" Stretch="Fill"/>
             </Button>
             <Button
+                x:Name="HistoricalKmButton"
                 Grid.Row="1"
                 Style="{StaticResource ChooseMenuStyle}"
-                Click="Dutch_Click"
+                Click="HistoricalKmButton_Click"
                 >
                 <Image Source="..\Assets/Netherlands.png" Stretch="Fill"/>
             </Button>

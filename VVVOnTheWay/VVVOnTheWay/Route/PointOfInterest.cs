@@ -8,7 +8,7 @@ using Windows.Devices.Geolocation;
 
 namespace VVVOnTheWay.Route
 {
-    class Point
+    public class Point
     {
         /// <summary>
         /// The Geoposition from the POI's location.
@@ -34,7 +34,7 @@ namespace VVVOnTheWay.Route
     /// - If the point has been visited or not.
     /// - Get a notification with the information.
     /// </summary>
-    class PointOfInterest : Point
+   public class PointOfInterest : Point
     {
         //JSON loves this
         public PointOfInterest() { }

@@ -9,23 +9,35 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-           <Maps:MapControl 
-               x:Name="Map"
-               MapServiceToken="DypxObTyzkWM3QVKqeOV~qPZIp3xC8DUMt_rrBW2qCA~At8UUC81s3n5IDAcdRyQftV2iN4zdJraRdCON4mCrwGC9lZ_YLbBJldJh486D9TR"/>
+        <Maps:MapControl 
+            x:Name="Map"
+            MapServiceToken="DypxObTyzkWM3QVKqeOV~qPZIp3xC8DUMt_rrBW2qCA~At8UUC81s3n5IDAcdRyQftV2iN4zdJraRdCON4mCrwGC9lZ_YLbBJldJh486D9TR"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="{Binding ElementName=Map, Path=ActualHeight}"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{Binding ElementName=Map, Path=ActualWidth}"/>
+            </Grid.ColumnDefinitions>
 
-        <Button 
-                    Style="{StaticResource RoundButtonStyle}"
-                    Click="HelpButton_Click" Margin="270,550,0,10"
-                    >
-            <Image Source="Assets/help.png" Stretch="Uniform"/>
-        </Button>
+            <Button 
+                Style="{StaticResource RoundButtonStyle}"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Margin="0,0,10,10"
+                Click="HelpButton_Click"
+                >
+                <Image Source="..\Assets/help.png" Stretch="Uniform"/>
+            </Button>
 
-        <Button 
-                    Style="{StaticResource RoundButtonStyle}"
-                    Click="SettingsButton_Click" Margin="0,-550,0,10"
-                    >
-            <Image Source="Assets/settings.png" Stretch="Uniform"/>
-        </Button>
-
+            <Button 
+                Style="{StaticResource RoundButtonStyle}"
+                VerticalAlignment="Top"
+                Margin="10,10"
+                Click="SettingsButton_Click"
+                >
+                <Image Source="..\Assets/settings.png" Stretch="Uniform"/>
+            </Button>
+        </Grid>
     </Grid>
 </Page>

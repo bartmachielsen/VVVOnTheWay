@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VVVOnTheWay.Route
 {
-    class Route
+   public class Route
     {   
         /// <summary>
         /// The list of POI that are on this route.

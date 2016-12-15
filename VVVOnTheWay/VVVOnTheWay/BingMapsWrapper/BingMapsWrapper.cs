@@ -22,7 +22,7 @@ namespace LocationSystem
         /// Uint which represents the wanted accuracy from the GPS receiver
         /// </summary>
         private static uint Accuracy = 10;
-        
+
 
         /// <summary>
         /// Double which represents the movementthreshold in meters
@@ -35,7 +35,7 @@ namespace LocationSystem
         /// <returns>returns boolean which represents the accessibility</returns>
         private static async Task<bool> CheckGpsAccessibility()
         {
-            return (await Geolocator.RequestAccessAsync()) == GeolocationAccessStatus.Allowed 
+            return (await Geolocator.RequestAccessAsync()) == GeolocationAccessStatus.Allowed
                 && new Geolocator().LocationStatus != PositionStatus.NotAvailable;
         }
 
@@ -44,11 +44,11 @@ namespace LocationSystem
         /// </summary>
         /// <exception cref="GpsNotAllowed">Exception when system has deactivated GPS or user does not allow GPS to this application</exception>
         /// <param name="method"></param>
-        public static async void NotifyOnLocationUpdate(Func<Geoposition,object> method)
+        public static async void NotifyOnLocationUpdate(Func<Geoposition, object> method)
         {
             if (!await CheckGpsAccessibility())
                 throw new GpsNotAllowed();
-           Geolocator locator = new Geolocator() {DesiredAccuracyInMeters = Accuracy, MovementThreshold = MovementThreshold};
+            Geolocator locator = new Geolocator() { DesiredAccuracyInMeters = Accuracy, MovementThreshold = MovementThreshold };
             locator.PositionChanged +=
                 (Geolocator sender, PositionChangedEventArgs args) => { method.Invoke(args.Position); };
         }
@@ -61,7 +61,7 @@ namespace LocationSystem
         {
             if (!await CheckGpsAccessibility())
                 throw new GpsNotAllowed();
-            Geolocator locator = new Geolocator() {DesiredAccuracyInMeters = Accuracy};
+            Geolocator locator = new Geolocator() { DesiredAccuracyInMeters = Accuracy };
             return await locator.GetGeopositionAsync();
         }
 
@@ -88,9 +88,9 @@ namespace LocationSystem
         /// <param name="source">The location of the source as Geoposition</param>
         /// <param name="target">The location to calculate the distance to</param>
         /// <returns>MapRoute between the two points <seealso cref="MapRoute"/></returns>
-        public static async Task<MapRoute> GetRouteTo(Geoposition source, Geoposition target)
+        public static async Task<MapRoute> GetRouteTo(Geopoint source, Geopoint target)
         {
-            return (await MapRouteFinder.GetWalkingRouteAsync(source.Coordinate.Point, target.Coordinate.Point)).Route;
+            return (await MapRouteFinder.GetWalkingRouteAsync(source, target)).Route;
         }
 
 
@@ -104,7 +104,7 @@ namespace LocationSystem
         /// </summary>
         /// <param name="route">The route the user is using <seealso cref="Route"/></param> 
         /// <exception cref="GpsNotAllowed">Exception when system has deactivated GPS or user does not allow GPS to this application</exception>
-        public static async Task PointOfInterestEntered(Func<PointOfInterest, object> notifier, PointOfInterest pointOfInterest)
+        public static async Task PointOfInterestEntered(Func<PointOfInterest, Task> notifier, PointOfInterest pointOfInterest)
         {
             if (!await CheckGpsAccessibility())
                 throw new GpsNotAllowed();
@@ -119,7 +119,7 @@ namespace LocationSystem
             };
         }
 
-       
+
     }
 
     /// <summary>
@@ -127,6 +127,6 @@ namespace LocationSystem
     /// </summary>
     class GpsNotAllowed : Exception
     {
-        
+
     }
 }

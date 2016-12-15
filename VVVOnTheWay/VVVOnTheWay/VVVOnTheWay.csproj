@@ -99,6 +99,9 @@
     <Compile Include="BingMapsWrapper\BingMapsWrapper.cs" />
     <Compile Include="FileIO\FullRouteIO.cs" />
     <Compile Include="FileIO\FullRouteIOTest.cs" />
+    <Compile Include="Pages\GuidePage.xaml.cs">
+      <DependentUpon>GuidePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LanguageSelectionPage.xaml.cs">
       <DependentUpon>LanguageSelectionPage.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,12 @@
     <Compile Include="NotificationSystem\Notification.cs" />
     <Compile Include="NotificationSystem\NotificationSystem.cs" />
     <Compile Include="NotificationSystem\POINotification.cs" />
+    <Compile Include="Pages\PasswordPage.xaml.cs">
+      <DependentUpon>PasswordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FileIO\RouteProgressIO.cs" />
     <Compile Include="Pages\RouteSelectionPage.xaml.cs">
@@ -126,6 +135,7 @@
     <None Include="VVVOnTheWay_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\back.png" />
     <Content Include="Assets\England.png" />
     <Content Include="Assets\help.png" />
     <Content Include="Assets\Netherlands.png" />
@@ -144,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\GuidePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\LanguageSelectionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -153,6 +167,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\RouteSelectionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PasswordPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

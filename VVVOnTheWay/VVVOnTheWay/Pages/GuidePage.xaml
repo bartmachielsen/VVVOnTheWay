@@ -1,0 +1,39 @@
+﻿<ContentDialog
+    x:Class="VVVOnTheWay.Pages.GuidePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VVVOnTheWay.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White"
+    >
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="530"/>
+            <RowDefinition Height="90"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Margin="0,10"
+            Text="GuidePage information"
+            FontSize="17"
+            />
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Row="1">
+            <Button 
+                Style="{StaticResource RoundButtonStyle}"
+                Click="BackButton_Click"
+                >
+                <Image Source="..\Assets/back.png"></Image>
+            </Button>
+            <TextBlock
+                Text="Back / Terug"
+                Style="{StaticResource InstructionTextStyle}"></TextBlock>
+        </StackPanel>
+    </Grid>
+</ContentDialog>
