@@ -18,7 +18,10 @@ namespace VVVOnTheWay.Route
         public Geopoint Location { get { return new Geopoint(new BasicGeoposition() { Latitude = jsonPosition[0], Longitude = jsonPosition[1] }); } set {jsonPosition = new double[] { Location.Position.Latitude, Location.Position.Longitude } ; } }
       
         public double[] jsonPosition { get; set; }
-
+        /// <summary>
+        /// Whether the POI is visited or not.
+        /// </summary>
+        public bool IsVisited { get; set; }
         //This constructor is needed for JSON
         public Point() { }
 
@@ -47,10 +50,7 @@ namespace VVVOnTheWay.Route
         /// Description of the POI in 2 language's.
         /// </summary>
         public string[] Description { get; set; }
-        /// <summary>
-        /// Whether the POI is visited or not.
-        /// </summary>
-        public bool IsVisited { get; set; }
+        
         /// <summary>
         /// The path to get the audio file associated with the POI in both languages.
         /// </summary>

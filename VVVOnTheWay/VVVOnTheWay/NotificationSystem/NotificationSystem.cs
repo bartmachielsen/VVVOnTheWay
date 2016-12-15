@@ -1,8 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Composition;
+using Windows.UI.Notifications;
+using Windows.UI.Popups;
+using Microsoft.Toolkit.Uwp.Notifications;
+using Windows.Phone.Devices.Notification;
 
 namespace VVVOnTheWay.NotificationSystem
 {
@@ -11,37 +17,24 @@ namespace VVVOnTheWay.NotificationSystem
     /// </summary>
     static class NotificationSystem
     {
-        
-
         /// <summary>
-        /// Creates a task to send a push notification
+        /// Creates a task to send a push notification. In windows phone, this type of notification that is in the top bar of the screen is called
+        /// a toast (yes, that is spelled correctly).
         /// </summary>
         /// <param name="notification"> A notification implementing the <see cref="INotification"/> interface.</param>
         /// <returns> A task to send a push notification. </returns>
-        //TODO add a way to send the vibration notifiction
-        public static Task SendPushNotificationAsync(INotification notification)
+        public static void SenToastificationAsync(INotification notification)
         {
-            throw new NotImplementedException();
-        }
-
-        /// <summary>
-        /// Creates a task to send a sound notification.
-        /// </summary>
-        /// <returns> The task to send a sound notification. </returns>
-        //TODO add a way to send the vibration notifiction
-        public static Task SendSoundNotificationAsync()
-        {
-            throw new NotImplementedException();
+            ToastNotificationManager.CreateToastNotifier().Show(CreateCompleteToastNotification(notification));
         }
 
         /// <summary>
         /// Creates a task to send a sound notification.
         /// </summary>
         /// <returns> The task to send a vibration notification. </returns>
-        //TODO add a way to send the vibration notifiction
-        public static Task SendVibrationNotificationAsync()
+        public static void SendVibrationNotificationAsync()
         {
-            throw new NotImplementedException();
+            VibrationDevice.GetDefault().Vibrate(TimeSpan.FromSeconds(5));
         }
 
         /// <summary>
@@ -49,10 +42,69 @@ namespace VVVOnTheWay.NotificationSystem
         /// </summary>
         /// <param name="notification"> A notification implementing the <see cref="INotification"/> interface.</param>
         /// <returns> A task to send a pop up notification. </returns>
-        //TODO add a way to send the pop up notifiction
-        public static Task SendPopUpNotificationAsync(INotification notification)
+        public static async Task SendPopUpNotificationAsync(Notification notification)
         {
-            throw new NotImplementedException();
+            await new MessageDialog(notification.Description, notification.Title).ShowAsync();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="n"> The notification on which the toast is based. </param>
+        /// <returns>The toast notification.</returns>
+        private static ToastNotification CreateCompleteToastNotification(INotification n)
+        {
+            var preGeneric = new ToastBindingGeneric()
+            {
+                Children =
+                {
+                    new AdaptiveText()
+                    {
+                        Text = n.Title
+                    },
+
+                    new AdaptiveText()
+                    {
+                        Text = n.Description
+                    },
+                }
+            };
+
+            if (n.GetType() == typeof(PoiNotification))
+            {
+                preGeneric.Children.Add(new AdaptiveImage()
+                {
+                    Source = ((PoiNotification) n).ImagePath
+                });
+            }
+
+            return new ToastNotification(new ToastContent()
+            {
+                Visual = new ToastVisual() {BindingGeneric = preGeneric},
+
+                Actions = new ToastActionsCustom()
+                {
+                    Buttons =
+                    {
+                        new ToastButton("Pause", "pause")
+                        {
+                            ActivationType = ToastActivationType.Background
+                        },
+
+                        new ToastButton("Close", "close")
+                        {
+                            ActivationType = ToastActivationType.Background
+                        }
+                    }
+                },
+
+                Audio = new ToastAudio()
+                {
+                    Src = new Uri("ms-winsoundevent:Notification.Reminder")
+                },
+
+                Duration = ToastDuration.Short
+            }.GetXml());
         }
     }
 }

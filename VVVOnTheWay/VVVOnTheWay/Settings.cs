@@ -21,16 +21,28 @@ namespace VVVOnTheWay
        ///  </summary>
        public static Language Language = Language.ENGLISH;
 
+        public static void setLanguageDutch()
+        {
+            Language = Language.DUTCH;
+        }
+        public static void setLanguageEnglish()
+        {
+            Language = Language.ENGLISH;
+        }
+
         /// <summary>
         /// The correct password that is needed to login, 
         /// must completely match to correctly login.
         /// </summary>
-       public static string Password = "";
+        public static string Password = "wachtwoord";
         
         /// <summary>
         /// The path to saved progress, progress of a Route that has not been finished.
         /// </summary>
        public static string ProgressPath = "";
+
+        
+       
 
        
    }

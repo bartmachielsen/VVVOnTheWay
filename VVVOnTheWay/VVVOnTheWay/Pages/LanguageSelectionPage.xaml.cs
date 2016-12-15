@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using VVVOnTheWay.NotificationSystem;
 using VVVOnTheWay.Pages;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -33,16 +34,20 @@ namespace VVVOnTheWay
         {
             if (DutchButton.BorderBrush == new SolidColorBrush(Colors.Black))
             {
-                //choose Dutch language
+                Settings.setLanguageDutch();
             }
-            //choose English language
+            else
+            {
+                Settings.setLanguageEnglish();
+            }
             LanguageSelectionFrame.Navigate(typeof(MapPage));
         }
 
         private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            var g = new GuidePage();
-            await g.ShowAsync();
+            NotificationSystemTestDriver.TestRun();
+            //var g = new GuidePage();
+            //await g.ShowAsync();
         }
 
         private void EnglishButton_Click(object sender, RoutedEventArgs e)
@@ -60,5 +65,7 @@ namespace VVVOnTheWay
             EnglishButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
             EnglishButton.BorderThickness = new Thickness(1);
         }
+
+        
     }
 }

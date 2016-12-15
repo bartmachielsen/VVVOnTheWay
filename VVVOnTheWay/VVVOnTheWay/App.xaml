@@ -7,7 +7,7 @@
     
     <Application.Resources>
         <Style x:Key="BasicButtonStyle" TargetType="Button">
-            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="FontSize" Value="35"/>
             <Setter Property="Width" Value="250"/>
             <Setter Property="Content" Value="Text"/>
             <Setter Property="FontStyle" Value="Italic"/>
@@ -17,8 +17,8 @@
             <Setter Property="BorderBrush" Value="Black"/>
         </Style>
         <Style x:Key="RoundButtonStyle" TargetType="Button">
-            <Setter Property="Width" Value="77"/>
-            <Setter Property="Height" Value="77"/>
+            <Setter Property="Width" Value="65"/>
+            <Setter Property="Height" Value="65"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Margin" Value="0,0,10,0"/>
             <Setter Property="Template">
@@ -38,7 +38,7 @@
             <Setter Property="Background" Value="White"/>
         </Style>
         <Style x:Key="InstructionTextStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="FontSize" Value="35"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>

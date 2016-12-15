@@ -98,6 +98,7 @@
     </Compile>
     <Compile Include="BingMapsWrapper\BingMapsWrapper.cs" />
     <Compile Include="FileIO\FullRouteIO.cs" />
+    <Compile Include="NotificationSystem\NotificationSystemTestDriver.cs" />
     <Compile Include="FileIO\FullRouteIOTest.cs" />
     <Compile Include="Pages\GuidePage.xaml.cs">
       <DependentUpon>GuidePage.xaml</DependentUpon>
@@ -181,6 +182,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Route\Storage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
+      <Name>Windows Mobile Extensions for the UWP</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

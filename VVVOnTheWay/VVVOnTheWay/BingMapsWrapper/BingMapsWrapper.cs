@@ -9,6 +9,7 @@ using Windows.Foundation;
 using Windows.Services.Maps;
 using Windows.UI.Xaml.Controls.Maps;
 using VVVOnTheWay.Route;
+using Point = VVVOnTheWay.Route.Point;
 
 
 namespace LocationSystem
@@ -78,7 +79,7 @@ namespace LocationSystem
         /// <returns> double as distance in meters between the two positions</returns>
         public static async Task<double> GetDistanceTo(Geoposition source, Geoposition target)
         {
-            return (await GetRouteTo(source, target)).LengthInMeters;
+            return (await GetRouteTo(source.Coordinate.Point, target.Coordinate.Point)).LengthInMeters;
         }
 
 
@@ -104,11 +105,11 @@ namespace LocationSystem
         /// </summary>
         /// <param name="route">The route the user is using <seealso cref="Route"/></param> 
         /// <exception cref="GpsNotAllowed">Exception when system has deactivated GPS or user does not allow GPS to this application</exception>
-        public static async Task PointOfInterestEntered(Func<PointOfInterest, Task> notifier, PointOfInterest pointOfInterest)
+        public static async Task PointOfInterestEntered(Func<Point, Task> notifier, Point pointOfInterest)
         {
             if (!await CheckGpsAccessibility())
                 throw new GpsNotAllowed();
-            var geofence = new Geofence($"{pointOfInterest.Title[0]} notifier", new Geocircle(pointOfInterest.Location.Position, 20.0), MonitoredGeofenceStates.Entered, true);
+            var geofence = new Geofence($"{pointOfInterest} notifier", new Geocircle(pointOfInterest.Location.Position, 20.0), MonitoredGeofenceStates.Entered, true);
 
             GeofenceMonitor.Current.Geofences.Add(geofence);
             GeofenceMonitor.Current.GeofenceStateChanged += (GeofenceMonitor monitor, object obj) =>

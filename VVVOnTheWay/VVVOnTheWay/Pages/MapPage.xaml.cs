@@ -18,14 +18,13 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using LocationSystem;
+using VVVOnTheWay.Pages;
 using VVVOnTheWay.Route;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace VVVOnTheWay
 {
-
-    
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -39,6 +38,7 @@ namespace VVVOnTheWay
         public MapPage(Route.Route route)
         {
             this.InitializeComponent();
+            BingMapsWrapper.ClearGeofences();
             this.route = route;
             GetUserLocation();
             AddPointsOfInterest();
@@ -103,9 +103,9 @@ namespace VVVOnTheWay
             }
         }
 
-        private PointOfInterest GetNextPointOfInterest()
+        private Route.Point GetNextPointOfInterest()
         {
-            foreach (var point in route.PointsOfInterest)
+            foreach (var point in route.RoutePoints)
                 if (!point.IsVisited)
                     return point;
             return null;
@@ -131,34 +131,31 @@ namespace VVVOnTheWay
       
         private void AddPointsOfInterest()
         {
-            foreach (PointOfInterest poi in route.PointsOfInterest)
+            foreach (var poi in route.RoutePoints)
             {
-                Map.MapElements.Add(new MapIcon()
+                PointOfInterest point = poi as PointOfInterest;
+                if (point != null)
                 {
-                    Title = poi.Title[(int)_language],
-                    Location = poi.Location
+                    Map.MapElements.Add(new MapIcon()
+                    {
+                        Title = point.Title[(int) _language],
+                        Location = poi.Location
 
-                });
+                    });
+                }
             }
         }
 
-
-
-        private void LanguageSwitch_Click(object sender, RoutedEventArgs e)
+        private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(RouteSelectionPage));
+            var g = new GuidePage();
+            await g.ShowAsync();
         }
 
-        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        private async void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MapPage));
-            //#TODO: Make GuidePage
-        }
-
-        private void SettingsButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(MapPage));
-            //#TODO: Make GuidePage
+            var g = new SettingsPage();
+            await g.ShowAsync();
         }
 
        

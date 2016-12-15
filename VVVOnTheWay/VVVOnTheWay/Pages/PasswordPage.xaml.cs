@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using VVVOnTheWay.NotificationSystem;
 using VVVOnTheWay.Pages;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -30,13 +31,14 @@ namespace VVVOnTheWay
 
         private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            var g = new GuidePage();
-            await g.ShowAsync();
+            NotificationSystemTestDriver.TestRun();
+            //var g = new GuidePage();
+            //await g.ShowAsync();
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (PasswordBox.Password == "wachtwoord")
+            if (PasswordBox.Password == ""+Settings.Password)
             {
                 PasswordFrame.Navigate(typeof(RouteSelectionPage));
             }
