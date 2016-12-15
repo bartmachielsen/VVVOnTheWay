@@ -98,7 +98,7 @@
     <Compile Include="BingMapsWrapper\BingMapsWrapper.cs" />
     <Compile Include="FileIO\FullRouteIO.cs" />
     <Compile Include="FileIO\FullRouteIOTest.cs" />
-    <Compile Include="LanguageSelectionPage.xaml.cs">
+    <Compile Include="Pages\LanguageSelectionPage.xaml.cs">
       <DependentUpon>LanguageSelectionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MapPage.xaml.cs">
