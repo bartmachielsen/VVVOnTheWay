@@ -28,6 +28,13 @@
                 >
                 <Image Source="..\Assets/England.png" Stretch="Fill"/>
             </Button>
+            <TextBlock 
+                Grid.Row="0"
+                Text="Historische kilometer"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                FontSize="19"
+                />
             <Button
                 x:Name="HistoricalKmButton"
                 Grid.Row="1"
@@ -36,6 +43,13 @@
                 >
                 <Image Source="..\Assets/Netherlands.png" Stretch="Fill"/>
             </Button>
+            <TextBlock 
+                Grid.Row="1"
+                Text="Blind walk"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                FontSize="19"
+                />
             <TextBlock
                 Grid.Row="2"
                 Style="{StaticResource InstructionTextStyle}"

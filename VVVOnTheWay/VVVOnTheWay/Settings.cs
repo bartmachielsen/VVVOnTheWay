@@ -9,7 +9,7 @@ namespace VVVOnTheWay
    /// <summary>
    /// Settings for the application that are generally used.
    /// </summary>
-    class Settings
+   static class Settings
    {
        ///  <value>
        ///  Default language is set to ENGLISH
@@ -20,15 +20,6 @@ namespace VVVOnTheWay
        ///  <seealso cref="Language"/>
        ///  </summary>
        public static Language Language = Language.ENGLISH;
-
-        public static void setLanguageDutch()
-        {
-            Language = Language.DUTCH;
-        }
-        public static void setLanguageEnglish()
-        {
-            Language = Language.ENGLISH;
-        }
 
         /// <summary>
         /// The correct password that is needed to login, 

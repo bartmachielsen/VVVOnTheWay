@@ -35,14 +35,17 @@ namespace VVVOnTheWay
         private MapRouteView _routeView;
         private Language _language = VVVOnTheWay.Language.ENGLISH;
 
-        public MapPage(Route.Route route)
+        public MapPage()
         {
             this.InitializeComponent();
+        }
+
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            route = e.Parameter as Route.Route;
             BingMapsWrapper.ClearGeofences();
-            this.route = route;
-            GetUserLocation();
+            await GetUserLocation();
             AddPointsOfInterest();
-            
         }
 
         private async Task GetUserLocation()

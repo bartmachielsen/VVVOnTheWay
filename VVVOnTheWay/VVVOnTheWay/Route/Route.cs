@@ -20,6 +20,7 @@ namespace VVVOnTheWay.Route
         {
             RoutePoints = routePoints;
         }
+        
         /// <summary>
         /// Saves the route into a file located at the specified location.
         /// </summary>

@@ -31,28 +31,26 @@ namespace VVVOnTheWay.FileIO
         public static async Task<Route.Route> LoadHistoricalKilometerRoute()
         {
             StorageFolder datafolder = ApplicationData.Current.LocalFolder;
+            StorageFile historicalKilometerFile;
             try
             {
-                StorageFile historicalKilometerFile = await datafolder.GetFileAsync($"{HistoricalKilometerFileName}.json");
-                string json = await Windows.Storage.FileIO.ReadTextAsync(historicalKilometerFile);
-                Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
-                return retrievedRoute;
+                historicalKilometerFile = await datafolder.GetFileAsync($"{HistoricalKilometerFileName}.json");
             }
             catch (FileNotFoundException)
             {
-                var file = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\HistoricalKilometerFullRoute.json");
-                await file.CopyAsync(datafolder, $"{HistoricalKilometerFileName}", NameCollisionOption.ReplaceExisting);
-                string json = await Windows.Storage.FileIO.ReadTextAsync(file);
-                Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
-                return retrievedRoute;
+                historicalKilometerFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\HistoricalKilometerFullRoute.json");
+                await historicalKilometerFile.CopyAsync(datafolder, $"{HistoricalKilometerFileName}", NameCollisionOption.ReplaceExisting);
             }
+            string json = await Windows.Storage.FileIO.ReadTextAsync(historicalKilometerFile);
+            Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
+            return retrievedRoute;
         }
 
         /// <summary>
         /// Loads/creates the Blind Walls Route, which can be retrieved as this class' attributes
         /// </summary>
         /// <returns>The Route object for the Blind Walls route</returns>
-        public static Route.Route LoadBlindWallsRoute()
+        public static async Task<Route.Route> LoadBlindWallsRoute()
         {
             throw new NotImplementedException();
         }
