@@ -63,8 +63,7 @@ namespace VVVOnTheWay.FileIO
             }
             catch
             {
-                //This happens if there wasn't a check if a last saved route exists
-                return await FullRouteIO.LoadHistoricalKilometerRoute();
+                return null;
             }
         }
     }
