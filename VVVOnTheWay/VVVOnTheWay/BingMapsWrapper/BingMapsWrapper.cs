@@ -91,7 +91,14 @@ namespace LocationSystem
         /// <returns>MapRoute between the two points <seealso cref="MapRoute"/></returns>
         public static async Task<MapRoute> GetRouteTo(Geopoint source, Geopoint target)
         {
-            return (await MapRouteFinder.GetWalkingRouteAsync(source, target)).Route;
+            var result = (await MapRouteFinder.GetWalkingRouteAsync(source, target));
+            if (result.Status == MapRouteFinderStatus.Success)
+                return result.Route;
+            else
+            {
+                return null;
+            }
+
         }
 
 

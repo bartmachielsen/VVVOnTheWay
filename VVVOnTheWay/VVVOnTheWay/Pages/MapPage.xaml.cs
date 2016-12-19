@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
@@ -56,6 +57,7 @@ namespace VVVOnTheWay
                 Map.Center = location.Coordinate.Point;
                 Map.ZoomLevel = 15;
                 UpdateUserLocation(location);
+                ShowNewRoute(location);
             }
             catch (GpsNotAllowed)
             {
@@ -63,11 +65,13 @@ namespace VVVOnTheWay
                 // TODO take action when no gps
                 // TODO show in language which is chosen
             }
+            
             BingMapsWrapper.NotifyOnLocationUpdate((async geoposition =>
             {
                 await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal, () =>
                  {
                      UpdateUserLocation(geoposition);
+                     ShowNewRoute(geoposition);
                  });
                 // TODO CHECK IF DISPATCHER IS NEEDED BECAUSE OTHER THREAD
             }));
@@ -80,28 +84,35 @@ namespace VVVOnTheWay
         private async void ShowNewRoute(Geoposition position)
         {
             var nextPoint = GetNextPointOfInterest();
-            if (nextPoint != null)
-            {
-                if (_routeView != null)
-                    Map.Routes.Remove(_routeView);
-                _routeView = new MapRouteView(await BingMapsWrapper.GetRouteTo(position.Coordinate.Point, nextPoint.Location));
-                if (_routeView == null)
-                    Map.Routes.Add(_routeView);
-            }
+            if (nextPoint == null) return;
+            var routeResult = await BingMapsWrapper.GetRouteTo(position.Coordinate.Point, nextPoint.Location);
+            if (routeResult == null) return;
+            if (_routeView != null)
+                Map.Routes.Remove(_routeView);
 
+            _routeView = new MapRouteView(routeResult)
+            {
+                OutlineColor = Colors.Black,
+                RouteColor = Colors.Yellow
+            };
+            Map.Routes.Add(_routeView);
         }
 
         private async void ListenToNextPointOfInterest()
         {
             var point = GetNextPointOfInterest();
+            
             if (point != null)
             {
                 await BingMapsWrapper.PointOfInterestEntered((async interest =>
                 {
-                    // TODO SHOW NOTIFICATION THAT POINT OF INTEREST IS REACHED
-                    interest.IsVisited = true;
-                    ListenToNextPointOfInterest();
-                    ShowNewRoute((await BingMapsWrapper.GetCurrentPosition()));
+                    await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal, async () =>
+                    {
+                        // TODO SHOW NOTIFICATION THAT POINT OF INTEREST IS REACHED
+                        interest.IsVisited = true;
+                        ListenToNextPointOfInterest();
+                        ShowNewRoute((await BingMapsWrapper.GetCurrentPosition()));
+                    });
                     return;
                 }), point);
             }
