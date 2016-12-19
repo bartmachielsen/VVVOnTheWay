@@ -65,6 +65,7 @@ namespace VVVOnTheWay
                 EnglishButton.BorderThickness = new Thickness(1);
             }
         }
+
         private void EnglishButton_Click(object sender, RoutedEventArgs e)
         {
             Settings.Language = VVVOnTheWay.Language.ENGLISH;

@@ -81,10 +81,14 @@ namespace VVVOnTheWay.NotificationSystem
 
             if (n.GetType() == typeof(PoiNotification))
             {
-                preGeneric.Children.Add(new AdaptiveImage()
+                PoiNotification poi = (PoiNotification) n;
+                if (!String.IsNullOrEmpty(poi.ImagePath))
                 {
-                    Source = ((PoiNotification) n).ImagePath
-                });
+                    preGeneric.Children.Add(new AdaptiveImage()
+                    {
+                        Source = poi.ImagePath
+                    });
+                }
             }
 
             return new ToastNotification(new ToastContent()
