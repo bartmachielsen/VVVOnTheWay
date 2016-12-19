@@ -87,18 +87,7 @@ namespace VVVOnTheWay.Route
         /// <returns>A Point Of Interest notification for this point.</returns>
         public PoiNotification GetNotification()
         {
-            PoiNotification poi = null;
-            switch (Settings.Language)
-            {
-                case Language.ENGLISH:
-                    poi = new PoiNotification(Title[0], ImagePath, Description[0]);
-                    break;
-                
-                case Language.DUTCH:
-                    poi = new PoiNotification(Title[1], ImagePath, Description[1]);
-                    break;
-            }
-            return poi;
+            return new PoiNotification(Title[(int)Settings.Language], ImagePath, Description[(int)Settings.Language]);
         }
     }
 }

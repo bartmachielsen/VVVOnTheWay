@@ -89,7 +89,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\BlindWalls\hedof-2.jpg" />
+    <Content Include="Assets\BlindWalls\iwan-smit.jpg" />
+    <Content Include="Assets\BlindWalls\rutger-termohlen.jpg" />
+    <Content Include="Assets\BlindWalls\staynice.jpg" />
+    <Content Include="Assets\BlindWalls\TB_Web_Thumb-150x150.jpg" />
+    <Content Include="Assets\guy.png" />
     <Content Include="Assets\HistoricalKilometerFullRoute.json" />
+    <Content Include="Assets\BlindWallsFullRoute.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +104,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="LocationSystem\BingMapsWrapper.cs" />
+    <Compile Include="LocationSystem\BingMapsWrapperTestDriver.cs" />
     <Compile Include="FileIO\BlindwallsRetriever.cs" />
     <Compile Include="LocationSystem\BingMapsWrapperTestDriver.cs" />
     <Compile Include="FileIO\FullRouteIO.cs" />
@@ -146,6 +154,8 @@
     <Content Include="Assets\help.png" />
     <Content Include="Assets\Netherlands.png" />
     <Content Include="Assets\play.png" />
+    <Content Include="Assets\Point visited.png" />
+    <Content Include="Assets\Point.png" />
     <Content Include="Assets\settings.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
