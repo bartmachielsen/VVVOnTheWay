@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
+using VVVOnTheWay.NotificationSystem;
 
 namespace VVVOnTheWay.Route
 {
@@ -83,10 +84,21 @@ namespace VVVOnTheWay.Route
         /// <summary>
         /// Get the notification with all the information about this POI.
         /// </summary>
-        /// TODO: Return Notification
-        public void GetNotification()
+        /// <returns>A Point Of Interest notification for this point.</returns>
+        public PoiNotification GetNotification()
         {
-            throw new NotImplementedException();
+            PoiNotification poi = null;
+            switch (Settings.Language)
+            {
+                case Language.ENGLISH:
+                    poi = new PoiNotification(Title[0], ImagePath, Description[0]);
+                    break;
+                
+                case Language.DUTCH:
+                    poi = new PoiNotification(Title[1], ImagePath, Description[1]);
+                    break;
+            }
+            return poi;
         }
     }
 }

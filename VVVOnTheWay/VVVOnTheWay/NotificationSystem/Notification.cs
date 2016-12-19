@@ -10,7 +10,7 @@ namespace VVVOnTheWay.NotificationSystem
     /// <summary>
     /// A general implementation of the INotification interface, having only a text
     /// </summary>
-    class Notification : INotification
+    public class Notification : INotification
     {
         /// <summary>
         /// Title: The property containing the tile for this notification

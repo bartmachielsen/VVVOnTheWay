@@ -39,9 +39,8 @@ namespace VVVOnTheWay
 
         private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            NotificationSystemTestDriver.TestRun();
-            //var g = new GuidePage();
-            //await g.ShowAsync();
+            var g = new GuidePage();
+            await g.ShowAsync();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -65,8 +64,8 @@ namespace VVVOnTheWay
                 EnglishButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
                 EnglishButton.BorderThickness = new Thickness(1);
             }
+            LanguageSelectionFrame.Navigate(typeof(MapPage));
         }
-
         private void EnglishButton_Click(object sender, RoutedEventArgs e)
         {
             Settings.Language = VVVOnTheWay.Language.ENGLISH;

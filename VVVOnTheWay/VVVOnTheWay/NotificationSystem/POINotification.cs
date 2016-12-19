@@ -12,7 +12,7 @@ namespace VVVOnTheWay.NotificationSystem
     /// <summary>
     /// A implementation of the INotification interface for specific use with the PointOfInterest class
     /// </summary>
-    class PoiNotification : INotification
+    public class PoiNotification : INotification
     {
         /// <summary>
         /// The following property's are in order (from top to botton):

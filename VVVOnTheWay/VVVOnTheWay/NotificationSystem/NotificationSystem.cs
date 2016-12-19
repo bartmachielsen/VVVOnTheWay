@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -34,7 +35,15 @@ namespace VVVOnTheWay.NotificationSystem
         /// <returns> The task to send a vibration notification. </returns>
         public static void SendVibrationNotificationAsync()
         {
-            VibrationDevice.GetDefault().Vibrate(TimeSpan.FromSeconds(5));
+            try
+            {
+                VibrationDevice.GetDefault().Vibrate(TimeSpan.FromSeconds(5));
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("BRRRRRRRRRRRRRRRRRRRRRRRRRRRR BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
+            }
+            
         }
 
         /// <summary>
