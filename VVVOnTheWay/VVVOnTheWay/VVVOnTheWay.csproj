@@ -94,6 +94,7 @@
     <Content Include="Assets\BlindWalls\rutger-termohlen.jpg" />
     <Content Include="Assets\BlindWalls\staynice.jpg" />
     <Content Include="Assets\BlindWalls\TB_Web_Thumb-150x150.jpg" />
+    <Content Include="Assets\guy.png" />
     <Content Include="Assets\HistoricalKilometerFullRoute.json" />
     <None Include="project.json" />
   </ItemGroup>
@@ -151,6 +152,8 @@
     <Content Include="Assets\help.png" />
     <Content Include="Assets\Netherlands.png" />
     <Content Include="Assets\play.png" />
+    <Content Include="Assets\Point visited.png" />
+    <Content Include="Assets\Point.png" />
     <Content Include="Assets\settings.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
