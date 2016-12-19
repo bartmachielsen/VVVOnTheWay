@@ -30,7 +30,7 @@
             </Button>
             <TextBlock 
                 Grid.Row="0"
-                Text="Historische kilometer"
+                Text="Blind Walls"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
                 FontSize="19"
@@ -45,7 +45,7 @@
             </Button>
             <TextBlock 
                 Grid.Row="1"
-                Text="Blind walk"
+                Text="Historische Kilometer"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
                 FontSize="19"
