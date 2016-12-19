@@ -45,7 +45,7 @@ namespace VVVOnTheWay
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             route = e.Parameter as Route.Route;
-            BingMapsWrapper.ClearGeofences();
+            LocationSystem.BingMapsWrapper.ClearGeofences();
             await GetUserLocation();
             AddPointsOfInterest();
         }
@@ -54,7 +54,7 @@ namespace VVVOnTheWay
         {
             try
             {
-                var location = await BingMapsWrapper.GetCurrentPosition();
+                var location = await LocationSystem.BingMapsWrapper.GetCurrentPosition();
                 Map.Center = location.Coordinate.Point;
                 Map.ZoomLevel = 15;
                 UpdateUserLocation(location);
