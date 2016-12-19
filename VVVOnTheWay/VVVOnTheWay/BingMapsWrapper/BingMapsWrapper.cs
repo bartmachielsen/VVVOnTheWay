@@ -116,15 +116,26 @@ namespace LocationSystem
         {
             if (!await CheckGpsAccessibility())
                 throw new GpsNotAllowed();
-            var geofence = new Geofence($"{pointOfInterest} notifier", new Geocircle(pointOfInterest.Location.Position, 20.0), MonitoredGeofenceStates.Entered, true);
+            int distance = 100;
+            if (pointOfInterest is PointOfInterest)
+                distance = 30;
+            var geofence = new Geofence($"{pointOfInterest.GetHashCode()} notifier", new Geocircle(pointOfInterest.Location.Position, distance), MonitoredGeofenceStates.Entered, true, TimeSpan.FromSeconds(1));
+            
 
             GeofenceMonitor.Current.Geofences.Add(geofence);
-            GeofenceMonitor.Current.GeofenceStateChanged += (GeofenceMonitor monitor, object obj) =>
+            
+            TypedEventHandler<GeofenceMonitor, object> listener = null;
+            listener = (GeofenceMonitor monitor, object obj) =>
             {
+                if (pointOfInterest.IsVisited) return;
                 foreach (var report in monitor.ReadReports())
                     if (report.Geofence.Id == geofence.Id)
+                    {
                         notifier.Invoke(pointOfInterest);
+                        GeofenceMonitor.Current.GeofenceStateChanged -= listener;
+                    }
             };
+            GeofenceMonitor.Current.GeofenceStateChanged += listener;
         }
 
 

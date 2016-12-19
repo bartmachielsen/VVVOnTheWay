@@ -21,6 +21,7 @@ using Windows.UI.Xaml.Navigation;
 using LocationSystem;
 using VVVOnTheWay.Pages;
 using VVVOnTheWay.Route;
+using Point = VVVOnTheWay.Route.Point;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -83,9 +84,19 @@ namespace VVVOnTheWay
 
         private async void ShowNewRoute(Geoposition position)
         {
-            var nextPoint = GetNextPointOfInterest();
-            if (nextPoint == null) return;
-            var routeResult = await BingMapsWrapper.GetRouteTo(position.Coordinate.Point, nextPoint.Location);
+            List<Point> routepoints = new List<Point>();
+            List<Geopoint> points = new List<Geopoint>() { position.Coordinate.Point};
+            while (true)
+            {
+                var nextPoint = GetNextPointOfInterest(false,routepoints);
+                if (nextPoint == null) break;
+                points.Add(nextPoint.Location);
+                routepoints.Add(nextPoint);
+                if (nextPoint is PointOfInterest)
+                    break;
+            }
+            if (points.Count <= 1) return;
+            var routeResult = await BingMapsWrapper.GetRouteBetween(points);
             if (routeResult == null) return;
             if (_routeView != null)
                 Map.Routes.Remove(_routeView);
@@ -100,14 +111,14 @@ namespace VVVOnTheWay
 
         private async void ListenToNextPointOfInterest()
         {
-            var point = GetNextPointOfInterest();
-            
+            var point = GetNextPointOfInterest(true);
             if (point != null)
             {
                 await BingMapsWrapper.PointOfInterestEntered((async interest =>
                 {
                     await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal, async () =>
                     {
+                        if (interest.IsVisited) return;
                         // TODO SHOW NOTIFICATION THAT POINT OF INTEREST IS REACHED
                         interest.IsVisited = true;
                         ListenToNextPointOfInterest();
@@ -118,11 +129,21 @@ namespace VVVOnTheWay
             }
         }
 
-        private Route.Point GetNextPointOfInterest()
+        private Route.Point GetNextPointOfInterest(bool pointOfInterest = false, List<Point> skip = null)
         {
-            foreach (var point in route.RoutePoints)
-                if (!point.IsVisited)
+            if(skip == null)
+                skip = new List<Point>();
+            var reversed = new List<Point>(route.RoutePoints);
+            reversed.Reverse();
+            var index = reversed.FindIndex((point) => point.IsVisited);
+            if (index == -1)
+                index = route.RoutePoints.Count;
+            for (var i = route.RoutePoints.Count-index; i < route.RoutePoints.Count; i++)
+            {
+                var point = route.RoutePoints.ElementAt(i);
+                if (!point.IsVisited && (point is PointOfInterest == pointOfInterest || !pointOfInterest) && !skip.Contains(point))
                     return point;
+            }
             return null;
         }
 
