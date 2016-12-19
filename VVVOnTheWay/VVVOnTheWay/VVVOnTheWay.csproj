@@ -102,9 +102,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="LocationSystem\BingMapsWrapper.cs" />
-    <Compile Include="FileIO\BlindwallsRetriever.cs" />
     <Compile Include="LocationSystem\BingMapsWrapperTestDriver.cs" />
-    <Compile Include="BingMapsWrapper\BingMapsWrapper.cs" />
     <Compile Include="FileIO\BlindwallsRetriever.cs" />
     <Compile Include="FileIO\FullRouteIO.cs" />
     <Compile Include="NotificationSystem\NotificationSystemTestDriver.cs" />
