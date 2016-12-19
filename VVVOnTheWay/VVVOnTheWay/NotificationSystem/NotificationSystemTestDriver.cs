@@ -22,6 +22,7 @@ namespace VVVOnTheWay.NotificationSystem
             Test1(testNotification);
             Test2(testNotification);
             Test3(poiNotification);
+            Test4();
             Debug.WriteLine("Finished the test");
         }
 
@@ -41,6 +42,12 @@ namespace VVVOnTheWay.NotificationSystem
         {
             Debug.WriteLine("Third test");
             NotificationSystem.SenToastificationAsync(n);
+        }
+
+        public static void Test4()
+        {
+            Debug.WriteLine("Fourth Test");
+            NotificationSystem.SendVibrationNotificationAsync();
         }
     }
 }
