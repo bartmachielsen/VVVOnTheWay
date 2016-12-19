@@ -106,7 +106,6 @@
     <Compile Include="LocationSystem\BingMapsWrapper.cs" />
     <Compile Include="LocationSystem\BingMapsWrapperTestDriver.cs" />
     <Compile Include="FileIO\BlindwallsRetriever.cs" />
-    <Compile Include="LocationSystem\BingMapsWrapperTestDriver.cs" />
     <Compile Include="FileIO\FullRouteIO.cs" />
     <Compile Include="NotificationSystem\NotificationSystemTestDriver.cs" />
     <Compile Include="FileIO\FullRouteIOTest.cs" />

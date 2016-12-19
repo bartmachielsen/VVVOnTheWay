@@ -124,7 +124,7 @@ namespace VVVOnTheWay
             {
                 await BingMapsWrapper.PointOfInterestEntered((async interest =>
                 {
-                    await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal, () =>
+                    await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal,async () =>
                     {
                         if (interest.IsVisited) return;
                         if (interest.GetType() == typeof(PointOfInterest))
