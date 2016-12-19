@@ -74,7 +74,6 @@ namespace VVVOnTheWay
                      UpdateUserLocation(geoposition);
                      ShowNewRoute(geoposition);
                  });
-                // TODO CHECK IF DISPATCHER IS NEEDED BECAUSE OTHER THREAD
             }));
             
             ListenToNextPointOfInterest();
@@ -133,7 +132,7 @@ namespace VVVOnTheWay
                         }
                         interest.IsVisited = true;
                         ListenToNextPointOfInterest();
-                        //ShowNewRoute((await BingMapsWrapper.GetCurrentPosition())); TODO CHECK IF NEEDED
+                        ShowNewRoute((await BingMapsWrapper.GetCurrentPosition())); 
                         FileIO.RouteProgressIO.SaveRouteProgressToFile(route);
                     });
                     return;
