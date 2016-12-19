@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using VVVOnTheWay.Route;
 
 namespace VVVOnTheWay.FileIO
 {
@@ -53,6 +54,7 @@ namespace VVVOnTheWay.FileIO
             StorageFile routeFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync($@"Assets\{routeFileName}.json");
             await routeFile.CopyAsync(datafolder, $"{routeFileName}.json", NameCollisionOption.ReplaceExisting);
             string json = await Windows.Storage.FileIO.ReadTextAsync(routeFile);
+
             Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
             return retrievedRoute;
         }

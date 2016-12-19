@@ -89,15 +89,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Content Include="Assets\HistoricalKilometerRoute.json" />
-    <Content Include="Assets\BlindwallsRoute.json" />
     <Content Include="Assets\BlindWalls\hedof-2.jpg" />
     <Content Include="Assets\BlindWalls\iwan-smit.jpg" />
     <Content Include="Assets\BlindWalls\rutger-termohlen.jpg" />
     <Content Include="Assets\BlindWalls\staynice.jpg" />
     <Content Include="Assets\BlindWalls\TB_Web_Thumb-150x150.jpg" />
     <Content Include="Assets\guy.png" />
-
+    <Content Include="Assets\HistoricalKilometerFullRoute.json" />
+    <Content Include="Assets\BlindWallsFullRoute.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -157,14 +156,14 @@
     <Content Include="Assets\Point visited.png" />
     <Content Include="Assets\Point.png" />
     <Content Include="Assets\settings.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\unavailable-image.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\Square150x150Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\150x150.png" />
+    <Content Include="Assets\44x44.png" />
     <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\310x150.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
