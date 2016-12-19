@@ -35,7 +35,6 @@ namespace VVVOnTheWay
             //NotificationSystemTestDriver.TestRun();
             //var g = new GuidePage();
             //await g.ShowAsync();
-            var blind = new BlindwallsRetriever();
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
