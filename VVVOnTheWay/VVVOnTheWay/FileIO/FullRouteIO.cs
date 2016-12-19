@@ -52,9 +52,20 @@ namespace VVVOnTheWay.FileIO
         /// <returns>The Route object for the Blind Walls route</returns>
         public static async Task<Route.Route> LoadBlindWallsRoute()
         {
-            BlindwallsRetriever bwRetriever = new BlindwallsRetriever();
-            var result = await bwRetriever.GetJson();
-            return result;
+            StorageFolder datafolder = ApplicationData.Current.LocalFolder;
+            StorageFile blindWallsRoute;
+            try
+            {
+                blindWallsRoute = await datafolder.GetFileAsync($"{BlindWallsFileName}.json");
+            }
+            catch (FileNotFoundException)
+            {
+                blindWallsRoute = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\BlindWallsFullRoute.json");
+                await blindWallsRoute.CopyAsync(datafolder, $"{BlindWallsFileName}.json", NameCollisionOption.ReplaceExisting);
+            }
+            string json = await Windows.Storage.FileIO.ReadTextAsync(blindWallsRoute);
+            Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
+            return retrievedRoute;
         }
 
     }

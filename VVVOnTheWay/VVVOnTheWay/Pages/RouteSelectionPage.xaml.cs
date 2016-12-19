@@ -25,7 +25,7 @@ namespace VVVOnTheWay
     /// </summary>
     public sealed partial class RouteSelectionPage : Page
     {
-        private int _selectedRoute; // 0 Historische 1 Blindwalls
+        private int _selectedRoute; // 0 = Blind Walls, 1 = Historische Kilometer
         public RouteSelectionPage()
         {
             this.InitializeComponent();
@@ -34,7 +34,7 @@ namespace VVVOnTheWay
         private async void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
             Route.Route selectedRoute;
-            if (_selectedRoute == 0)
+            if (_selectedRoute == 1)
             {
                 //choose historical km route
                 selectedRoute = await FileIO.FullRouteIO.LoadHistoricalKilometerRoute();
@@ -42,7 +42,7 @@ namespace VVVOnTheWay
             else //choose blind walls route
             {
                 selectedRoute = await FileIO.FullRouteIO.LoadBlindWallsRoute();
-            } 
+            }
             RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage), selectedRoute);
         }
 
@@ -58,7 +58,7 @@ namespace VVVOnTheWay
             BlindWallsButton.BorderThickness = new Thickness(3);
             HistoricalKmButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
             HistoricalKmButton.BorderThickness = new Thickness(1);
-            _selectedRoute = 1;
+            _selectedRoute = 0;
         }
 
         private void HistoricalKmButton_Click(object sender, RoutedEventArgs e)
@@ -67,7 +67,7 @@ namespace VVVOnTheWay
             HistoricalKmButton.BorderThickness = new Thickness(3);
             BlindWallsButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
             BlindWallsButton.BorderThickness = new Thickness(1);
-            _selectedRoute = 0;
+            _selectedRoute = 1;
         }
     }
 }
