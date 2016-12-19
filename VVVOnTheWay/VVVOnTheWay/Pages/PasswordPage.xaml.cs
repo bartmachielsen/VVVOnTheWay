@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using VVVOnTheWay.FileIO;
 using VVVOnTheWay.NotificationSystem;
 using VVVOnTheWay.Pages;
 
@@ -31,14 +32,16 @@ namespace VVVOnTheWay
 
         private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            NotificationSystemTestDriver.TestRun();
+            //NotificationSystemTestDriver.TestRun();
             //var g = new GuidePage();
             //await g.ShowAsync();
+            var blind = new BlindwallsRetriever();
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (PasswordBox.Password == ""+Settings.Password)
+            //TODO Remove Test password
+            if (PasswordBox.Password == ""+Settings.Password || PasswordBox.Password == "")
             {
                 PasswordFrame.Navigate(typeof(RouteSelectionPage));
             }

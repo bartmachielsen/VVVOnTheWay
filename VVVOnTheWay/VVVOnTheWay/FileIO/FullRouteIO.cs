@@ -39,7 +39,7 @@ namespace VVVOnTheWay.FileIO
             catch (FileNotFoundException)
             {
                 historicalKilometerFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\HistoricalKilometerFullRoute.json");
-                await historicalKilometerFile.CopyAsync(datafolder, $"{HistoricalKilometerFileName}", NameCollisionOption.ReplaceExisting);
+                await historicalKilometerFile.CopyAsync(datafolder, $"{HistoricalKilometerFileName}.json", NameCollisionOption.ReplaceExisting);
             }
             string json = await Windows.Storage.FileIO.ReadTextAsync(historicalKilometerFile);
             Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
@@ -52,7 +52,9 @@ namespace VVVOnTheWay.FileIO
         /// <returns>The Route object for the Blind Walls route</returns>
         public static async Task<Route.Route> LoadBlindWallsRoute()
         {
-            throw new NotImplementedException();
+            BlindwallsRetriever bwRetriever = new BlindwallsRetriever();
+            var result = await bwRetriever.GetJson();
+            return result;
         }
 
     }
