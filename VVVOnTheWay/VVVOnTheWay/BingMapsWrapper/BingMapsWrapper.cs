@@ -45,7 +45,7 @@ namespace LocationSystem
         /// </summary>
         /// <exception cref="GpsNotAllowed">Exception when system has deactivated GPS or user does not allow GPS to this application</exception>
         /// <param name="method"></param>
-        public static async void NotifyOnLocationUpdate(Func<Geoposition, object> method)
+        public static async void NotifyOnLocationUpdate(Func<Geoposition, Task> method)
         {
             if (!await CheckGpsAccessibility())
                 throw new GpsNotAllowed();

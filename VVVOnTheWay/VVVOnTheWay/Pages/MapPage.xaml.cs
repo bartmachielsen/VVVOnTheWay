@@ -63,12 +63,13 @@ namespace VVVOnTheWay
                 // TODO take action when no gps
                 // TODO show in language which is chosen
             }
-            BingMapsWrapper.NotifyOnLocationUpdate((geoposition =>
+            BingMapsWrapper.NotifyOnLocationUpdate((async geoposition =>
             {
-                UpdateUserLocation(geoposition);
-
+                await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal, () =>
+                 {
+                     UpdateUserLocation(geoposition);
+                 });
                 // TODO CHECK IF DISPATCHER IS NEEDED BECAUSE OTHER THREAD
-                return null;
             }));
             
             ListenToNextPointOfInterest();
