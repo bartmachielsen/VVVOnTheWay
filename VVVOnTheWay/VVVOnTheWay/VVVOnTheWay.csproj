@@ -89,15 +89,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Content Include="Assets\HistoricalKilometerRoute.json" />
-    <Content Include="Assets\BlindwallsRoute.json" />
     <Content Include="Assets\BlindWalls\hedof-2.jpg" />
     <Content Include="Assets\BlindWalls\iwan-smit.jpg" />
     <Content Include="Assets\BlindWalls\rutger-termohlen.jpg" />
     <Content Include="Assets\BlindWalls\staynice.jpg" />
     <Content Include="Assets\BlindWalls\TB_Web_Thumb-150x150.jpg" />
     <Content Include="Assets\guy.png" />
-
+    <Content Include="Assets\HistoricalKilometerFullRoute.json" />
+    <Content Include="Assets\BlindWallsFullRoute.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>

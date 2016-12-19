@@ -42,6 +42,7 @@ namespace VVVOnTheWay
             else //choose blind walls route
             {
                 selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.BlindWallsFileName);
+
             }
             RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage), selectedRoute);
         }
