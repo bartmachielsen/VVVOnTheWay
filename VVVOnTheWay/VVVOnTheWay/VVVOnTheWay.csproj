@@ -101,6 +101,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LocationSystem\BingMapsWrapper.cs" />
+    <Compile Include="FileIO\BlindwallsRetriever.cs" />
+    <Compile Include="LocationSystem\BingMapsWrapperTestDriver.cs" />
     <Compile Include="BingMapsWrapper\BingMapsWrapper.cs" />
     <Compile Include="FileIO\BlindwallsRetriever.cs" />
     <Compile Include="FileIO\FullRouteIO.cs" />
@@ -121,6 +124,9 @@
     <Compile Include="NotificationSystem\POINotification.cs" />
     <Compile Include="Pages\PasswordPage.xaml.cs">
       <DependentUpon>PasswordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PointDataPage.xaml.cs">
+      <DependentUpon>PointDataPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -146,6 +152,7 @@
     <Content Include="Assets\England.png" />
     <Content Include="Assets\help.png" />
     <Content Include="Assets\Netherlands.png" />
+    <Content Include="Assets\play.png" />
     <Content Include="Assets\settings.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
@@ -172,6 +179,10 @@
     <Page Include="Pages\MapPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PointDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RouteSelectionPage.xaml">
       <SubType>Designer</SubType>

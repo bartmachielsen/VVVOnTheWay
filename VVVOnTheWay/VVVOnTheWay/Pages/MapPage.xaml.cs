@@ -19,6 +19,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using LocationSystem;
+using VVVOnTheWay.NotificationSystem;
 using VVVOnTheWay.Pages;
 using VVVOnTheWay.Route;
 using Point = VVVOnTheWay.Route.Point;
@@ -45,7 +46,7 @@ namespace VVVOnTheWay
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             route = e.Parameter as Route.Route;
-            BingMapsWrapper.ClearGeofences();
+            LocationSystem.BingMapsWrapper.ClearGeofences();
             await GetUserLocation();
             AddPointsOfInterest();
         }
@@ -54,7 +55,7 @@ namespace VVVOnTheWay
         {
             try
             {
-                var location = await BingMapsWrapper.GetCurrentPosition();
+                var location = await LocationSystem.BingMapsWrapper.GetCurrentPosition();
                 Map.Center = location.Coordinate.Point;
                 Map.ZoomLevel = 15;
                 UpdateUserLocation(location);
@@ -95,7 +96,12 @@ namespace VVVOnTheWay
                 if (nextPoint is PointOfInterest)
                     break;
             }
-            if (points.Count <= 1) return;
+            if (points.Count <= 1)
+            {
+                if (_routeView != null)
+                    Map.Routes.Remove(_routeView);
+                return;
+            }
             var routeResult = await BingMapsWrapper.GetRouteBetween(points);
             if (routeResult == null) return;
             if (_routeView != null)
@@ -119,20 +125,39 @@ namespace VVVOnTheWay
                     await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal, async () =>
                     {
                         if (interest.IsVisited) return;
-                        // TODO SHOW NOTIFICATION THAT POINT OF INTEREST IS REACHED
                         if (interest.GetType() == typeof(PointOfInterest))
                         {
                             PointOfInterest poi = ((PointOfInterest)interest);
                             NotificationSystem.NotificationSystem.SenToastificationAsync(poi.GetNotification());
                             NotificationSystem.NotificationSystem.SendVibrationNotificationAsync();
+                            var g = new PointDataPage(poi);
+                            await g.ShowAsync();
+
                         }
                         interest.IsVisited = true;
                         ListenToNextPointOfInterest();
-                        ShowNewRoute((await BingMapsWrapper.GetCurrentPosition()));
+                        //ShowNewRoute((await BingMapsWrapper.GetCurrentPosition())); TODO CHECK IF NEEDED
                         FileIO.RouteProgressIO.SaveRouteProgressToFile(route);
                     });
                     return;
                 }), point);
+            }
+            else
+            {
+                // TODO SHOW NOTIFICATION ROUTE FINISHED
+                // TODO OK BART
+                switch (Settings.Language)
+                {
+                    case VVVOnTheWay.Language.ENGLISH:
+                        NotificationSystem.NotificationSystem.SenToastificationAsync(
+                        new Notification("End of the route.", "You have reached the end of the route. You can turn in your phone to the VVV employee."));
+                        break;
+                    case VVVOnTheWay.Language.DUTCH:
+                        NotificationSystem.NotificationSystem.SenToastificationAsync(
+                        new Notification("Einde van de route.", "U heeft de route afgerond. U kan nu de telefoon inleveren bij de VVV medewerker."));
+                        break;
+                }
+                // TODO REMOVE ROUTE PROGRESS
             }
         }
 

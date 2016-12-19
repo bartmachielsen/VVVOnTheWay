@@ -65,26 +65,35 @@ namespace VVVOnTheWay.NotificationSystem
         {
             var preGeneric = new ToastBindingGeneric()
             {
-                Children =
-                {
-                    new AdaptiveText()
-                    {
-                        Text = n.Title
-                    },
-
-                    new AdaptiveText()
-                    {
-                        Text = n.Description
-                    },
-                }
+                Children = {}
             };
+
+            if (!string.IsNullOrEmpty(n.Title))
+            {
+                preGeneric.Children.Add(new AdaptiveText()
+                {
+                    Text = n.Title
+                });
+            }
+            
+            if (!string.IsNullOrEmpty(n.Description))
+            {
+                preGeneric.Children.Add(new AdaptiveText()
+                {
+                    Text = n.Description
+                });
+            }
 
             if (n.GetType() == typeof(PoiNotification))
             {
-                preGeneric.Children.Add(new AdaptiveImage()
+                PoiNotification poi = (PoiNotification) n;
+                if (!String.IsNullOrEmpty(poi.ImagePath))
                 {
-                    Source = ((PoiNotification) n).ImagePath
-                });
+                    preGeneric.Children.Add(new AdaptiveImage()
+                    {
+                        Source = poi.ImagePath
+                    });
+                }
             }
 
             return new ToastNotification(new ToastContent()
