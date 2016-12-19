@@ -112,6 +112,7 @@ namespace VVVOnTheWay
                         interest.IsVisited = true;
                         ListenToNextPointOfInterest();
                         ShowNewRoute((await BingMapsWrapper.GetCurrentPosition()));
+                        FileIO.RouteProgressIO.SaveRouteProgressToFile(route);
                     });
                     return;
                 }), point);

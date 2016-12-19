@@ -39,7 +39,7 @@ namespace VVVOnTheWay.FileIO
             catch (FileNotFoundException)
             {
                 historicalKilometerFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\HistoricalKilometerFullRoute.json");
-                await historicalKilometerFile.CopyAsync(datafolder, $"{HistoricalKilometerFileName}", NameCollisionOption.ReplaceExisting);
+                await historicalKilometerFile.CopyAsync(datafolder, $"{HistoricalKilometerFileName}.json", NameCollisionOption.ReplaceExisting);
             }
             string json = await Windows.Storage.FileIO.ReadTextAsync(historicalKilometerFile);
             Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
