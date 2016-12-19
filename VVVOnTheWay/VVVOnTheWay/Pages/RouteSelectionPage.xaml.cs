@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Phone.Management.Deployment;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -24,6 +25,7 @@ namespace VVVOnTheWay
     /// </summary>
     public sealed partial class RouteSelectionPage : Page
     {
+        private int _selectedRoute; // 0 Historische 1 Blindwalls
         public RouteSelectionPage()
         {
             this.InitializeComponent();
@@ -31,17 +33,16 @@ namespace VVVOnTheWay
 
         private async void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
-            Route.Route selectedRoute = await FileIO.FullRouteIO.LoadHistoricalKilometerRoute();
-            //Following code won't function because Blind Walls route is not iplemented yet
-            //if (HistoricalKmButton.BorderBrush == new SolidColorBrush(Colors.Black))
-            //{
-            //    //choose historical km route
-            //    selectedRoute = await FileIO.FullRouteIO.LoadHistoricalKilometerRoute();
-            //}
-            //else //choose blind walls route
-            //{
-            //    selectedRoute = await FileIO.FullRouteIO.LoadBlindWallsRoute(); //not implemented yet
-            //} 
+            Route.Route selectedRoute;
+            if (_selectedRoute == 0)
+            {
+                //choose historical km route
+                selectedRoute = await FileIO.FullRouteIO.LoadHistoricalKilometerRoute();
+            }
+            else //choose blind walls route
+            {
+                selectedRoute = await FileIO.FullRouteIO.LoadBlindWallsRoute();
+            } 
             RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage), selectedRoute);
         }
 
@@ -57,6 +58,7 @@ namespace VVVOnTheWay
             BlindWallsButton.BorderThickness = new Thickness(3);
             HistoricalKmButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
             HistoricalKmButton.BorderThickness = new Thickness(1);
+            _selectedRoute = 1;
         }
 
         private void HistoricalKmButton_Click(object sender, RoutedEventArgs e)
@@ -65,6 +67,7 @@ namespace VVVOnTheWay
             HistoricalKmButton.BorderThickness = new Thickness(3);
             BlindWallsButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
             BlindWallsButton.BorderThickness = new Thickness(1);
+            _selectedRoute = 0;
         }
     }
 }

@@ -52,7 +52,9 @@ namespace VVVOnTheWay.FileIO
         /// <returns>The Route object for the Blind Walls route</returns>
         public static async Task<Route.Route> LoadBlindWallsRoute()
         {
-            throw new NotImplementedException();
+            BlindwallsRetriever bwRetriever = new BlindwallsRetriever();
+            var result = await bwRetriever.GetJson();
+            return result;
         }
 
     }

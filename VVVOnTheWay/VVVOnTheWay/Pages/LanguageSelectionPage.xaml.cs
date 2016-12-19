@@ -64,7 +64,6 @@ namespace VVVOnTheWay
                 EnglishButton.BorderBrush = new SolidColorBrush(Colors.Transparent);
                 EnglishButton.BorderThickness = new Thickness(1);
             }
-            LanguageSelectionFrame.Navigate(typeof(MapPage));
         }
         private void EnglishButton_Click(object sender, RoutedEventArgs e)
         {
@@ -77,7 +76,5 @@ namespace VVVOnTheWay
             Settings.Language = VVVOnTheWay.Language.DUTCH;
             SetColors();
         }
-
-        
     }
 }
