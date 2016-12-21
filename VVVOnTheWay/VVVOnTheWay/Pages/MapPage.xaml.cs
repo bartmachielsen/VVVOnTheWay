@@ -40,7 +40,7 @@ namespace VVVOnTheWay
         private Language _language = VVVOnTheWay.Language.ENGLISH;
         private Dictionary<PointOfInterest, MapIcon> _routeIcons = new Dictionary<PointOfInterest, MapIcon>();
 
-        private MapPolyline _mapPolyline;\
+        private MapPolyline _mapPolyline;
 
         public MapPage()
         {
@@ -132,7 +132,7 @@ namespace VVVOnTheWay
             if (_routeView != null)
                 Map.Routes.Remove(_routeView);
             double distance = routeResult.LengthInMeters;
-            if(distance >= 1000.0) { textBlock2.Text = Math.Round(distance / 1000.0) + " km"; }
+            if(distance >= 1000.0) { textBlock2.Text = Math.Round(distance / 1000.0 , 2) + " km"; }
             else { textBlock2.Text = distance + " m"; }
             //@TODO textblock1 check lang 
             _routeView = new MapRouteView(routeResult)
