@@ -34,15 +34,24 @@ namespace VVVOnTheWay.Pages
             PointPicture.Source = _poi.ImagePath != null ? new BitmapImage(new Uri($"ms-appx:///{_poi.ImagePath}")) : new BitmapImage(new Uri("ms-appx:///Assets/unavailable-image.png"));
         }
 
-        private void PlayButton_Click(object sender, RoutedEventArgs e)
+        private async void PlayButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Settings.Language == VVVOnTheWay.Language.ENGLISH)
+            if (_poi.AudioPath == null) return;
+            try
             {
-                //play English audio
+                MediaElement mysong = new MediaElement();
+
+                Windows.Storage.StorageFolder folder =
+                    await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
+                Windows.Storage.StorageFile file = await folder.GetFileAsync(_poi.AudioPath[(int)Settings.Language]);
+                var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+                mysong.SetSource(stream, file.ContentType);
+                mysong.Play();
+                
             }
-            else
+            catch
             {
-                //play Dutch audio
+                // ignored
             }
         }
 
