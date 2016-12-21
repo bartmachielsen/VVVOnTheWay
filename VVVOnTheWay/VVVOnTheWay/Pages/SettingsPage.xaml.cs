@@ -25,6 +25,7 @@ namespace VVVOnTheWay.Pages
             LanguageSwitchButton.Content = Settings.Language == VVVOnTheWay.Language.ENGLISH ? "Switch language" : "Verander taal";
             BackTextBlock.Text = Settings.Language == VVVOnTheWay.Language.ENGLISH ? "Back" : "Terug";
             CurrentLanguageText.Text = Settings.Language == VVVOnTheWay.Language.ENGLISH ? "Current language: English" : "Huidige taal: Nederlands";
+            
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -40,6 +41,7 @@ namespace VVVOnTheWay.Pages
                 LanguageSwitchButton.Content = "Switch language";
                 BackTextBlock.Text = "Back";
                 CurrentLanguageText.Text = "Current language: English";
+                
             }
             else
             {

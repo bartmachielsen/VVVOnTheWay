@@ -40,15 +40,16 @@ namespace VVVOnTheWay.FileIO
             }
             catch (FileNotFoundException)
             {
-                return await loadRouteFromAssetsAsync(routeFileName);
+
+                return await LoadRouteFromAssetsAsync(routeFileName);
             }
             string json = await Windows.Storage.FileIO.ReadTextAsync(routeFile);
-            if (json == "") return await loadRouteFromAssetsAsync(routeFileName);
+            if (json == "") return await LoadRouteFromAssetsAsync(routeFileName);
             Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
             return retrievedRoute;
         }
 
-        private static async Task<Route.Route> loadRouteFromAssetsAsync(string routeFileName)
+        private static async Task<Route.Route> LoadRouteFromAssetsAsync(string routeFileName)
         {
             StorageFolder datafolder = ApplicationData.Current.LocalFolder;
             StorageFile routeFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync($@"Assets\{routeFileName}.json");

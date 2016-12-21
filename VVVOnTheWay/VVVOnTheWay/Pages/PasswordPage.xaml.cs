@@ -39,14 +39,29 @@ namespace VVVOnTheWay
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (PasswordBox.Password == ""+Settings.Password || PasswordBox.Password == "")
+            ValidatePassword(PasswordBox.Password);
+        }
+
+        private void ValidatePassword(string password)
+        {
+            if (password == $"{Settings.Password}" || PasswordBox.Password == "")
             {
-                PasswordFrame.Navigate(typeof(RouteSelectionPage));
+                PasswordCorrect();
             }
             else
             {
-                PasswordWrongAnimation.Begin();
+                PasswordFalse();
             }
+        }
+
+        private void PasswordCorrect()
+        {
+            PasswordFrame.Navigate(typeof(RouteSelectionPage));
+        }
+
+        private void PasswordFalse()
+        {
+            PasswordWrongAnimation.Begin();
         }
 
         private void PasswordBox_OnKeyDown(object sender, KeyRoutedEventArgs e)

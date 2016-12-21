@@ -137,6 +137,7 @@
       <DependentUpon>RouteSelectionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Route\RouteTest.cs" />
+    <Compile Include="Route\RouteTestDriver.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Route\PointOfInterest.cs" />
     <Compile Include="Route\Route.cs" />
