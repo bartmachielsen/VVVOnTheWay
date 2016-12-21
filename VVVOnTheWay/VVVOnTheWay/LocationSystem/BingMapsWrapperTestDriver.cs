@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
+using VVVOnTheWay.Route;
 
 namespace LocationSystem
 {
@@ -66,9 +67,17 @@ namespace LocationSystem
             {
                 
             }
-            System.Diagnostics.Debug.WriteLine("\n\nWaiting for geofence response:");
-
-
+            System.Diagnostics.Debug.WriteLine("\n\nWaiting for geofence response:" +
+                                               $"\nWalk to: {endPoint.Position.Longitude}, {endPoint.Position.Latitude}");
+            Point targetpoint = new Point(endPoint);
+            changed = false;
+            BingMapsWrapper.PointOfInterestEntered(( async point =>
+            {
+                System.Diagnostics.Debug.WriteLine("Reached Point!!!!");
+                changed = true;
+            }), targetpoint);
+            while (!changed) { }
+            System.Diagnostics.Debug.WriteLine("Test finished!");
         }
     }
 }
