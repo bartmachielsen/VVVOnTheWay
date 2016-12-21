@@ -59,9 +59,12 @@ namespace VVVOnTheWay
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             route = e.Parameter as Route.Route;
+            RouteProgressIO.SaveRouteProgressToFile(route);
+
             BingMapsWrapper.ClearGeofences();
             await GetUserLocation();
             AddPointsOfInterest();
+
         }
 
 

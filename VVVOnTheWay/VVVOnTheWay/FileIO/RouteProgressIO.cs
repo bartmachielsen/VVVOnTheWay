@@ -31,7 +31,9 @@ namespace VVVOnTheWay.FileIO
             var folder = ApplicationData.Current.LocalFolder;
             var json = JsonConvert.SerializeObject(routeInProgress,
                 new JsonSerializerSettings {TypeNameHandling = TypeNameHandling.All});
-            await folder.CreateFileAsync($"{LastSavedRouteFileName}.json", CreationCollisionOption.ReplaceExisting);
+            var file = await folder.CreateFileAsync($"{LastSavedRouteFileName}.json", CreationCollisionOption.ReplaceExisting);
+            await Windows.Storage.FileIO.WriteTextAsync(file, json);
+
         }
 
         /// <summary>
@@ -71,8 +73,9 @@ namespace VVVOnTheWay.FileIO
                     new JsonSerializerSettings {TypeNameHandling = TypeNameHandling.All});
                 return retrievedRoute;
             }
-            catch
+            catch(Exception e)
             {
+                System.Diagnostics.Debug.WriteLine(e);
                 return null;
             }
         }
