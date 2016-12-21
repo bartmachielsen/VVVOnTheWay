@@ -10,6 +10,7 @@ namespace VVVOnTheWay.Route
         public RouteTest()
         {
             PointsOfInterest = new List<Point>();
+            //TODO: Christiaan
             PointsOfInterest.Add(new PointOfInterest(new[] { "VVV", "VVV" }, new[] { "null", "null" }, false,
                 new[] { "null", "null" }, null,
                 new Geopoint(new BasicGeoposition { Latitude = 51.594119, Longitude = 4.779405 })));
@@ -63,6 +64,10 @@ namespace VVVOnTheWay.Route
                 false,
                 new[] { "null", "null" }, null,
                 new Geopoint(new BasicGeoposition { Latitude = 51.5888333, Longitude = 4.7752783 })));
+
+
+
+            //TODO: Bart
             PointsOfInterest.Add(
                 new Point(new Geopoint(new BasicGeoposition { Latitude = 51.5887783, Longitude = 4.7748883 })));
             PointsOfInterest.Add(new PointOfInterest(new[] { "Het Poortje", "Het Poortje" }, new[] { "", "" },
@@ -111,6 +116,9 @@ namespace VVVOnTheWay.Route
                 false,
                 new[] { "null", "null" }, null,
                 new Geopoint(new BasicGeoposition { Latitude = 51.58775, Longitude = 4.782 })));
+
+
+            //TODO: Menno
             PointsOfInterest.Add(
                 new Point(new Geopoint(new BasicGeoposition { Latitude = 51.58775, Longitude = 4.78125 })));
             PointsOfInterest.Add(new PointOfInterest(new[] { "Binding van Isaac", "Binding van Isaac" }, new[] { "", "" },
