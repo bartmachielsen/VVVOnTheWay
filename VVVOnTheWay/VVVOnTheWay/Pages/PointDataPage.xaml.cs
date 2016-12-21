@@ -30,6 +30,7 @@ namespace VVVOnTheWay.Pages
             this.InitializeComponent();
             _poi = poi;
             PointInfoText.Text = _poi.Title[(int)VVVOnTheWay.Settings.Language] + "\n\n" + _poi.Description[(int)VVVOnTheWay.Settings.Language];
+            if (_poi.Description == null) poi.Description = new[] { "No description", "Geen beschrijving" };
             PointPicture.Source = _poi.ImagePath != null ? new BitmapImage(new Uri($"ms-appx:///{_poi.ImagePath}")) : new BitmapImage(new Uri("ms-appx:///Assets/unavailable-image.png"));
         }
 
@@ -52,6 +53,7 @@ namespace VVVOnTheWay.Pages
 
         private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
+            Hide();
             var g = new GuidePage();
             await g.ShowAsync();
         }

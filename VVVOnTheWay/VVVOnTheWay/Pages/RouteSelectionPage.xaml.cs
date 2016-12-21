@@ -42,6 +42,7 @@ namespace VVVOnTheWay
             Route.Route selectedRoute;
             if (_selectedRoute == 1)
             {
+                //choose historical km route
                 selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.HistoricalKilometerFileName);
             }
             else 
