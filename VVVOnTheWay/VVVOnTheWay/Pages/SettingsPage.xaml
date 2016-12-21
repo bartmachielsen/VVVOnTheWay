@@ -14,7 +14,7 @@
             <ColumnDefinition Width="320"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="540"/>
+            <RowDefinition Height="500"/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
 
