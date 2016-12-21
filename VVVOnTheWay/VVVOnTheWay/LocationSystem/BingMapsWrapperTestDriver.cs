@@ -68,6 +68,7 @@ namespace LocationSystem
             }
             System.Diagnostics.Debug.WriteLine("\n\nWaiting for geofence response:");
 
+
         }
     }
 }
