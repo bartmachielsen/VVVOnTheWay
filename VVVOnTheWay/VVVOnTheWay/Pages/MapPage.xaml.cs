@@ -138,8 +138,8 @@ namespace VVVOnTheWay
             //@TODO textblock1 check lang 
             _routeView = new MapRouteView(routeResult)
             {
-                OutlineColor = Colors.Black,
-                RouteColor = Colors.Yellow
+                OutlineColor = Colors.Blue,
+                RouteColor = Colors.Blue
             };
             Map.Routes.Add(_routeView);
         }
@@ -151,16 +151,16 @@ namespace VVVOnTheWay
             {
                 await BingMapsWrapper.PointOfInterestEntered((async interest =>
                 {
-                    await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal, async () =>
-                     {
-                         if (interest.IsVisited) return;
-                         if (interest.GetType() == typeof(PointOfInterest))
-                         {
-                             PointOfInterest poi = ((PointOfInterest)interest);
-                             NotificationSystem.NotificationSystem.SenToastificationAsync(poi.GetNotification());
-                             NotificationSystem.NotificationSystem.SendVibrationNotificationAsync();
-                             var g = new PointDataPage(poi);
-                             await g.ShowAsync();
+                    await Dispatcher.TryRunAsync(CoreDispatcherPriority.Normal,async () =>
+                    {
+                        if (interest.IsVisited) return;
+                        if (interest.GetType() == typeof(PointOfInterest))
+                        {
+                            PointOfInterest poi = ((PointOfInterest) interest);
+                            NotificationSystem.NotificationSystem.SenToastificationAsync(poi.GetNotification());
+                            NotificationSystem.NotificationSystem.SendVibrationNotificationAsync();
+                            var g = new PointDataPage(poi);
+                            await g.ShowAsync();
 
                          }
                          interest.IsVisited = true;
@@ -242,10 +242,10 @@ namespace VVVOnTheWay
             }
             if (_userIcon == null)
             {
-                _userIcon = new MapIcon()
+                _userIcon = new MapIcon
                 {
                     Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/guy.png")),
-                    Title = "Your Location",
+                    Title = Settings.Language == VVVOnTheWay.Language.ENGLISH ? "Your Location" : "Uw locatie",
                     Location = geoposition.Coordinate.Point
                 };
                 Map.MapElements.Add(_userIcon);
@@ -293,7 +293,8 @@ namespace VVVOnTheWay
         private void ChangeLanguage(Language languageBefore)
         {
             var languageAfter = Settings.Language;
-            if(languageAfter == languageBefore) return;
+            _userIcon.Title = languageAfter == VVVOnTheWay.Language.ENGLISH ? "Your Location" : "Uw locatie";
+            if (languageAfter == languageBefore) return;
             foreach (var pair in _routeIcons)
             {
                 pair.Value.Title = pair.Key.Title[(int)languageAfter];
