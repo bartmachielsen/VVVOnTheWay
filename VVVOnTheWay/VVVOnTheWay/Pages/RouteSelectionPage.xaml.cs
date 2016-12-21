@@ -31,15 +31,20 @@ namespace VVVOnTheWay
             this.InitializeComponent();
         }
 
-        private async void ApplyButton_Click(object sender, RoutedEventArgs e)
+        private void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
+            LoadRouteFromFilePath();
+        }
+
+        private async void LoadRouteFromFilePath()
+        {
+            
             Route.Route selectedRoute;
             if (_selectedRoute == 1)
             {
-                //choose historical km route
                 selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.HistoricalKilometerFileName);
             }
-            else //choose blind walls route
+            else 
             {
                 selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.BlindWallsFileName);
             }
