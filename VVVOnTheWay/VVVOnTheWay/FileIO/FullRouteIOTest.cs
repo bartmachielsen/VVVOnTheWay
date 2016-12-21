@@ -29,7 +29,7 @@ namespace VVVOnTheWay.FileIO
             string s = JsonConvert.SerializeObject(totest, settings);
             WriteJson(s);
             ReadJson();
-            Route.Route route = await FullRouteIO.LoadHistoricalKilometerRoute();
+            Route.Route route = await FullRouteIO.LoadRouteAsync(FullRouteIO.HistoricalKilometerFileName);
         }
 
         public async void WriteJson(string s)

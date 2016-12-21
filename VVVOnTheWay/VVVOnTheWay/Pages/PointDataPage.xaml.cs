@@ -30,7 +30,7 @@ namespace VVVOnTheWay.Pages
             this.InitializeComponent();
             _poi = poi;
             PointInfoText.Text = _poi.Title[(int)VVVOnTheWay.Settings.Language] + "\n\n" + _poi.Description[(int)VVVOnTheWay.Settings.Language];
-            PointPicture.Source = new BitmapImage(new Uri(_poi.ImagePath));
+            PointPicture.Source = _poi.ImagePath != null ? new BitmapImage(new Uri($"ms-appx:///{_poi.ImagePath}")) : new BitmapImage(new Uri("ms-appx:///Assets/unavailable-image.png"));
         }
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
