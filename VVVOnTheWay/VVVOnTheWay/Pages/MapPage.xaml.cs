@@ -41,7 +41,7 @@ namespace VVVOnTheWay
         private Language _language = VVVOnTheWay.Language.ENGLISH;
         private Dictionary<PointOfInterest, MapIcon> _routeIcons = new Dictionary<PointOfInterest, MapIcon>();
 
-        private MapPolyline _mapPolyline;\
+        private MapPolyline _mapPolyline;
 
         public MapPage()
         {
