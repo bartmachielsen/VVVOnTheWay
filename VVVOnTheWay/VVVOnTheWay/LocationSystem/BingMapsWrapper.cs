@@ -81,7 +81,10 @@ namespace LocationSystem
         {
             return (await GetRouteTo(source.Coordinate.Point, target.Coordinate.Point)).LengthInMeters;
         }
-
+        public static async Task<double> GetDistanceTo(Geopoint source, Geopoint target)
+        {
+            return (await GetRouteTo(source, target)).LengthInMeters;
+        }
 
         /// <summary>
         /// Calculate the route between two geopositons
