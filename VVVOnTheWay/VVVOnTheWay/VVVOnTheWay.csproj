@@ -89,6 +89,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\blindwalls.PNG" />
     <Content Include="Assets\BlindWalls\hedof-2.jpg" />
     <Content Include="Assets\BlindWalls\iwan-smit.jpg" />
     <Content Include="Assets\BlindWalls\rutger-termohlen.jpg" />
@@ -153,6 +154,7 @@
     <Content Include="Assets\back.png" />
     <Content Include="Assets\England.png" />
     <Content Include="Assets\help.png" />
+    <Content Include="Assets\historicalKm.PNG" />
     <Content Include="Assets\Netherlands.png" />
     <Content Include="Assets\play.png" />
     <Content Include="Assets\Point visited.png" />

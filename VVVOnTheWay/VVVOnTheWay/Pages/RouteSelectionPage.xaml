@@ -26,7 +26,7 @@
                 BorderThickness="3"
                 Click="BlindWallsButton_Click"
                 >
-                <Image Source="..\Assets/England.png" Stretch="Fill"/>
+                <Image Source="..\Assets/blindwalls.PNG" Stretch="Fill"/>
             </Button>
             <TextBlock 
                 Grid.Row="0"
@@ -41,7 +41,7 @@
                 Style="{StaticResource ChooseMenuStyle}"
                 Click="HistoricalKmButton_Click"
                 >
-                <Image Source="..\Assets/Netherlands.png" Stretch="Fill"/>
+                <Image Source="..\Assets/historicalKm.PNG" Stretch="Fill"/>
             </Button>
             <TextBlock 
                 Grid.Row="1"

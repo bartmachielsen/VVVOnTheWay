@@ -293,7 +293,8 @@ namespace VVVOnTheWay
         private void ChangeLanguage(Language languageBefore)
         {
             var languageAfter = Settings.Language;
-            if(languageAfter == languageBefore) return;
+            _userIcon.Title = languageAfter == VVVOnTheWay.Language.ENGLISH ? "Your Location" : "Uw locatie";
+            if (languageAfter == languageBefore) return;
             foreach (var pair in _routeIcons)
             {
                 pair.Value.Title = pair.Key.Title[(int)languageAfter];
