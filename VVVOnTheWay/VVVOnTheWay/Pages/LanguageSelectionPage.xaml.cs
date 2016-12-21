@@ -1,27 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿// Created by Bart Machielsen
+
+#region
+
+using System;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using VVVOnTheWay.NotificationSystem;
 using VVVOnTheWay.Pages;
+
+#endregion
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace VVVOnTheWay
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    ///     An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class LanguageSelectionPage : Page
     {
@@ -29,7 +25,7 @@ namespace VVVOnTheWay
 
         public LanguageSelectionPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
 
         private void ApplyButton_Click(object sender, RoutedEventArgs e)

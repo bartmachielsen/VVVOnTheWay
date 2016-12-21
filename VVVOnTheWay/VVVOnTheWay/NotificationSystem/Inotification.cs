@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Created by Bart Machielsen
 
 namespace VVVOnTheWay.NotificationSystem
 {
     /// <summary>
-    /// The interface every notification implements
+    ///     The interface every notification implements
     /// </summary>
-    interface INotification
+    internal interface INotification
     {
         /// <summary>
-        /// The title of the notification
+        ///     The title of the notification
         /// </summary>
         string Title { get; }
+
         string Description { get; }
     }
 }

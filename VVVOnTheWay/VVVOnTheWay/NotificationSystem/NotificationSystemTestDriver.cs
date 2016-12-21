@@ -1,22 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// Created by Bart Machielsen
+
+#region
+
+using System;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Windows.ApplicationModel;
+
+#endregion
 
 namespace VVVOnTheWay.NotificationSystem
 {
     /// <summary>
-    /// The test driver for the notification system.
+    ///     The test driver for the notification system.
     /// </summary>
-    static class NotificationSystemTestDriver
+    internal static class NotificationSystemTestDriver
     {
         public static async void TestRun()
         {
-            var file = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\Netherlands.png");
-            Notification testNotification = new Notification("Test 1", "Test 1");
-            PoiNotification poiNotification = new PoiNotification("Test2", file.Path, "Test2");
+            var file = await Package.Current.InstalledLocation.GetFileAsync(@"Assets\Netherlands.png");
+            var testNotification = new Notification("Test 1", "Test 1");
+            var poiNotification = new PoiNotification("Test2", file.Path, "Test2");
 
             Debug.WriteLine("Started the test");
             Test1(testNotification);

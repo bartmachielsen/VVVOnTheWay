@@ -1,21 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// Created by Bart Machielsen
+
+#region
+
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+#endregion
 
 namespace VVVOnTheWay.FileIO
 {
-    class RouteProgressIOTest
+    internal class RouteProgressIOTest
     {
-        public Route.Route RetrievedRoute1 { get; set; }
-        public Route.Route RetrievedRoute2 { get; set; }
-
         public RouteProgressIOTest()
         {
             TestMethod();
         }
+
+        public Route.Route RetrievedRoute1 { get; set; }
+        public Route.Route RetrievedRoute2 { get; set; }
 
         public async void TestMethod()
         {
@@ -25,7 +26,7 @@ namespace VVVOnTheWay.FileIO
                 Debug.WriteLine($"RetrievedRoute1 loaded");
             }
             RouteProgressIO.SaveRouteProgressToFile(await FullRouteIO.LoadRouteAsync(FullRouteIO.BlindWallsFileName));
-            if(await RouteProgressIO.CheckIfLastSavedRouteExists())
+            if (await RouteProgressIO.CheckIfLastSavedRouteExists())
             {
                 RetrievedRoute2 = await RouteProgressIO.LoadLastSavedRouteFromFile();
                 Debug.WriteLine($"RetrievedRoute2 loaded");

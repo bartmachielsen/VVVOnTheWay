@@ -1,34 +1,31 @@
+// Created by Bart Machielsen
+
+#region
+
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Phone.Management.Deployment;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+using VVVOnTheWay.FileIO;
 using VVVOnTheWay.Pages;
+
+#endregion
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace VVVOnTheWay
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    ///     An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class RouteSelectionPage : Page
     {
         private int _selectedRoute; // 0 = Blind Walls, 1 = Historische Kilometer
+
         public RouteSelectionPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
 
         private void ApplyButton_Click(object sender, RoutedEventArgs e)
@@ -38,17 +35,11 @@ namespace VVVOnTheWay
 
         private async void LoadRouteFromFilePath()
         {
-            
             Route.Route selectedRoute;
             if (_selectedRoute == 1)
-            {
-                //choose historical km route
-                selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.HistoricalKilometerFileName);
-            }
-            else 
-            {
-                selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.BlindWallsFileName);
-            }
+                selectedRoute = await FullRouteIO.LoadRouteAsync(FullRouteIO.HistoricalKilometerFileName);
+            else
+                selectedRoute = await FullRouteIO.LoadRouteAsync(FullRouteIO.BlindWallsFileName);
             RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage), selectedRoute);
         }
 
