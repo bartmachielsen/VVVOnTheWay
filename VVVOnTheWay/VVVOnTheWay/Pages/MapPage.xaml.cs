@@ -138,8 +138,8 @@ namespace VVVOnTheWay
             //@TODO textblock1 check lang 
             _routeView = new MapRouteView(routeResult)
             {
-                OutlineColor = Colors.Black,
-                RouteColor = Colors.Yellow
+                OutlineColor = Colors.Blue,
+                RouteColor = Colors.Blue
             };
             Map.Routes.Add(_routeView);
         }
