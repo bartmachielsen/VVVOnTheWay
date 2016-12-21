@@ -133,6 +133,8 @@ namespace VVVOnTheWay
         private void TestDrivers()
         {
            BingMapsWrapperTestDriver.TestBingMapsWrapper();
+           new FileIO.RouteProgressIOTest();
+           new FileIO.FullRouteIOTest();
         }
     }
 }

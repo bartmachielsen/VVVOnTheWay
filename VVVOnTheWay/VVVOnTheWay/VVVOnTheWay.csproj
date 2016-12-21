@@ -95,14 +95,15 @@
     <Content Include="Assets\BlindWalls\staynice.jpg" />
     <Content Include="Assets\BlindWalls\TB_Web_Thumb-150x150.jpg" />
     <Content Include="Assets\guy.png" />
-    <Content Include="Assets\HistoricalKilometerFullRoute.json" />
-    <Content Include="Assets\BlindWallsFullRoute.json" />
+    <Content Include="Assets\HistoricalKilometerRoute.json" />
+    <Content Include="Assets\BlindWallsRoute.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FileIO\RouteProgressIOTest.cs" />
     <Compile Include="LocationSystem\BingMapsWrapper.cs" />
     <Compile Include="LocationSystem\BingMapsWrapperTestDriver.cs" />
     <Compile Include="FileIO\BlindwallsRetriever.cs" />
