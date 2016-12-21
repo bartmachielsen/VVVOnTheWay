@@ -6,16 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="White"
-    >
+    Background="White">
 
     <Grid Margin="0,10">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="320"></ColumnDefinition>
+            <ColumnDefinition Width="320" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="500"/>
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="500" />
+            <RowDefinition Height="80" />
         </Grid.RowDefinitions>
 
         <TextBlock
@@ -24,29 +23,26 @@
             TextWrapping="Wrap"
             TextAlignment="Center"
             Margin="0,0,0,200"
-            Text="Huidige taal: Nederlands"
-            />
+            Text="Huidige taal: Nederlands" />
         <Button
             x:Name="LanguageSwitchButton"
             Content="Verander taal"
             Style="{StaticResource BasicButtonStyle}"
             HorizontalAlignment="Center"
             FontSize="30"
-            Click="LanguageSwitchButton_Click"
-            />
+            Click="LanguageSwitchButton_Click" />
         <StackPanel
             Orientation="Horizontal"
             Grid.Row="1">
-            <Button 
+            <Button
                 Style="{StaticResource RoundButtonStyle}"
-                Click="BackButton_Click"
-                >
-                <Image Source="..\Assets/back.png"></Image>
+                Click="BackButton_Click">
+                <Image Source="..\Assets/back.png" />
             </Button>
             <TextBlock
                 x:Name="BackTextBlock"
                 Text="Back / Terug"
-                Style="{StaticResource InstructionTextStyle}"></TextBlock>
+                Style="{StaticResource InstructionTextStyle}" />
         </StackPanel>
     </Grid>
 </ContentDialog>

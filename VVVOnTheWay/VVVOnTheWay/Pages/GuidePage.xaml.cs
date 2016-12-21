@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿// Created by Bart Machielsen
+
+#region
+
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+
+#endregion
 
 // The Content Dialog item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -21,9 +15,8 @@ namespace VVVOnTheWay.Pages
     {
         public GuidePage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
             if (Settings.Language == VVVOnTheWay.Language.ENGLISH)
-            {
                 GuideText.Text = "Password page: \nHere you fill in the password.\n\n" +
                                  "Route selection page: \nHere you choose which route will be walk.\n\n" +
                                  "Language selection page: \nHere you choose which language you want to use.\n\n" +
@@ -32,9 +25,7 @@ namespace VVVOnTheWay.Pages
                                  "you have already been there. The distance and time to the next attraction are in the top right of the screen. With the button in the bottom " +
                                  "left you can go to the settings page.\n\n" +
                                  "Settings page: \nHere you can change the language the application is currently running on.";
-            }
             else
-            {
                 GuideText.Text = "Wachtwoord pagina: \nHier kunt u het wachtwoord invullen.\n\n" +
                                  "Selecteer route pagina: \nHier kunt u kiezen welke route gelopen gaat worden.\n\n" +
                                  "Selecteer taal pagina: \nHier kunt u kiezen welke taal u wil gebruiken\n\n" +
@@ -43,7 +34,6 @@ namespace VVVOnTheWay.Pages
                                  "en groen wanneer u er al bent geweest. De afstand en tijd naar het volgende punt zijn in de rechterbovenhoek te zien. Met de knop in de hoek " +
                                  "linksonder gaat u naar de instellingen.\n\n" +
                                  "instellingen: \nHier kunt u de taal veranderen waar de applicatie nu op draait";
-            }
             BackTextBlock.Text = Settings.Language == VVVOnTheWay.Language.ENGLISH ? "Back" : "Terug";
         }
 

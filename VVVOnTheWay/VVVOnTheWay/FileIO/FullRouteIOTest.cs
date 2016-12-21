@@ -1,27 +1,25 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿// Created by Bart Machielsen
+
+#region
+
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using VVVOnTheWay.Route;
-using Windows.Storage;
+
+#endregion
 
 namespace VVVOnTheWay.FileIO
 {
     /// <summary>
-    /// Unit Test class for class FullRouteIO
+    ///     Unit Test class for class FullRouteIO
     /// </summary>
-    class FullRouteIOTest
+    internal class FullRouteIOTest
     {
-        public Route.Route RetrievedRoute { get; set; }
-
         public FullRouteIOTest()
         {
             TestMethod();
         }
+
+        public Route.Route RetrievedRoute { get; set; }
 
         public async void TestMethod()
         {
@@ -35,6 +33,5 @@ namespace VVVOnTheWay.FileIO
         {
             return await FullRouteIO.LoadRouteAsync(routename);
         }
-
     }
 }

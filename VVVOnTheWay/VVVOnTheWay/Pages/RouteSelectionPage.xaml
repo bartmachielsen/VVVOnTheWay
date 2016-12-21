@@ -10,13 +10,13 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <Button
@@ -24,56 +24,47 @@
                 Style="{StaticResource ChooseMenuStyle}"
                 BorderBrush="Black"
                 BorderThickness="3"
-                Click="BlindWallsButton_Click"
-                >
-                <Image Source="..\Assets/blindwalls.PNG" Stretch="Fill"/>
+                Click="BlindWallsButton_Click">
+                <Image Source="..\Assets/blindwalls.PNG" Stretch="Fill" />
             </Button>
-            <TextBlock 
+            <TextBlock
                 Grid.Row="0"
                 Text="Blind Walls"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
-                FontSize="19"
-                />
+                FontSize="19" />
             <Button
                 x:Name="HistoricalKmButton"
                 Grid.Row="1"
                 Style="{StaticResource ChooseMenuStyle}"
-                Click="HistoricalKmButton_Click"
-                >
-                <Image Source="..\Assets/historicalKm.PNG" Stretch="Fill"/>
+                Click="HistoricalKmButton_Click">
+                <Image Source="..\Assets/historicalKm.PNG" Stretch="Fill" />
             </Button>
-            <TextBlock 
+            <TextBlock
                 Grid.Row="1"
                 Text="Historische Kilometer"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
-                FontSize="19"
-                />
+                FontSize="19" />
             <TextBlock
                 Grid.Row="2"
                 Style="{StaticResource InstructionTextStyle}"
-                Text="Kies een route"
-                >
-            </TextBlock>
-            <StackPanel 
+                Text="Kies een route" />
+            <StackPanel
                 Grid.Row="3"
                 Orientation="Horizontal"
-                HorizontalAlignment="Center"
-                >
-                <Button 
+                HorizontalAlignment="Center">
+                <Button
                     Style="{StaticResource BasicButtonStyle}"
-                    Content="Instellen" 
-                    Click="ApplyButton_Click"
-                    />
-                <Button 
+                    Content="Instellen"
+                    Click="ApplyButton_Click" />
+                <Button
                     Style="{StaticResource RoundButtonStyle}"
-                    Click="HelpButton_Click"
-                    >
-                    <Image Source="..\Assets/help.png" Stretch="Uniform"/>
+                    Click="HelpButton_Click">
+                    <Image Source="..\Assets/help.png" Stretch="Uniform" />
                 </Button>
             </StackPanel>
         </Grid>
-        <Frame Name="RouteSelectionFrame"/>
+        <Frame Name="RouteSelectionFrame" />
     </Grid>
 </Page>
