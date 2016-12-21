@@ -132,7 +132,7 @@ namespace VVVOnTheWay
 
         private void TestDrivers()
         {
-           BingMapsWrapperTestDriver.TestBingMapsWrapper();
+           //BingMapsWrapperTestDriver.TestBingMapsWrapper();
         }
     }
 }

@@ -95,8 +95,8 @@
     <Content Include="Assets\BlindWalls\staynice.jpg" />
     <Content Include="Assets\BlindWalls\TB_Web_Thumb-150x150.jpg" />
     <Content Include="Assets\guy.png" />
-    <Content Include="Assets\HistoricalKilometerFullRoute.json" />
-    <Content Include="Assets\BlindWallsFullRoute.json" />
+    <Content Include="Assets\HistoricalKilometerRoute.json" />
+    <Content Include="Assets\BlindWallsRoute.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +137,7 @@
       <DependentUpon>RouteSelectionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Route\RouteTest.cs" />
+    <Compile Include="Route\RouteTestDriver.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Route\PointOfInterest.cs" />
     <Compile Include="Route\Route.cs" />

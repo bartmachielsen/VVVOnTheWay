@@ -39,7 +39,8 @@ namespace VVVOnTheWay
         private MapRouteView _routeView;
         private Language _language = VVVOnTheWay.Language.ENGLISH;
         private Dictionary<PointOfInterest, MapIcon> _routeIcons = new Dictionary<PointOfInterest, MapIcon>();
-        
+
+        private MapPolyline _mapPolyline;\
 
         public MapPage()
         {
@@ -64,6 +65,7 @@ namespace VVVOnTheWay
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+            
             route = e.Parameter as Route.Route;
             LocationSystem.BingMapsWrapper.ClearGeofences();
             await GetUserLocation();
@@ -217,6 +219,26 @@ namespace VVVOnTheWay
 
         private void UpdateUserLocation(Geoposition geoposition)
         {
+            if (_mapPolyline == null)
+            {
+                _mapPolyline = new MapPolyline
+                {
+                    Path = new Geopath(new List<BasicGeoposition>() { geoposition.Coordinate.Point.Position }),
+                    StrokeColor = Colors.Green,
+                    StrokeThickness = 3,
+                    StrokeDashed = true
+                };
+                Map.MapElements.Add(_mapPolyline);
+            }
+            else
+            {
+                var geopath =
+                    new Geopath(new List<BasicGeoposition>(_mapPolyline.Path.Positions)
+                    {
+                            geoposition.Coordinate.Point.Position
+                    });
+                _mapPolyline.Path = geopath;
+            }
             if (_userIcon == null)
             {
                 _userIcon = new MapIcon()
