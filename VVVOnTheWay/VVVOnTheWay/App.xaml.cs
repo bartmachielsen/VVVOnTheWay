@@ -113,10 +113,13 @@ namespace VVVOnTheWay
         /// <param name="rootFrame">The frame to be used to navigate to the next page</param>
         private async void ApplicationStartRouteCheck(Frame rootFrame)
         {
-            if (await FileIO.RouteProgressIO.CheckIfLastSavedRouteExists())
+            Route.Route existing = null;
+            if(await FileIO.RouteProgressIO.CheckIfLastSavedRouteExists())
+                existing = await FileIO.RouteProgressIO.LoadLastSavedRouteFromFile();
+            if (existing != null)
             {
                 //Route exists, load the route and navigate to the MapPage
-                rootFrame.Navigate(typeof(MapPage), await FileIO.RouteProgressIO.LoadLastSavedRouteFromFile());
+                rootFrame.Navigate(typeof(MapPage), existing);
             }
             else
             {

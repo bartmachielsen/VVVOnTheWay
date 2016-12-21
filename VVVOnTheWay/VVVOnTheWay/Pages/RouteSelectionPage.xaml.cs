@@ -37,11 +37,11 @@ namespace VVVOnTheWay
             if (_selectedRoute == 1)
             {
                 //choose historical km route
-                selectedRoute = await FileIO.FullRouteIO.LoadHistoricalKilometerRoute();
+                selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.HistoricalKilometerFileName);
             }
             else //choose blind walls route
             {
-                selectedRoute = await FileIO.FullRouteIO.LoadBlindWallsRoute();
+                selectedRoute = await FileIO.FullRouteIO.LoadRouteAsync(FileIO.FullRouteIO.BlindWallsFileName);
             }
             RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage), selectedRoute);
         }

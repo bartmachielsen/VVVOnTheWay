@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using VVVOnTheWay.Route;
 
 namespace VVVOnTheWay.FileIO
 {
@@ -25,45 +26,35 @@ namespace VVVOnTheWay.FileIO
         public static readonly string HistoricalKilometerFileName = "HistoricalKilometerRoute";
 
         /// <summary>
-        /// Loads/creates the Historical Kilometer Route, which can be retrieved as this class' attributes
+        /// Creates a new Blind Walls or Historical Kilometer Route
         /// </summary>
-        /// <returns>The Route object for the Historical Kilometer route</returns>
-        public static async Task<Route.Route> LoadHistoricalKilometerRoute()
+        /// <param name="routeFileName">Available via this class its attributes</param>
+        /// <returns>The requested Route via the routeFileName</returns>
+        public static async Task<Route.Route> LoadRouteAsync(string routeFileName)
         {
             StorageFolder datafolder = ApplicationData.Current.LocalFolder;
-            StorageFile historicalKilometerFile;
+            StorageFile routeFile;
             try
             {
-                historicalKilometerFile = await datafolder.GetFileAsync($"{HistoricalKilometerFileName}.json");
+                routeFile = await datafolder.GetFileAsync($"{routeFileName}.json");
             }
             catch (FileNotFoundException)
             {
-                historicalKilometerFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\HistoricalKilometerFullRoute.json");
-                await historicalKilometerFile.CopyAsync(datafolder, $"{HistoricalKilometerFileName}.json", NameCollisionOption.ReplaceExisting);
+                return await loadRouteFromAssetsAsync(routeFileName);
             }
-            string json = await Windows.Storage.FileIO.ReadTextAsync(historicalKilometerFile);
+            string json = await Windows.Storage.FileIO.ReadTextAsync(routeFile);
+            if (json == "") return await loadRouteFromAssetsAsync(routeFileName);
             Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
             return retrievedRoute;
         }
 
-        /// <summary>
-        /// Loads/creates the Blind Walls Route, which can be retrieved as this class' attributes
-        /// </summary>
-        /// <returns>The Route object for the Blind Walls route</returns>
-        public static async Task<Route.Route> LoadBlindWallsRoute()
+        private static async Task<Route.Route> loadRouteFromAssetsAsync(string routeFileName)
         {
             StorageFolder datafolder = ApplicationData.Current.LocalFolder;
-            StorageFile blindWallsRoute;
-            try
-            {
-                blindWallsRoute = await datafolder.GetFileAsync($"{BlindWallsFileName}.json");
-            }
-            catch (FileNotFoundException)
-            {
-                blindWallsRoute = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(@"Assets\BlindWallsFullRoute.json");
-                await blindWallsRoute.CopyAsync(datafolder, $"{BlindWallsFileName}.json", NameCollisionOption.ReplaceExisting);
-            }
-            string json = await Windows.Storage.FileIO.ReadTextAsync(blindWallsRoute);
+            StorageFile routeFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync($@"Assets\{routeFileName}.json");
+            await routeFile.CopyAsync(datafolder, $"{routeFileName}.json", NameCollisionOption.ReplaceExisting);
+            string json = await Windows.Storage.FileIO.ReadTextAsync(routeFile);
+
             Route.Route retrievedRoute = JsonConvert.DeserializeObject<Route.Route>(json, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
             return retrievedRoute;
         }
