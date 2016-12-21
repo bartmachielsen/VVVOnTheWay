@@ -16,16 +16,17 @@ namespace VVVOnTheWay.Route
         public RouteTest()
         {
             PointsOfInterest = new List<Point>();
-            PointsOfInterest.Add(new PointOfInterest(new[] {"VVV", "VVV"}, new[] {"null", "null"}, false,
-                new[] {"null", "null"}, null,
-                new Geopoint(new BasicGeoposition {Latitude = 51.594119, Longitude = 4.779405})));
-            PointsOfInterest.Add(new PointOfInterest(new[] {"Liefdezuster", "Liefdezuster"}, new[] {"", ""}, false,
-                new[] {"null", "null"}, null,
-                new Geopoint(new BasicGeoposition {Latitude = 51.5932783, Longitude = 4.7793883})));
-            PointsOfInterest.Add(new PointOfInterest(new[] {"Nassau Baronie Monument", "Nassau Baronie Monument"},
-                new[] {"", ""}, false,
-                new[] {"null", "null"}, null,
-                new Geopoint(new BasicGeoposition {Latitude = 51.5925000, Longitude = 4.7796950})));
+            //TODO: Christiaan
+            PointsOfInterest.Add(new PointOfInterest(new[] { "VVV", "VVV" }, new[] { "null", "null" }, false,
+                new[] { "null", "null" }, null,
+                new Geopoint(new BasicGeoposition { Latitude = 51.594119, Longitude = 4.779405 })));
+            PointsOfInterest.Add(new PointOfInterest(new[] { "Liefdezuster", "Liefdezuster" }, new[] { "", "" }, false,
+                new[] { "null", "null" }, null,
+                new Geopoint(new BasicGeoposition { Latitude = 51.5932783, Longitude = 4.7793883 })));
+            PointsOfInterest.Add(new PointOfInterest(new[] { "Nassau Baronie Monument", "Nassau Baronie Monument" },
+                new[] { "", "" }, false,
+                new[] { "null", "null" }, null,
+                new Geopoint(new BasicGeoposition { Latitude = 51.5925000, Longitude = 4.7796950 })));
             PointsOfInterest.Add(
                 new Point(new Geopoint(new BasicGeoposition {Latitude = 51.5925000, Longitude = 4.7793883})));
             PointsOfInterest.Add(new PointOfInterest(new[] {"The Light House", "The Light House"}, new[] {"", ""}, false,
@@ -67,8 +68,12 @@ namespace VVVOnTheWay.Route
                 new Point(new Geopoint(new BasicGeoposition {Latitude = 51.5887783, Longitude = 4.7748883})));
             PointsOfInterest.Add(new PointOfInterest(new[] {"Grote kerk", "Grote kerk"}, new[] {"", ""},
                 false,
-                new[] {"null", "null"}, null,
-                new Geopoint(new BasicGeoposition {Latitude = 51.5888333, Longitude = 4.7752783})));
+                new[] { "null", "null" }, null,
+                new Geopoint(new BasicGeoposition { Latitude = 51.5888333, Longitude = 4.7752783 })));
+
+
+
+            //TODO: Bart
             PointsOfInterest.Add(
                 new Point(new Geopoint(new BasicGeoposition {Latitude = 51.5887783, Longitude = 4.7748883})));
             PointsOfInterest.Add(new PointOfInterest(new[] {"Het Poortje", "Het Poortje"}, new[] {"", ""},
@@ -115,8 +120,11 @@ namespace VVVOnTheWay.Route
                 new Geopoint(new BasicGeoposition {Latitude = 51.5877217, Longitude = 4.7810283})));
             PointsOfInterest.Add(new PointOfInterest(new[] {"Chasse theater", "Chasse theater"}, new[] {"", ""},
                 false,
-                new[] {"null", "null"}, null,
-                new Geopoint(new BasicGeoposition {Latitude = 51.58775, Longitude = 4.782})));
+                new[] { "null", "null" }, null,
+                new Geopoint(new BasicGeoposition { Latitude = 51.58775, Longitude = 4.782 })));
+
+
+            //TODO: Menno
             PointsOfInterest.Add(
                 new Point(new Geopoint(new BasicGeoposition {Latitude = 51.58775, Longitude = 4.78125})));
             PointsOfInterest.Add(new PointOfInterest(new[] {"Binding van Isaac", "Binding van Isaac"}, new[] {"", ""},
