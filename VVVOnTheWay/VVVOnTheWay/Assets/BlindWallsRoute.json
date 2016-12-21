@@ -1,927 +1,1006 @@
 ﻿{
-	"$type": "VVVOnTheWay.Route.Route, VVVOnTheWay",
-	"RoutePoints": {
-		"$type": "System.Collections.Generic.List`1[[VVVOnTheWay.Route.Point, VVVOnTheWay]], mscorlib",
-		"$values": [{
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Zenk One Godevaert", "Zenk One Godevaert"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Robin Nas aka Zenkone groeit op in creatieve familie en start op jonge leeftijd met graffiti. Hij raakt bekend om zijn realistische portretten die hij later mixt met een meer grafische stijl. Inmiddels reist hij de wereld over om metershoge muurschilderingen te maken in zijn kenmerkte stijl. Vanuit zijn studio in Breda werkt hij als illustrator voor internationale opdrachtgevers.\r\n\r\nDe muurschildering is een ode aan Godevaart Montens, burgemeester van Breda van 1580-1581 en 1596-1602. Hij staat bekend vanwege zijn vermeend heldhaftig gedrag op 28 juni 1581. Tijdens de furie van Houtepen voerde hij een groep Bredase burgersoldaten aan in de strijd tegen de Spaanse troepen. Deze troepen hebben hevig huisgehouden, geplunderd, gemoord en gebrandschat. Vrijwilligers moesten de stoffelijke overschotten van 400 à 500 dode burgers opruimen. ", "Robin Nas aka Zenkone groeit op in creatieve familie en start op jonge leeftijd met graffiti. Hij raakt bekend om zijn realistische portretten die hij later mixt met een meer grafische stijl. Inmiddels reist hij de wereld over om metershoge muurschilderingen te maken in zijn kenmerkte stijl. Vanuit zijn studio in Breda werkt hij als illustrator voor internationale opdrachtgevers.\r\n\r\nDe muurschildering is een ode aan Godevaart Montens, burgemeester van Breda van 1580-1581 en 1596-1602. Hij staat bekend vanwege zijn vermeend heldhaftig gedrag op 28 juni 1581. Tijdens de furie van Houtepen voerde hij een groep Bredase burgersoldaten aan in de strijd tegen de Spaanse troepen. Deze troepen hebben hevig huisgehouden, geplunderd, gemoord en gebrandschat. Vrijwilligers moesten de stoffelijke overschotten van 400 à 500 dode burgers opruimen. "]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.581838292179654, 4.7757321220901758]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Staynice Lunettunnel", "Staynice Lunettunnel"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["De broers Rob (1973) en Barry (1977) van Dijck vormen samen de grafisch ontwerp studio Staynice. Vanuit hun interesse voor graffiti startten ze de opleiding Graphic Design aan AKV|St.Joost. In 2006 gaf de nominatie voor de St.Joost-penning toegang tot een gastatelier. Hier smeedden ze plannen om een eigen studio te starten.\r\n\r\nIn tien jaar tijd groeiden ze uit tot een gerenommeerde studio. Hun werk kenmerkt zich door het op speelse wijze combineren van informatie, illustratie en typografie. Experimenten op hun eigen Riso printer dienen vaak als inspiratie voor commerciële projecten voor internationale klanten. Toch blijven ze trouw aan hun roots en nemen regelmatig de spuitbus ter hand voor muurschilderingen.\r\n\r\nVoor de Blind Walls Gallery maakten ze de langste muurschildering tot nu toe. De ruim 130m zoete vormen zijn geïnspireerd op de (deels verdwenen) suikerwaren industrie in Breda. Als de wind de juiste kant op waait, voegt de Perfetti Van Melle fabriek een geurige dimensie aan de schildering toe.", "De broers Rob (1973) en Barry (1977) van Dijck vormen samen de grafisch ontwerp studio Staynice. Vanuit hun interesse voor graffiti startten ze de opleiding Graphic Design aan AKV|St.Joost. In 2006 gaf de nominatie voor de St.Joost-penning toegang tot een gastatelier. Hier smeedden ze plannen om een eigen studio te starten.\r\n\r\nIn tien jaar tijd groeiden ze uit tot een gerenommeerde studio. Hun werk kenmerkt zich door het op speelse wijze combineren van informatie, illustratie en typografie. Experimenten op hun eigen Riso printer dienen vaak als inspiratie voor commerciële projecten voor internationale klanten. Toch blijven ze trouw aan hun roots en nemen regelmatig de spuitbus ter hand voor muurschilderingen.\r\n\r\nVoor de Blind Walls Gallery maakten ze de langste muurschildering tot nu toe. De ruim 130m zoete vormen zijn geïnspireerd op de (deels verdwenen) suikerwaren industrie in Breda. Als de wind de juiste kant op waait, voegt de Perfetti Van Melle fabriek een geurige dimensie aan de schildering toe."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.592310639865154, 4.7571593333434521]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Jukka Hakanen", "Jukka Hakanen"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Al sinds jonge leeftijd zijn tekenen en schilderen natuurlijke expressievormen voor Jukka Hakanen. Opgroeiend in Turku (FI) raakte hij geïnteresseerd in graffiti. Sinds 2000 maakte hij vele muurschilderingen in Finland en het buitenland.\r\n\r\nDeze muurschildering is een hedendaagse versie van het klassieke stilleven. De inspiratie kwam uit de omliggende restaurants, de lange geschiedenis van het pand en de beroemde moerbeiboom (geplant in 1780) in de tuin van de Nieuwe Veste.", "Al sinds jonge leeftijd zijn tekenen en schilderen natuurlijke expressievormen voor Jukka Hakanen. Opgroeiend in Turku (FI) raakte hij geïnteresseerd in graffiti. Sinds 2000 maakte hij vele muurschilderingen in Finland en het buitenland.\r\n\r\nDeze muurschildering is een hedendaagse versie van het klassieke stilleven. De inspiratie kwam uit de omliggende restaurants, de lange geschiedenis van het pand en de beroemde moerbeiboom (geplant in 1780) in de tuin van de Nieuwe Veste."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.588160636936408, 4.778343934323857]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Maikki Rantala", "Maikki Rantala"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Maikki Rantala mixt sinds 2012 ‘community art’ en street art tot participatie projecten op grote schaal. Zij ziet street art als een vorm van stedelijk activisme, waarmee uitdagingen rondom verstedelijking aangepakt kunnen worden. Met haar muurschilderingen richt ze zich vaak op kinderen, omdat ze veel beter hun omgeving observeren dan volwassenen.\r\n\r\nDit historische miniatuur huisje met bakstenen gevels en vele hoeken is een echte uitdaging om te beschilderen. Het verhaal van deze muurschildering gaat terug tot de 19e eeuwse horeca school gevestigd op dit terrein. Ze refereert hieraan met een verscheidenheid aan picturaal serviesgoed in traditioneel Nederlandse, Spaanse, Italiaanse, Chinese, Arabische en zelfs de Finse stijl.", "Maikki Rantala mixt sinds 2012 ‘community art’ en street art tot participatie projecten op grote schaal. Zij ziet street art als een vorm van stedelijk activisme, waarmee uitdagingen rondom verstedelijking aangepakt kunnen worden. Met haar muurschilderingen richt ze zich vaak op kinderen, omdat ze veel beter hun omgeving observeren dan volwassenen.\r\n\r\nDit historische miniatuur huisje met bakstenen gevels en vele hoeken is een echte uitdaging om te beschilderen. Het verhaal van deze muurschildering gaat terug tot de 19e eeuwse horeca school gevestigd op dit terrein. Ze refereert hieraan met een verscheidenheid aan picturaal serviesgoed in traditioneel Nederlandse, Spaanse, Italiaanse, Chinese, Arabische en zelfs de Finse stijl."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.585578668468166, 4.777427909123162]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["DZIA", "DZIA"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["De Liniestraat vormt de buitengrens van het Liniekwartier. Op het verzoek van de bewoners is de wijk niet gesloopt, maar herontwikkeld door AlleeWonen in samenwerking met de bewoners. Er zijn klushuizen, een wijksalon en diverse culturele evenementen in samenwerking met Electron.\r\n\r\nBelgische kunstenaar DZIA is uitgenodigd om het creatieve karakter van de wijk te visualiseren. Zijn echte naam blijft onbekend, ook is hij niet herkenbaar op foto's. Hij kiest ervoor zijn werk te laten spreken. Al jaren schildert hij dieren in zijn karakteristieke stijl op muren over de hele wereld.\r\n\r\nDe flamingo verbeeldt het kleurrijke karakter van de wijk. Vroeger was dit gebied een ??polder waar veel vogels broedden. Tijdens het aanbrengen van de witte onderschildering kreeg DZIA al veel reacties uit de buurt. Men vond zijn 'zwaan' te gek! Na de toekan was de inspiratie voor de laatste vogel snel gevonden. Samen verbeelden de drie vogels het creatieve, kleurrijke en diverse karakter van de wijk, met een kleine knipoog naar het verleden.", "De Liniestraat vormt de buitengrens van het Liniekwartier. Op het verzoek van de bewoners is de wijk niet gesloopt, maar herontwikkeld door AlleeWonen in samenwerking met de bewoners. Er zijn klushuizen, een wijksalon en diverse culturele evenementen in samenwerking met Electron.\r\n\r\nBelgische kunstenaar DZIA is uitgenodigd om het creatieve karakter van de wijk te visualiseren. Zijn echte naam blijft onbekend, ook is hij niet herkenbaar op foto's. Hij kiest ervoor zijn werk te laten spreken. Al jaren schildert hij dieren in zijn karakteristieke stijl op muren over de hele wereld.\r\n\r\nDe flamingo verbeeldt het kleurrijke karakter van de wijk. Vroeger was dit gebied een ??polder waar veel vogels broedden. Tijdens het aanbrengen van de witte onderschildering kreeg DZIA al veel reacties uit de buurt. Men vond zijn 'zwaan' te gek! Na de toekan was de inspiratie voor de laatste vogel snel gevonden. Samen verbeelden de drie vogels het creatieve, kleurrijke en diverse karakter van de wijk, met een kleine knipoog naar het verleden."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5969712, 4.7880514999999377]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Damien Poulain Van Coothplein", "Damien Poulain Van Coothplein"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'.", "Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5828537991085, 4.7770608687866343]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Damien Poulian Boschstraat", "Damien Poulian Boschstraat"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'.", "Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.591129, 4.7837544000000207]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Hell&#8217;O", "Hell&#8217;O"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Het Brusselse duo Hell’O beheerst de grafische lijn als een 21-ste eeuwse Jherimus Bosch. Hun universum lijkt een surrealistisch bestiarium met mysterieuze dieren, hybride personages, architectuur en badass geometrie. Hun schilderingen en sculpturen verwijzen naar middeleeuwse folklore, esoterie, techno muziek, de Memphis Design Group, 17e-eeuwse gravure, oude mythologie, surrealisme, ... In verhalende scènes, die soms betekenisrijk, dan weer gewoon absurd zijn, geven humor en spot ruimte voor eigen interpretatie door de kijker.\r\n\r\nVoor de muurschildering in de Bleekstraat lieten ze zich inspireren door het uitzicht op winkelend publiek vanuit de Bleekstraat op de Ginnekenstraat. De straatnaam is letterlijk geïnterpreteerd en laat de hybride personages langzaam aan vervagen.", "Het Brusselse duo Hell’O beheerst de grafische lijn als een 21-ste eeuwse Jherimus Bosch. Hun universum lijkt een surrealistisch bestiarium met mysterieuze dieren, hybride personages, architectuur en badass geometrie. Hun schilderingen en sculpturen verwijzen naar middeleeuwse folklore, esoterie, techno muziek, de Memphis Design Group, 17e-eeuwse gravure, oude mythologie, surrealisme, ... In verhalende scènes, die soms betekenisrijk, dan weer gewoon absurd zijn, geven humor en spot ruimte voor eigen interpretatie door de kijker.\r\n\r\nVoor de muurschildering in de Bleekstraat lieten ze zich inspireren door het uitzicht op winkelend publiek vanuit de Bleekstraat op de Ginnekenstraat. De straatnaam is letterlijk geïnterpreteerd en laat de hybride personages langzaam aan vervagen."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5852304, 4.7761367000000519]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Kratje Beeld", "Kratje Beeld"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Studio Kratje Beeld is een tijdelijke ontwerpstudio gevormd door tien derdejaarsstudenten Illustratie van AKV|St.Joost. In hun stageperiode werken ze aan opdrachten voor verschillende opdrachtgevers waaronder de 3sec.gallery. Voor de meeste studenten is het de eerste keer dat ze op deze schaal werken. De muurschildering is dan ook grondig voorbereid met schetsen, kleurstudies en research in het Stadsarchief Breda.", "Studio Kratje Beeld is een tijdelijke ontwerpstudio gevormd door tien derdejaarsstudenten Illustratie van AKV|St.Joost. In hun stageperiode werken ze aan opdrachten voor verschillende opdrachtgevers waaronder de 3sec.gallery. Voor de meeste studenten is het de eerste keer dat ze op deze schaal werken. De muurschildering is dan ook grondig voorbereid met schetsen, kleurstudies en research in het Stadsarchief Breda."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.584043233466389, 4.77688957553255]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["NOL", "NOL"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Vermoedelijk heeft vroeger, in het witte vlak, op de gevel van dit monument een reclame schildering gestaan. Onderzoek in het stadsarchief leverde geen aanwijzingen op over welke reclame hier wanneer heeft gestaan. Ook navraag bij de buren Meeuwsen Aquaria -al meer dan 35 jaar hier gevestigd- leverde geen informatie op.", "Vermoedelijk heeft vroeger, in het witte vlak, op de gevel van dit monument een reclame schildering gestaan. Onderzoek in het stadsarchief leverde geen aanwijzingen op over welke reclame hier wanneer heeft gestaan. Ook navraag bij de buren Meeuwsen Aquaria -al meer dan 35 jaar hier gevestigd- leverde geen informatie op."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5871211, 4.7684835000000021]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Thunder&#038;Bold", "Thunder&#038;Bold"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["De nieuwe eigenaar en gebruiker van de oude kleuterschool in het Burgemeester van Sonsbeek Park vroegen ons een muurschildering te realiseren op dit fraaie paviljoen. Sinds kort wordt het doordeweeks gebruikt als crèche en is het in het weekend een koffiehuis.\r\n\r\nHet Burgemeester van Sonsbeek Park wordt door betrokken buurtbewoners onderhouden. Ze houden het park schoon, planten bloembollen en maakten zelfs speeltoestellen voor de kinderen van afvalmateriaal. We vroegen ontwerpers Thunder&amp;Bold het bijzondere karakter van dit park weer te geven in de muurschildering.\r\n\r\nThunder&amp;Bold (aka Martijn van der Meeren en Emiel Jonkers) gingen op bezoek in het park en vonden inspiratie. Terwijl ze in het park waren fluisterde Jimmy Hendrix in hun oor....\r\n\r\n<em>Rainy day, dream away\r\nAh let the sun take a holiday\r\nFlowers bathe an' ah see the children play\r\nLay back and groove on a rainy day.</em>", "De nieuwe eigenaar en gebruiker van de oude kleuterschool in het Burgemeester van Sonsbeek Park vroegen ons een muurschildering te realiseren op dit fraaie paviljoen. Sinds kort wordt het doordeweeks gebruikt als crèche en is het in het weekend een koffiehuis.\r\n\r\nHet Burgemeester van Sonsbeek Park wordt door betrokken buurtbewoners onderhouden. Ze houden het park schoon, planten bloembollen en maakten zelfs speeltoestellen voor de kinderen van afvalmateriaal. We vroegen ontwerpers Thunder&amp;Bold het bijzondere karakter van dit park weer te geven in de muurschildering.\r\n\r\nThunder&amp;Bold (aka Martijn van der Meeren en Emiel Jonkers) gingen op bezoek in het park en vonden inspiratie. Terwijl ze in het park waren fluisterde Jimmy Hendrix in hun oor....\r\n\r\n<em>Rainy day, dream away\r\nAh let the sun take a holiday\r\nFlowers bathe an' ah see the children play\r\nLay back and groove on a rainy day.</em>"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.579412299999987, 4.764087199999949]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Ben Eine", "Ben Eine"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Deze spooronderdoorgang verbindt het centrum van de stad en de wijk Belcrum, bekend om zijn woonwijk en voormalige industrie. De rivier de Mark loopt onder de onderdoorgang en laat kleine boten toe tot de passantenhaven in de binnenstad. Aan de zijde van de Belcrumweg zijn er doorgangen voor auto's, fietsers en voetgangers. Hier passeren elke dag duizenden mensen op hun weg naar de stad. Aan de andere zijde ligt de Markkade. Deze kade is tegenwoordig veel minder druk, de fabrieken de hier aan lagen zijn inmiddels verdwenen.", "Deze spooronderdoorgang verbindt het centrum van de stad en de wijk Belcrum, bekend om zijn woonwijk en voormalige industrie. De rivier de Mark loopt onder de onderdoorgang en laat kleine boten toe tot de passantenhaven in de binnenstad. Aan de zijde van de Belcrumweg zijn er doorgangen voor auto's, fietsers en voetgangers. Hier passeren elke dag duizenden mensen op hun weg naar de stad. Aan de andere zijde ligt de Markkade. Deze kade is tegenwoordig veel minder druk, de fabrieken de hier aan lagen zijn inmiddels verdwenen."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5953254, 4.7714017000000695]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Noodle Inc.", "Noodle Inc."]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Het duo Noodle inc bestaat uit de vrienden Michael Nolta en Edo Rath. Hun doorgaans kleurige en altijd vrolijke werk kenmerkt zich door strakke lijnen en steeds terugkerende figuren.\r\n\r\nOp uitnodiging van Koffie bij Teun maakten ze in twee nachten tijd een zwart witte muurschildering met de titel \"Koffie verkeerd\". Je ziet het verhaal van twee betoverde koffielepeltjes die een reis maken door een fluffy landschap met opgeblazen muffins, blije koffiekopjes, dansende donuts, euforische theezakjes, stralende suikerstrooiers en zichzelf regulerende koffiemalers.", "Het duo Noodle inc bestaat uit de vrienden Michael Nolta en Edo Rath. Hun doorgaans kleurige en altijd vrolijke werk kenmerkt zich door strakke lijnen en steeds terugkerende figuren.\r\n\r\nOp uitnodiging van Koffie bij Teun maakten ze in twee nachten tijd een zwart witte muurschildering met de titel \"Koffie verkeerd\". Je ziet het verhaal van twee betoverde koffielepeltjes die een reis maken door een fluffy landschap met opgeblazen muffins, blije koffiekopjes, dansende donuts, euforische theezakjes, stralende suikerstrooiers en zichzelf regulerende koffiemalers."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5881031, 4.7740522999999939]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Luca Font", "Luca Font"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["The day before Luca Font arrived in Breda rock star David Bowie had passed away. This painting commemorates the iconic artist.", "The day before Luca Font arrived in Breda rock star David Bowie had passed away. This painting commemorates the iconic artist."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5849612, 4.7757771999999932]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Combat Super Mural", "Combat Super Mural"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.596108735394139, 4.7663289217041438]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Hedof Oase", "Hedof Oase"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.586900019445409, 4.7720578290832236]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Zenk One 2012", "Zenk One 2012"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.589168636406768, 4.7803271484100378]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Staynice KOP", "Staynice KOP"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.599944600000008, 4.7695209999999406]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Staynice Bloos", "Staynice Bloos"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5993976, 4.7708168000000342]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Zenk One Veilingkade", "Zenk One Veilingkade"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5988907, 4.7669094000000314]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Super A", "Super A"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5989416, 4.7668356000000358]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Fin Dac", "Fin Dac"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Samen met Nol Art en Edo Rath maakte Fin DAC deze Geisha muurschildering ‘Kokesh’ op de muur van een (eveneens Japans) sushi restaurant. DAC maakte deze als toevoeging op zijn ‘Hidden Beauty’ serie. Het kleurpalet, met veel rood en wit, sluit aan bij de Bredase stadsvlag.", "Samen met Nol Art en Edo Rath maakte Fin DAC deze Geisha muurschildering ‘Kokesh’ op de muur van een (eveneens Japans) sushi restaurant. DAC maakte deze als toevoeging op zijn ‘Hidden Beauty’ serie. Het kleurpalet, met veel rood en wit, sluit aan bij de Bredase stadsvlag."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.567258751202942, 4.7853179704223976]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Jeff Canham", "Jeff Canham"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["In zijn schildering nam Canham de eerste negen woorden van het NATO fonetische alfabet op. Het gebruik ervan tijdens o.a. WWII verwijst naar het militaire verleden van Achter de Lange Stallen. Vanaf 1765 tot 1980 was het terrein onderdeel van de Chassékazerne, waar tijdens WWII Kriegs­marine-opleidingseenheden gevestigd waren.", "In zijn schildering nam Canham de eerste negen woorden van het NATO fonetische alfabet op. Het gebruik ervan tijdens o.a. WWII verwijst naar het militaire verleden van Achter de Lange Stallen. Vanaf 1765 tot 1980 was het terrein onderdeel van de Chassékazerne, waar tijdens WWII Kriegs­marine-opleidingseenheden gevestigd waren."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.58307, 4.7769504999999981]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["RUTGER TERMOHLEN, COLLIN VAN DER SLUIJS &#038; SUPER A", "RUTGER TERMOHLEN, COLLIN VAN DER SLUIJS &#038; SUPER A"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Deze muurschildering is geinspireerd op het duistere verleden van deze plek. De Mols Parking was ooit (rond 1514) een begraafplaats voor mensen die stierven aan de pest. De rat ­ de ziekteverspreider ­ symboliseert dit.", "Deze muurschildering is geinspireerd op het duistere verleden van deze plek. De Mols Parking was ooit (rond 1514) een begraafplaats voor mensen die stierven aan de pest. De rat ­ de ziekteverspreider ­ symboliseert dit."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.58483649380176, 4.7773947249924049]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["JOB WOUTERS", "JOB WOUTERS"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["De veelkleurigheid en grillige vormen van deze muurschildering verwijzen naar het roerige verleden van de plek waar Wouters het werk maakte. Van kapel in de vijftiende eeuw tot begraafplaats in de zestiende eeuw, groentetuin in de negentiende eeuw en kazerne in de twintigste eeuw.", "De veelkleurigheid en grillige vormen van deze muurschildering verwijzen naar het roerige verleden van de plek waar Wouters het werk maakte. Van kapel in de vijftiende eeuw tot begraafplaats in de zestiende eeuw, groentetuin in de negentiende eeuw en kazerne in de twintigste eeuw."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.584781495822362, 4.7773451041256294]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Mike Perry", "Mike Perry"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Dat de muurschildering van Perry is opgebouwd uit diverse lagen zie je als toeschouwer niet direct. Het verwijst naar het verborgen ontwerpproces e´n de gelaagdheid van de Bredase geschiedenis. In zijn werk is een Bredaas palindroom gedicht verwerkt, bestaande uit woorden die je vanaf beide kanten hetzelfde leest.", "Dat de muurschildering van Perry is opgebouwd uit diverse lagen zie je als toeschouwer niet direct. Het verwijst naar het verborgen ontwerpproces e´n de gelaagdheid van de Bredase geschiedenis. In zijn werk is een Bredaas palindroom gedicht verwerkt, bestaande uit woorden die je vanaf beide kanten hetzelfde leest."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.584731497601574, 4.7771318685089454]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Stephen Powers", "Stephen Powers"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Gesprekken met bewoners en passanten verwerkte Powers in zijn muurschildering, als liefdesbrief aan de stad. Dit deed hij tijdens de eerste Koningsdag, met Oranjegekte ten top. Koninginnedag mag dan geschiedenis zijn, volgens Powers is het elke dag ‘Queensday’ met een dagelijkse ode aan alle vrouwen.", "Gesprekken met bewoners en passanten verwerkte Powers in zijn muurschildering, als liefdesbrief aan de stad. Dit deed hij tijdens de eerste Koningsdag, met Oranjegekte ten top. Koninginnedag mag dan geschiedenis zijn, volgens Powers is het elke dag ‘Queensday’ met een dagelijkse ode aan alle vrouwen."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5847281643849, 4.7775395642792091]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Hedof", "Hedof"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Deze schildering verwijst naar zowel het heden als verleden van de locatie. Opnieuw ‘groeit’ er groenten en fruit op de plek waar begin negentiende eeuw een grote groentetuin was. De winkelende figuren in de schildering zijn op doortocht naar de nabij­ gelegen winkelstraat.", "Deze schildering verwijst naar zowel het heden als verleden van de locatie. Opnieuw ‘groeit’ er groenten en fruit op de plek waar begin negentiende eeuw een grote groentetuin was. De winkelende figuren in de schildering zijn op doortocht naar de nabij­ gelegen winkelstraat."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.584554836780747, 4.7777004968201027]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Johan Moorman", "Johan Moorman"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["De muurschildering is geïnspireerd op een gebeurtenis uit 1988 toen twee rivaliserende circussen gelijktijdig Breda aandeden. Ter promotie liet een van de circussen olifanten uit op de Mols Parking. Naar aanleiding van de actie kregen beiden gedurende 5 jaar een verbod tot op treden in de stad.", "De muurschildering is geïnspireerd op een gebeurtenis uit 1988 toen twee rivaliserende circussen gelijktijdig Breda aandeden. Ter promotie liet een van de circussen olifanten uit op de Mols Parking. Naar aanleiding van de actie kregen beiden gedurende 5 jaar een verbod tot op treden in de stad."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.584287435878025, 4.7777406755325273]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Bruce TMC", "Bruce TMC"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["“If wishes were horses, beggars would ride” is een Engels gezegde dat suggereert dat het nutteloos is om te wensen en dat verbetering bereikt wordt door actie. In dit werk is “beggars” (bedelaars) vervangen voor “refugees” (vluchtelingen), mogelijk een verwijzing naar de huidige vluchtelingenproblematiek. Het vers­ je verwijst ook naar de paardenstal die hier ooit stond.", "“If wishes were horses, beggars would ride” is een Engels gezegde dat suggereert dat het nutteloos is om te wensen en dat verbetering bereikt wordt door actie. In dit werk is “beggars” (bedelaars) vervangen voor “refugees” (vluchtelingen), mogelijk een verwijzing naar de huidige vluchtelingenproblematiek. Het vers­ je verwijst ook naar de paardenstal die hier ooit stond."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.584041516535969, 4.7778721581970558]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Thomas &#038; Jurgen", "Thomas &#038; Jurgen"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Op de zolder van een verhuisbedrijf in de Stallings­traat lag ooit een kist bomvol werken van Van Gogh. Zijn moeder had ze daar opgeslagen, maar nadat ze verhuisde verkocht de eigenaar ze voor een dubbel­ tje per stuk. Pas later ontdekte hij hoe waardevol ze waren. De tekst “Trash to Treasure” illustreert deze gebeurtenis.", "Op de zolder van een verhuisbedrijf in de Stallings­traat lag ooit een kist bomvol werken van Van Gogh. Zijn moeder had ze daar opgeslagen, maar nadat ze verhuisde verkocht de eigenaar ze voor een dubbel­ tje per stuk. Pas later ontdekte hij hoe waardevol ze waren. De tekst “Trash to Treasure” illustreert deze gebeurtenis."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.583988184229931, 4.7776039372955665]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Ilse Weisfelt", "Ilse Weisfelt"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Op de plek van de fietsenstalling waarop Weisfelt haar muurschildering maakte stond vroeger een paardenstal. Vandaar een ludieke mix van heden en verleden, met een ruiter op een fiets en een fietser op een paard.", "Op de plek van de fietsenstalling waarop Weisfelt haar muurschildering maakte stond vroeger een paardenstal. Vandaar een ludieke mix van heden en verleden, met een ruiter op een fiets en een fietser op een paard."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.583781520952783, 4.7780009042297706]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["FRM", "FRM"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Deze muurschildering verwijst naar de legende van St. Joris, een heilige die nauw is verbonden met de geschiedenis van Breda. Het werk verbeeldt de tekst “Overcome the Wind” en roept op tot dapperheid.", "Deze muurschildering verwijst naar de legende van St. Joris, een heilige die nauw is verbonden met de geschiedenis van Breda. Het werk verbeeldt de tekst “Overcome the Wind” en roept op tot dapperheid."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.584121514877637, 4.7761662732635841]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Aron Vellekoop Léon", "Aron Vellekoop Léon"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Illustrator en graficus Aron Vellekoop León werd geboren op Fuerteventura, groeide op op de Veluwe, studeerde aan AKV|St.Joost in Breda en werkt tegenwoordig vanuit Amsterdam. Zijn strakke geometrische vormen zijn vast beïnvloed door Nederland, terwijl zijn Spaanse roots terugkomen in zijn kleurenpalet. Aron maakt zowel vrij werk als redactionele illustraties en doet dit veelal volgens traditionele technieken zoals zeefdruk. Hij is een ware ambachtsman in het digitale tijdperk, maar moest voor deze print toch echt de computer hanteren. Een bestand van 8 gb verbeeldt het thema mobiliteit op de gevel van de oudste parkeergarage van de stad (1968).\r\n\r\n", "Illustrator en graficus Aron Vellekoop León werd geboren op Fuerteventura, groeide op op de Veluwe, studeerde aan AKV|St.Joost in Breda en werkt tegenwoordig vanuit Amsterdam. Zijn strakke geometrische vormen zijn vast beïnvloed door Nederland, terwijl zijn Spaanse roots terugkomen in zijn kleurenpalet. Aron maakt zowel vrij werk als redactionele illustraties en doet dit veelal volgens traditionele technieken zoals zeefdruk. Hij is een ware ambachtsman in het digitale tijdperk, maar moest voor deze print toch echt de computer hanteren. Een bestand van 8 gb verbeeldt het thema mobiliteit op de gevel van de oudste parkeergarage van de stad (1968).\r\n\r\n"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5843711, 4.775432300000034]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["AKAcorleone", "AKAcorleone"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["This mural is a visual interpretation of the busy location and to the chaos that surrounds us daily. Inspired by the adjacent lively shopping street, AKACorleone made a work that shows his own vision on chaos.", "This mural is a visual interpretation of the busy location and to the chaos that surrounds us daily. Inspired by the adjacent lively shopping street, AKACorleone made a work that shows his own vision on chaos."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.585214811431484, 4.7763379346405372]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Zenk ONE", "Zenk ONE"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Deze schildering op een tijdelijke bouwmuur toont een vlucht van eenden waarbij fotorealisme en illustratie zijn gecombineerd. Het ontwerp ver­wijst naar het groene karakter van de nieuwbouw. Hierbij wordt het casco grotendeels hergebruikt, is er ruimte voor duurzame ondernemers en worden de daken groen om de migratie van fauna in de stad te bevorderen.", "Deze schildering op een tijdelijke bouwmuur toont een vlucht van eenden waarbij fotorealisme en illustratie zijn gecombineerd. Het ontwerp ver­wijst naar het groene karakter van de nieuwbouw. Hierbij wordt het casco grotendeels hergebruikt, is er ruimte voor duurzame ondernemers en worden de daken groen om de migratie van fauna in de stad te bevorderen."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.589234450018893, 4.7802968751465187]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Cranio", "Cranio"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Met een kritische en grappige ondertoon verwijst het werk Cranio naar hedendaagse maatschappij. Net als het Bredase straatbeeld kan deze wel wat kleur gebruiken: zijn indianen voeren de opdracht voor een muur­schildering uit. Als passant zie je hoe de kleurrijke groep het woord ‘Amazonia’ op de tijdelijke bouw­schutting spuit terwijl ze hun speren als selfiestick gebruiken.", "Met een kritische en grappige ondertoon verwijst het werk Cranio naar hedendaagse maatschappij. Net als het Bredase straatbeeld kan deze wel wat kleur gebruiken: zijn indianen voeren de opdracht voor een muur­schildering uit. Als passant zie je hoe de kleurrijke groep het woord ‘Amazonia’ op de tijdelijke bouw­schutting spuit terwijl ze hun speren als selfiestick gebruiken."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.589134463322523, 4.7798569928680763]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["M-City", "M-City"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Met een futuristisch uitziende ‘Robo Dino’ verwijst M­City naar het industriële verleden van de stad. In dit stadsdeel stond o.a. de vermaarde Etna fabriek. De ijzergieterij en stoommachines zijn ingeruild voor een robot met schaar. Een verwijzing naar de kapsalon die in het pand gevestigd is.", "Met een futuristisch uitziende ‘Robo Dino’ verwijst M­City naar het industriële verleden van de stad. In dit stadsdeel stond o.a. de vermaarde Etna fabriek. De ijzergieterij en stoommachines zijn ingeruild voor een robot met schaar. Een verwijzing naar de kapsalon die in het pand gevestigd is."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5881762, 4.7708356000000549]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["anti-held", "anti-held"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Illustrator Sjoerd Jansen aka Anti-held geniet van het maken van semi-realistische expressieve illustraties geïnspireerd op de wereld waarin we leven. Hij gebruikt hierbij zijn eigen metaforen en symboliek. Hij heeft een fascinatie voor analoge technieken als tekenen, schilderen, zeefdruk, houtsnede en etsen.\r\n\r\nMet deze muurschildering reflecteert hij op het nachtleven dat zich afspeelt in deze smalle steeg.", "Illustrator Sjoerd Jansen aka Anti-held geniet van het maken van semi-realistische expressieve illustraties geïnspireerd op de wereld waarin we leven. Hij gebruikt hierbij zijn eigen metaforen en symboliek. Hij heeft een fascinatie voor analoge technieken als tekenen, schilderen, zeefdruk, houtsnede en etsen.\r\n\r\nMet deze muurschildering reflecteert hij op het nachtleven dat zich afspeelt in deze smalle steeg."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.589251179316307, 4.7729990166022844]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Joren Joshua", "Joren Joshua"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Dit werk werd speciaal gemaakt om de Potkanstraat visueel te verbeteren (zoals 4, 5 & 7). Qua kleur verwijst de schildering naar water van de haven. Het feestende duo, met een drankje en bitterbal in de hand, brengt een ode aan het Bredase uitgaans­ leven.", "Dit werk werd speciaal gemaakt om de Potkanstraat visueel te verbeteren (zoals 4, 5 & 7). Qua kleur verwijst de schildering naar water van de haven. Het feestende duo, met een drankje en bitterbal in de hand, brengt een ode aan het Bredase uitgaans­ leven."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.589221118472096, 4.7730012666260109]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Rutger Termohlen", "Rutger Termohlen"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Net als Antiheld, Joren Joshua en Daniel van de Haterd nam Termohlen een muur in de Potkanstraat onder­ handen. Zijn schildering is een ode aan de haven en het uitgaansleven om de hoek, te zien in zijn mooie dame die wordt omgeven door waterplanten en een octopus.", "Net als Antiheld, Joren Joshua en Daniel van de Haterd nam Termohlen een muur in de Potkanstraat onder­ handen. Zijn schildering is een ode aan de haven en het uitgaansleven om de hoek, te zien in zijn mooie dame die wordt omgeven door waterplanten en een octopus."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.589320522144668, 4.7728437780460808]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Iwan Smit", "Iwan Smit"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Het op de muur achtergebleven logo van studenten dispuut Phileas Fogg, tevens gevestigd in de School­ straat, was het startpunt voor deze schildering. Smit reageert met zijn vraag “Who’s got the power?” op de traditie van de verschillende logo’s op deze muur. Hij stelt de vraag aan passanten en nodigt andere disputen uit tot reactie.", "Het op de muur achtergebleven logo van studenten dispuut Phileas Fogg, tevens gevestigd in de School­ straat, was het startpunt voor deze schildering. Smit reageert met zijn vraag “Who’s got the power?” op de traditie van de verschillende logo’s op deze muur. Hij stelt de vraag aan passanten en nodigt andere disputen uit tot reactie."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.589834365575882, 4.7744282018219337]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Hedof", "Hedof"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Op de muren van het sanitairhuisje in de nieuwe Passantenhaven toont Hedof de ‘hoofd­ rolspelers’ uit de buurt: zeelieden, recreanten en passerende gezinnen. Het decor van zijn schildering verwijst naar de gebouwen in de stad.", "Op de muren van het sanitairhuisje in de nieuwe Passantenhaven toont Hedof de ‘hoofd­ rolspelers’ uit de buurt: zeelieden, recreanten en passerende gezinnen. Het decor van zijn schildering verwijst naar de gebouwen in de stad."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.592167295210423, 4.7708984147583351]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Staynice", "Staynice"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["De bouwschutting naast Station Breda leent zich goed voor een beeldverhaal. Een steeds terug­ kerende serie van tien illustraties visualiseert een dynamische dag in het leven van de treinreiziger.", "De bouwschutting naast Station Breda leent zich goed voor een beeldverhaal. Een steeds terug­ kerende serie van tien illustraties visualiseert een dynamische dag in het leven van de treinreiziger."]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.594528999999987, 4.7789752999999564]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Teckel KMA", "Teckel KMA"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.59018277245498, 4.7736668544921486]
-			},
-			"IsVisited": false
-		}, {
-			"$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
-			"Title": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["Staynice scouting", "Staynice scouting"]
-			},
-			"Description": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["MISSING", "MISSING"]
-			},
-			"AudioPath": {
-				"$type": "System.String[], mscorlib",
-				"$values": ["null", "null"]
-			},
-			"ImagePath": null,
-			"jsonPosition": {
-				"$type": "System.Double[], mscorlib",
-				"$values": [51.5749025, 4.7595185000000129]
-			},
-			"IsVisited": false
-		}]
-	}
+  "$type": "VVVOnTheWay.Route.Route, VVVOnTheWay",
+  "RoutePoints": {
+    "$type": "System.Collections.Generic.List`1[[VVVOnTheWay.Route.Point, VVVOnTheWay]], mscorlib",
+    "$values": [
+      {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Zenk One Godevaert", "Zenk One Godevaert"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Robin Nas aka Zenkone groeit op in creatieve familie en start op jonge leeftijd met graffiti. Hij raakt bekend om zijn realistische portretten die hij later mixt met een meer grafische stijl. Inmiddels reist hij de wereld over om metershoge muurschilderingen te maken in zijn kenmerkte stijl. Vanuit zijn studio in Breda werkt hij als illustrator voor internationale opdrachtgevers.\r\n\r\nDe muurschildering is een ode aan Godevaart Montens, burgemeester van Breda van 1580-1581 en 1596-1602. Hij staat bekend vanwege zijn vermeend heldhaftig gedrag op 28 juni 1581. Tijdens de furie van Houtepen voerde hij een groep Bredase burgersoldaten aan in de strijd tegen de Spaanse troepen. Deze troepen hebben hevig huisgehouden, geplunderd, gemoord en gebrandschat. Vrijwilligers moesten de stoffelijke overschotten van 400 à 500 dode burgers opruimen. ", "Robin Nas aka Zenkone groeit op in creatieve familie en start op jonge leeftijd met graffiti. Hij raakt bekend om zijn realistische portretten die hij later mixt met een meer grafische stijl. Inmiddels reist hij de wereld over om metershoge muurschilderingen te maken in zijn kenmerkte stijl. Vanuit zijn studio in Breda werkt hij als illustrator voor internationale opdrachtgevers.\r\n\r\nDe muurschildering is een ode aan Godevaart Montens, burgemeester van Breda van 1580-1581 en 1596-1602. Hij staat bekend vanwege zijn vermeend heldhaftig gedrag op 28 juni 1581. Tijdens de furie van Houtepen voerde hij een groep Bredase burgersoldaten aan in de strijd tegen de Spaanse troepen. Deze troepen hebben hevig huisgehouden, geplunderd, gemoord en gebrandschat. Vrijwilligers moesten de stoffelijke overschotten van 400 à 500 dode burgers opruimen. "
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.581838292179654, 4.7757321220901758]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Staynice Lunettunnel", "Staynice Lunettunnel"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "De broers Rob (1973) en Barry (1977) van Dijck vormen samen de grafisch ontwerp studio Staynice. Vanuit hun interesse voor graffiti startten ze de opleiding Graphic Design aan AKV|St.Joost. In 2006 gaf de nominatie voor de St.Joost-penning toegang tot een gastatelier. Hier smeedden ze plannen om een eigen studio te starten.\r\n\r\nIn tien jaar tijd groeiden ze uit tot een gerenommeerde studio. Hun werk kenmerkt zich door het op speelse wijze combineren van informatie, illustratie en typografie. Experimenten op hun eigen Riso printer dienen vaak als inspiratie voor commerciële projecten voor internationale klanten. Toch blijven ze trouw aan hun roots en nemen regelmatig de spuitbus ter hand voor muurschilderingen.\r\n\r\nVoor de Blind Walls Gallery maakten ze de langste muurschildering tot nu toe. De ruim 130m zoete vormen zijn geïnspireerd op de (deels verdwenen) suikerwaren industrie in Breda. Als de wind de juiste kant op waait, voegt de Perfetti Van Melle fabriek een geurige dimensie aan de schildering toe.", "De broers Rob (1973) en Barry (1977) van Dijck vormen samen de grafisch ontwerp studio Staynice. Vanuit hun interesse voor graffiti startten ze de opleiding Graphic Design aan AKV|St.Joost. In 2006 gaf de nominatie voor de St.Joost-penning toegang tot een gastatelier. Hier smeedden ze plannen om een eigen studio te starten.\r\n\r\nIn tien jaar tijd groeiden ze uit tot een gerenommeerde studio. Hun werk kenmerkt zich door het op speelse wijze combineren van informatie, illustratie en typografie. Experimenten op hun eigen Riso printer dienen vaak als inspiratie voor commerciële projecten voor internationale klanten. Toch blijven ze trouw aan hun roots en nemen regelmatig de spuitbus ter hand voor muurschilderingen.\r\n\r\nVoor de Blind Walls Gallery maakten ze de langste muurschildering tot nu toe. De ruim 130m zoete vormen zijn geïnspireerd op de (deels verdwenen) suikerwaren industrie in Breda. Als de wind de juiste kant op waait, voegt de Perfetti Van Melle fabriek een geurige dimensie aan de schildering toe."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.592310639865154, 4.7571593333434521]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Jukka Hakanen", "Jukka Hakanen"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Al sinds jonge leeftijd zijn tekenen en schilderen natuurlijke expressievormen voor Jukka Hakanen. Opgroeiend in Turku (FI) raakte hij geïnteresseerd in graffiti. Sinds 2000 maakte hij vele muurschilderingen in Finland en het buitenland.\r\n\r\nDeze muurschildering is een hedendaagse versie van het klassieke stilleven. De inspiratie kwam uit de omliggende restaurants, de lange geschiedenis van het pand en de beroemde moerbeiboom (geplant in 1780) in de tuin van de Nieuwe Veste.", "Al sinds jonge leeftijd zijn tekenen en schilderen natuurlijke expressievormen voor Jukka Hakanen. Opgroeiend in Turku (FI) raakte hij geïnteresseerd in graffiti. Sinds 2000 maakte hij vele muurschilderingen in Finland en het buitenland.\r\n\r\nDeze muurschildering is een hedendaagse versie van het klassieke stilleven. De inspiratie kwam uit de omliggende restaurants, de lange geschiedenis van het pand en de beroemde moerbeiboom (geplant in 1780) in de tuin van de Nieuwe Veste."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.588160636936408, 4.778343934323857]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Maikki Rantala", "Maikki Rantala"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Maikki Rantala mixt sinds 2012 ‘community art’ en street art tot participatie projecten op grote schaal. Zij ziet street art als een vorm van stedelijk activisme, waarmee uitdagingen rondom verstedelijking aangepakt kunnen worden. Met haar muurschilderingen richt ze zich vaak op kinderen, omdat ze veel beter hun omgeving observeren dan volwassenen.\r\n\r\nDit historische miniatuur huisje met bakstenen gevels en vele hoeken is een echte uitdaging om te beschilderen. Het verhaal van deze muurschildering gaat terug tot de 19e eeuwse horeca school gevestigd op dit terrein. Ze refereert hieraan met een verscheidenheid aan picturaal serviesgoed in traditioneel Nederlandse, Spaanse, Italiaanse, Chinese, Arabische en zelfs de Finse stijl.", "Maikki Rantala mixt sinds 2012 ‘community art’ en street art tot participatie projecten op grote schaal. Zij ziet street art als een vorm van stedelijk activisme, waarmee uitdagingen rondom verstedelijking aangepakt kunnen worden. Met haar muurschilderingen richt ze zich vaak op kinderen, omdat ze veel beter hun omgeving observeren dan volwassenen.\r\n\r\nDit historische miniatuur huisje met bakstenen gevels en vele hoeken is een echte uitdaging om te beschilderen. Het verhaal van deze muurschildering gaat terug tot de 19e eeuwse horeca school gevestigd op dit terrein. Ze refereert hieraan met een verscheidenheid aan picturaal serviesgoed in traditioneel Nederlandse, Spaanse, Italiaanse, Chinese, Arabische en zelfs de Finse stijl."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.585578668468166, 4.777427909123162]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["DZIA", "DZIA"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "De Liniestraat vormt de buitengrens van het Liniekwartier. Op het verzoek van de bewoners is de wijk niet gesloopt, maar herontwikkeld door AlleeWonen in samenwerking met de bewoners. Er zijn klushuizen, een wijksalon en diverse culturele evenementen in samenwerking met Electron.\r\n\r\nBelgische kunstenaar DZIA is uitgenodigd om het creatieve karakter van de wijk te visualiseren. Zijn echte naam blijft onbekend, ook is hij niet herkenbaar op foto's. Hij kiest ervoor zijn werk te laten spreken. Al jaren schildert hij dieren in zijn karakteristieke stijl op muren over de hele wereld.\r\n\r\nDe flamingo verbeeldt het kleurrijke karakter van de wijk. Vroeger was dit gebied een ??polder waar veel vogels broedden. Tijdens het aanbrengen van de witte onderschildering kreeg DZIA al veel reacties uit de buurt. Men vond zijn 'zwaan' te gek! Na de toekan was de inspiratie voor de laatste vogel snel gevonden. Samen verbeelden de drie vogels het creatieve, kleurrijke en diverse karakter van de wijk, met een kleine knipoog naar het verleden.", "De Liniestraat vormt de buitengrens van het Liniekwartier. Op het verzoek van de bewoners is de wijk niet gesloopt, maar herontwikkeld door AlleeWonen in samenwerking met de bewoners. Er zijn klushuizen, een wijksalon en diverse culturele evenementen in samenwerking met Electron.\r\n\r\nBelgische kunstenaar DZIA is uitgenodigd om het creatieve karakter van de wijk te visualiseren. Zijn echte naam blijft onbekend, ook is hij niet herkenbaar op foto's. Hij kiest ervoor zijn werk te laten spreken. Al jaren schildert hij dieren in zijn karakteristieke stijl op muren over de hele wereld.\r\n\r\nDe flamingo verbeeldt het kleurrijke karakter van de wijk. Vroeger was dit gebied een ??polder waar veel vogels broedden. Tijdens het aanbrengen van de witte onderschildering kreeg DZIA al veel reacties uit de buurt. Men vond zijn 'zwaan' te gek! Na de toekan was de inspiratie voor de laatste vogel snel gevonden. Samen verbeelden de drie vogels het creatieve, kleurrijke en diverse karakter van de wijk, met een kleine knipoog naar het verleden."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5969712, 4.7880514999999377]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Damien Poulain Van Coothplein", "Damien Poulain Van Coothplein"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'.", "Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5828537991085, 4.7770608687866343]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Damien Poulian Boschstraat", "Damien Poulian Boschstraat"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'.", "Damien Poulain is een grafisch ontwerper en illustrator met een specifieke focus op kunst, mode en muziek. Hij publiceert ook fotoboeken onder de naam oodee. Na het beschilderen van rolluiken in Tokyo, Parijs en Londen nodigde de Blind Walls Gallery Damien uit Breda te bezoeken. Ondanks dat het de warmste dag van het jaar was, schilderde Damien vier prachtige 'happy shutters'."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.591129, 4.7837544000000207]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Hell&#8217;O", "Hell&#8217;O"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Het Brusselse duo Hell’O beheerst de grafische lijn als een 21-ste eeuwse Jherimus Bosch. Hun universum lijkt een surrealistisch bestiarium met mysterieuze dieren, hybride personages, architectuur en badass geometrie. Hun schilderingen en sculpturen verwijzen naar middeleeuwse folklore, esoterie, techno muziek, de Memphis Design Group, 17e-eeuwse gravure, oude mythologie, surrealisme, ... In verhalende scènes, die soms betekenisrijk, dan weer gewoon absurd zijn, geven humor en spot ruimte voor eigen interpretatie door de kijker.\r\n\r\nVoor de muurschildering in de Bleekstraat lieten ze zich inspireren door het uitzicht op winkelend publiek vanuit de Bleekstraat op de Ginnekenstraat. De straatnaam is letterlijk geïnterpreteerd en laat de hybride personages langzaam aan vervagen.", "Het Brusselse duo Hell’O beheerst de grafische lijn als een 21-ste eeuwse Jherimus Bosch. Hun universum lijkt een surrealistisch bestiarium met mysterieuze dieren, hybride personages, architectuur en badass geometrie. Hun schilderingen en sculpturen verwijzen naar middeleeuwse folklore, esoterie, techno muziek, de Memphis Design Group, 17e-eeuwse gravure, oude mythologie, surrealisme, ... In verhalende scènes, die soms betekenisrijk, dan weer gewoon absurd zijn, geven humor en spot ruimte voor eigen interpretatie door de kijker.\r\n\r\nVoor de muurschildering in de Bleekstraat lieten ze zich inspireren door het uitzicht op winkelend publiek vanuit de Bleekstraat op de Ginnekenstraat. De straatnaam is letterlijk geïnterpreteerd en laat de hybride personages langzaam aan vervagen."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5852304, 4.7761367000000519]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Kratje Beeld", "Kratje Beeld"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Studio Kratje Beeld is een tijdelijke ontwerpstudio gevormd door tien derdejaarsstudenten Illustratie van AKV|St.Joost. In hun stageperiode werken ze aan opdrachten voor verschillende opdrachtgevers waaronder de 3sec.gallery. Voor de meeste studenten is het de eerste keer dat ze op deze schaal werken. De muurschildering is dan ook grondig voorbereid met schetsen, kleurstudies en research in het Stadsarchief Breda.", "Studio Kratje Beeld is een tijdelijke ontwerpstudio gevormd door tien derdejaarsstudenten Illustratie van AKV|St.Joost. In hun stageperiode werken ze aan opdrachten voor verschillende opdrachtgevers waaronder de 3sec.gallery. Voor de meeste studenten is het de eerste keer dat ze op deze schaal werken. De muurschildering is dan ook grondig voorbereid met schetsen, kleurstudies en research in het Stadsarchief Breda."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.584043233466389, 4.77688957553255]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["NOL", "NOL"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Vermoedelijk heeft vroeger, in het witte vlak, op de gevel van dit monument een reclame schildering gestaan. Onderzoek in het stadsarchief leverde geen aanwijzingen op over welke reclame hier wanneer heeft gestaan. Ook navraag bij de buren Meeuwsen Aquaria -al meer dan 35 jaar hier gevestigd- leverde geen informatie op.", "Vermoedelijk heeft vroeger, in het witte vlak, op de gevel van dit monument een reclame schildering gestaan. Onderzoek in het stadsarchief leverde geen aanwijzingen op over welke reclame hier wanneer heeft gestaan. Ook navraag bij de buren Meeuwsen Aquaria -al meer dan 35 jaar hier gevestigd- leverde geen informatie op."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5871211, 4.7684835000000021]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Thunder&#038;Bold", "Thunder&#038;Bold"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "De nieuwe eigenaar en gebruiker van de oude kleuterschool in het Burgemeester van Sonsbeek Park vroegen ons een muurschildering te realiseren op dit fraaie paviljoen. Sinds kort wordt het doordeweeks gebruikt als crèche en is het in het weekend een koffiehuis.\r\n\r\nHet Burgemeester van Sonsbeek Park wordt door betrokken buurtbewoners onderhouden. Ze houden het park schoon, planten bloembollen en maakten zelfs speeltoestellen voor de kinderen van afvalmateriaal. We vroegen ontwerpers Thunder&amp;Bold het bijzondere karakter van dit park weer te geven in de muurschildering.\r\n\r\nThunder&amp;Bold (aka Martijn van der Meeren en Emiel Jonkers) gingen op bezoek in het park en vonden inspiratie. Terwijl ze in het park waren fluisterde Jimmy Hendrix in hun oor....\r\n\r\n<em>Rainy day, dream away\r\nAh let the sun take a holiday\r\nFlowers bathe an' ah see the children play\r\nLay back and groove on a rainy day.</em>", "De nieuwe eigenaar en gebruiker van de oude kleuterschool in het Burgemeester van Sonsbeek Park vroegen ons een muurschildering te realiseren op dit fraaie paviljoen. Sinds kort wordt het doordeweeks gebruikt als crèche en is het in het weekend een koffiehuis.\r\n\r\nHet Burgemeester van Sonsbeek Park wordt door betrokken buurtbewoners onderhouden. Ze houden het park schoon, planten bloembollen en maakten zelfs speeltoestellen voor de kinderen van afvalmateriaal. We vroegen ontwerpers Thunder&amp;Bold het bijzondere karakter van dit park weer te geven in de muurschildering.\r\n\r\nThunder&amp;Bold (aka Martijn van der Meeren en Emiel Jonkers) gingen op bezoek in het park en vonden inspiratie. Terwijl ze in het park waren fluisterde Jimmy Hendrix in hun oor....\r\n\r\n<em>Rainy day, dream away\r\nAh let the sun take a holiday\r\nFlowers bathe an' ah see the children play\r\nLay back and groove on a rainy day.</em>"
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.579412299999987, 4.764087199999949]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Ben Eine", "Ben Eine"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Deze spooronderdoorgang verbindt het centrum van de stad en de wijk Belcrum, bekend om zijn woonwijk en voormalige industrie. De rivier de Mark loopt onder de onderdoorgang en laat kleine boten toe tot de passantenhaven in de binnenstad. Aan de zijde van de Belcrumweg zijn er doorgangen voor auto's, fietsers en voetgangers. Hier passeren elke dag duizenden mensen op hun weg naar de stad. Aan de andere zijde ligt de Markkade. Deze kade is tegenwoordig veel minder druk, de fabrieken de hier aan lagen zijn inmiddels verdwenen.", "Deze spooronderdoorgang verbindt het centrum van de stad en de wijk Belcrum, bekend om zijn woonwijk en voormalige industrie. De rivier de Mark loopt onder de onderdoorgang en laat kleine boten toe tot de passantenhaven in de binnenstad. Aan de zijde van de Belcrumweg zijn er doorgangen voor auto's, fietsers en voetgangers. Hier passeren elke dag duizenden mensen op hun weg naar de stad. Aan de andere zijde ligt de Markkade. Deze kade is tegenwoordig veel minder druk, de fabrieken de hier aan lagen zijn inmiddels verdwenen."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5953254, 4.7714017000000695]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Noodle Inc.", "Noodle Inc."]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Het duo Noodle inc bestaat uit de vrienden Michael Nolta en Edo Rath. Hun doorgaans kleurige en altijd vrolijke werk kenmerkt zich door strakke lijnen en steeds terugkerende figuren.\r\n\r\nOp uitnodiging van Koffie bij Teun maakten ze in twee nachten tijd een zwart witte muurschildering met de titel \"Koffie verkeerd\". Je ziet het verhaal van twee betoverde koffielepeltjes die een reis maken door een fluffy landschap met opgeblazen muffins, blije koffiekopjes, dansende donuts, euforische theezakjes, stralende suikerstrooiers en zichzelf regulerende koffiemalers.", "Het duo Noodle inc bestaat uit de vrienden Michael Nolta en Edo Rath. Hun doorgaans kleurige en altijd vrolijke werk kenmerkt zich door strakke lijnen en steeds terugkerende figuren.\r\n\r\nOp uitnodiging van Koffie bij Teun maakten ze in twee nachten tijd een zwart witte muurschildering met de titel \"Koffie verkeerd\". Je ziet het verhaal van twee betoverde koffielepeltjes die een reis maken door een fluffy landschap met opgeblazen muffins, blije koffiekopjes, dansende donuts, euforische theezakjes, stralende suikerstrooiers en zichzelf regulerende koffiemalers."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5881031, 4.7740522999999939]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Luca Font", "Luca Font"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "The day before Luca Font arrived in Breda rock star David Bowie had passed away. This painting commemorates the iconic artist.", "The day before Luca Font arrived in Breda rock star David Bowie had passed away. This painting commemorates the iconic artist."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5849612, 4.7757771999999932]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Combat Super Mural", "Combat Super Mural"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.596108735394139, 4.7663289217041438]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Hedof Oase", "Hedof Oase"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.586900019445409, 4.7720578290832236]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Zenk One 2012", "Zenk One 2012"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.589168636406768, 4.7803271484100378]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Staynice KOP", "Staynice KOP"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.599944600000008, 4.7695209999999406]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Staynice Bloos", "Staynice Bloos"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5993976, 4.7708168000000342]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Zenk One Veilingkade", "Zenk One Veilingkade"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5988907, 4.7669094000000314]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Super A", "Super A"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5989416, 4.7668356000000358]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Fin Dac", "Fin Dac"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Samen met Nol Art en Edo Rath maakte Fin DAC deze Geisha muurschildering ‘Kokesh’ op de muur van een (eveneens Japans) sushi restaurant. DAC maakte deze als toevoeging op zijn ‘Hidden Beauty’ serie. Het kleurpalet, met veel rood en wit, sluit aan bij de Bredase stadsvlag.", "Samen met Nol Art en Edo Rath maakte Fin DAC deze Geisha muurschildering ‘Kokesh’ op de muur van een (eveneens Japans) sushi restaurant. DAC maakte deze als toevoeging op zijn ‘Hidden Beauty’ serie. Het kleurpalet, met veel rood en wit, sluit aan bij de Bredase stadsvlag."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.567258751202942, 4.7853179704223976]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Jeff Canham", "Jeff Canham"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "In zijn schildering nam Canham de eerste negen woorden van het NATO fonetische alfabet op. Het gebruik ervan tijdens o.a. WWII verwijst naar het militaire verleden van Achter de Lange Stallen. Vanaf 1765 tot 1980 was het terrein onderdeel van de Chassékazerne, waar tijdens WWII Kriegs­marine-opleidingseenheden gevestigd waren.", "In zijn schildering nam Canham de eerste negen woorden van het NATO fonetische alfabet op. Het gebruik ervan tijdens o.a. WWII verwijst naar het militaire verleden van Achter de Lange Stallen. Vanaf 1765 tot 1980 was het terrein onderdeel van de Chassékazerne, waar tijdens WWII Kriegs­marine-opleidingseenheden gevestigd waren."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.58307, 4.7769504999999981]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "RUTGER TERMOHLEN, COLLIN VAN DER SLUIJS &#038; SUPER A",
+            "RUTGER TERMOHLEN, COLLIN VAN DER SLUIJS &#038; SUPER A"
+          ]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Deze muurschildering is geinspireerd op het duistere verleden van deze plek. De Mols Parking was ooit (rond 1514) een begraafplaats voor mensen die stierven aan de pest. De rat ­ de ziekteverspreider ­ symboliseert dit.", "Deze muurschildering is geinspireerd op het duistere verleden van deze plek. De Mols Parking was ooit (rond 1514) een begraafplaats voor mensen die stierven aan de pest. De rat ­ de ziekteverspreider ­ symboliseert dit."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.58483649380176, 4.7773947249924049]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["JOB WOUTERS", "JOB WOUTERS"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "De veelkleurigheid en grillige vormen van deze muurschildering verwijzen naar het roerige verleden van de plek waar Wouters het werk maakte. Van kapel in de vijftiende eeuw tot begraafplaats in de zestiende eeuw, groentetuin in de negentiende eeuw en kazerne in de twintigste eeuw.", "De veelkleurigheid en grillige vormen van deze muurschildering verwijzen naar het roerige verleden van de plek waar Wouters het werk maakte. Van kapel in de vijftiende eeuw tot begraafplaats in de zestiende eeuw, groentetuin in de negentiende eeuw en kazerne in de twintigste eeuw."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.584781495822362, 4.7773451041256294]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Mike Perry", "Mike Perry"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Dat de muurschildering van Perry is opgebouwd uit diverse lagen zie je als toeschouwer niet direct. Het verwijst naar het verborgen ontwerpproces e´n de gelaagdheid van de Bredase geschiedenis. In zijn werk is een Bredaas palindroom gedicht verwerkt, bestaande uit woorden die je vanaf beide kanten hetzelfde leest.", "Dat de muurschildering van Perry is opgebouwd uit diverse lagen zie je als toeschouwer niet direct. Het verwijst naar het verborgen ontwerpproces e´n de gelaagdheid van de Bredase geschiedenis. In zijn werk is een Bredaas palindroom gedicht verwerkt, bestaande uit woorden die je vanaf beide kanten hetzelfde leest."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.584731497601574, 4.7771318685089454]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Stephen Powers", "Stephen Powers"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Gesprekken met bewoners en passanten verwerkte Powers in zijn muurschildering, als liefdesbrief aan de stad. Dit deed hij tijdens de eerste Koningsdag, met Oranjegekte ten top. Koninginnedag mag dan geschiedenis zijn, volgens Powers is het elke dag ‘Queensday’ met een dagelijkse ode aan alle vrouwen.", "Gesprekken met bewoners en passanten verwerkte Powers in zijn muurschildering, als liefdesbrief aan de stad. Dit deed hij tijdens de eerste Koningsdag, met Oranjegekte ten top. Koninginnedag mag dan geschiedenis zijn, volgens Powers is het elke dag ‘Queensday’ met een dagelijkse ode aan alle vrouwen."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5847281643849, 4.7775395642792091]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Hedof", "Hedof"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Deze schildering verwijst naar zowel het heden als verleden van de locatie. Opnieuw ‘groeit’ er groenten en fruit op de plek waar begin negentiende eeuw een grote groentetuin was. De winkelende figuren in de schildering zijn op doortocht naar de nabij­ gelegen winkelstraat.", "Deze schildering verwijst naar zowel het heden als verleden van de locatie. Opnieuw ‘groeit’ er groenten en fruit op de plek waar begin negentiende eeuw een grote groentetuin was. De winkelende figuren in de schildering zijn op doortocht naar de nabij­ gelegen winkelstraat."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.584554836780747, 4.7777004968201027]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Johan Moorman", "Johan Moorman"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "De muurschildering is geïnspireerd op een gebeurtenis uit 1988 toen twee rivaliserende circussen gelijktijdig Breda aandeden. Ter promotie liet een van de circussen olifanten uit op de Mols Parking. Naar aanleiding van de actie kregen beiden gedurende 5 jaar een verbod tot op treden in de stad.", "De muurschildering is geïnspireerd op een gebeurtenis uit 1988 toen twee rivaliserende circussen gelijktijdig Breda aandeden. Ter promotie liet een van de circussen olifanten uit op de Mols Parking. Naar aanleiding van de actie kregen beiden gedurende 5 jaar een verbod tot op treden in de stad."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.584287435878025, 4.7777406755325273]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Bruce TMC", "Bruce TMC"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "“If wishes were horses, beggars would ride” is een Engels gezegde dat suggereert dat het nutteloos is om te wensen en dat verbetering bereikt wordt door actie. In dit werk is “beggars” (bedelaars) vervangen voor “refugees” (vluchtelingen), mogelijk een verwijzing naar de huidige vluchtelingenproblematiek. Het vers­ je verwijst ook naar de paardenstal die hier ooit stond.", "“If wishes were horses, beggars would ride” is een Engels gezegde dat suggereert dat het nutteloos is om te wensen en dat verbetering bereikt wordt door actie. In dit werk is “beggars” (bedelaars) vervangen voor “refugees” (vluchtelingen), mogelijk een verwijzing naar de huidige vluchtelingenproblematiek. Het vers­ je verwijst ook naar de paardenstal die hier ooit stond."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.584041516535969, 4.7778721581970558]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Thomas &#038; Jurgen", "Thomas &#038; Jurgen"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Op de zolder van een verhuisbedrijf in de Stallings­traat lag ooit een kist bomvol werken van Van Gogh. Zijn moeder had ze daar opgeslagen, maar nadat ze verhuisde verkocht de eigenaar ze voor een dubbel­ tje per stuk. Pas later ontdekte hij hoe waardevol ze waren. De tekst “Trash to Treasure” illustreert deze gebeurtenis.", "Op de zolder van een verhuisbedrijf in de Stallings­traat lag ooit een kist bomvol werken van Van Gogh. Zijn moeder had ze daar opgeslagen, maar nadat ze verhuisde verkocht de eigenaar ze voor een dubbel­ tje per stuk. Pas later ontdekte hij hoe waardevol ze waren. De tekst “Trash to Treasure” illustreert deze gebeurtenis."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.583988184229931, 4.7776039372955665]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Ilse Weisfelt", "Ilse Weisfelt"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Op de plek van de fietsenstalling waarop Weisfelt haar muurschildering maakte stond vroeger een paardenstal. Vandaar een ludieke mix van heden en verleden, met een ruiter op een fiets en een fietser op een paard.", "Op de plek van de fietsenstalling waarop Weisfelt haar muurschildering maakte stond vroeger een paardenstal. Vandaar een ludieke mix van heden en verleden, met een ruiter op een fiets en een fietser op een paard."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.583781520952783, 4.7780009042297706]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["FRM", "FRM"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Deze muurschildering verwijst naar de legende van St. Joris, een heilige die nauw is verbonden met de geschiedenis van Breda. Het werk verbeeldt de tekst “Overcome the Wind” en roept op tot dapperheid.", "Deze muurschildering verwijst naar de legende van St. Joris, een heilige die nauw is verbonden met de geschiedenis van Breda. Het werk verbeeldt de tekst “Overcome the Wind” en roept op tot dapperheid."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.584121514877637, 4.7761662732635841]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Aron Vellekoop Léon", "Aron Vellekoop Léon"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Illustrator en graficus Aron Vellekoop León werd geboren op Fuerteventura, groeide op op de Veluwe, studeerde aan AKV|St.Joost in Breda en werkt tegenwoordig vanuit Amsterdam. Zijn strakke geometrische vormen zijn vast beïnvloed door Nederland, terwijl zijn Spaanse roots terugkomen in zijn kleurenpalet. Aron maakt zowel vrij werk als redactionele illustraties en doet dit veelal volgens traditionele technieken zoals zeefdruk. Hij is een ware ambachtsman in het digitale tijdperk, maar moest voor deze print toch echt de computer hanteren. Een bestand van 8 gb verbeeldt het thema mobiliteit op de gevel van de oudste parkeergarage van de stad (1968).\r\n\r\n", "Illustrator en graficus Aron Vellekoop León werd geboren op Fuerteventura, groeide op op de Veluwe, studeerde aan AKV|St.Joost in Breda en werkt tegenwoordig vanuit Amsterdam. Zijn strakke geometrische vormen zijn vast beïnvloed door Nederland, terwijl zijn Spaanse roots terugkomen in zijn kleurenpalet. Aron maakt zowel vrij werk als redactionele illustraties en doet dit veelal volgens traditionele technieken zoals zeefdruk. Hij is een ware ambachtsman in het digitale tijdperk, maar moest voor deze print toch echt de computer hanteren. Een bestand van 8 gb verbeeldt het thema mobiliteit op de gevel van de oudste parkeergarage van de stad (1968).\r\n\r\n"
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5843711, 4.775432300000034]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["AKAcorleone", "AKAcorleone"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "This mural is a visual interpretation of the busy location and to the chaos that surrounds us daily. Inspired by the adjacent lively shopping street, AKACorleone made a work that shows his own vision on chaos.", "This mural is a visual interpretation of the busy location and to the chaos that surrounds us daily. Inspired by the adjacent lively shopping street, AKACorleone made a work that shows his own vision on chaos."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.585214811431484, 4.7763379346405372]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Zenk ONE", "Zenk ONE"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Deze schildering op een tijdelijke bouwmuur toont een vlucht van eenden waarbij fotorealisme en illustratie zijn gecombineerd. Het ontwerp ver­wijst naar het groene karakter van de nieuwbouw. Hierbij wordt het casco grotendeels hergebruikt, is er ruimte voor duurzame ondernemers en worden de daken groen om de migratie van fauna in de stad te bevorderen.", "Deze schildering op een tijdelijke bouwmuur toont een vlucht van eenden waarbij fotorealisme en illustratie zijn gecombineerd. Het ontwerp ver­wijst naar het groene karakter van de nieuwbouw. Hierbij wordt het casco grotendeels hergebruikt, is er ruimte voor duurzame ondernemers en worden de daken groen om de migratie van fauna in de stad te bevorderen."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.589234450018893, 4.7802968751465187]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Cranio", "Cranio"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Met een kritische en grappige ondertoon verwijst het werk Cranio naar hedendaagse maatschappij. Net als het Bredase straatbeeld kan deze wel wat kleur gebruiken: zijn indianen voeren de opdracht voor een muur­schildering uit. Als passant zie je hoe de kleurrijke groep het woord ‘Amazonia’ op de tijdelijke bouw­schutting spuit terwijl ze hun speren als selfiestick gebruiken.", "Met een kritische en grappige ondertoon verwijst het werk Cranio naar hedendaagse maatschappij. Net als het Bredase straatbeeld kan deze wel wat kleur gebruiken: zijn indianen voeren de opdracht voor een muur­schildering uit. Als passant zie je hoe de kleurrijke groep het woord ‘Amazonia’ op de tijdelijke bouw­schutting spuit terwijl ze hun speren als selfiestick gebruiken."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.589134463322523, 4.7798569928680763]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["M-City", "M-City"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Met een futuristisch uitziende ‘Robo Dino’ verwijst M­City naar het industriële verleden van de stad. In dit stadsdeel stond o.a. de vermaarde Etna fabriek. De ijzergieterij en stoommachines zijn ingeruild voor een robot met schaar. Een verwijzing naar de kapsalon die in het pand gevestigd is.", "Met een futuristisch uitziende ‘Robo Dino’ verwijst M­City naar het industriële verleden van de stad. In dit stadsdeel stond o.a. de vermaarde Etna fabriek. De ijzergieterij en stoommachines zijn ingeruild voor een robot met schaar. Een verwijzing naar de kapsalon die in het pand gevestigd is."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5881762, 4.7708356000000549]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["anti-held", "anti-held"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Illustrator Sjoerd Jansen aka Anti-held geniet van het maken van semi-realistische expressieve illustraties geïnspireerd op de wereld waarin we leven. Hij gebruikt hierbij zijn eigen metaforen en symboliek. Hij heeft een fascinatie voor analoge technieken als tekenen, schilderen, zeefdruk, houtsnede en etsen.\r\n\r\nMet deze muurschildering reflecteert hij op het nachtleven dat zich afspeelt in deze smalle steeg.", "Illustrator Sjoerd Jansen aka Anti-held geniet van het maken van semi-realistische expressieve illustraties geïnspireerd op de wereld waarin we leven. Hij gebruikt hierbij zijn eigen metaforen en symboliek. Hij heeft een fascinatie voor analoge technieken als tekenen, schilderen, zeefdruk, houtsnede en etsen.\r\n\r\nMet deze muurschildering reflecteert hij op het nachtleven dat zich afspeelt in deze smalle steeg."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.589251179316307, 4.7729990166022844]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Joren Joshua", "Joren Joshua"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Dit werk werd speciaal gemaakt om de Potkanstraat visueel te verbeteren (zoals 4, 5 & 7). Qua kleur verwijst de schildering naar water van de haven. Het feestende duo, met een drankje en bitterbal in de hand, brengt een ode aan het Bredase uitgaans­ leven.", "Dit werk werd speciaal gemaakt om de Potkanstraat visueel te verbeteren (zoals 4, 5 & 7). Qua kleur verwijst de schildering naar water van de haven. Het feestende duo, met een drankje en bitterbal in de hand, brengt een ode aan het Bredase uitgaans­ leven."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.589221118472096, 4.7730012666260109]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Rutger Termohlen", "Rutger Termohlen"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Net als Antiheld, Joren Joshua en Daniel van de Haterd nam Termohlen een muur in de Potkanstraat onder­ handen. Zijn schildering is een ode aan de haven en het uitgaansleven om de hoek, te zien in zijn mooie dame die wordt omgeven door waterplanten en een octopus.", "Net als Antiheld, Joren Joshua en Daniel van de Haterd nam Termohlen een muur in de Potkanstraat onder­ handen. Zijn schildering is een ode aan de haven en het uitgaansleven om de hoek, te zien in zijn mooie dame die wordt omgeven door waterplanten en een octopus."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.589320522144668, 4.7728437780460808]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Iwan Smit", "Iwan Smit"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Het op de muur achtergebleven logo van studenten dispuut Phileas Fogg, tevens gevestigd in de School­ straat, was het startpunt voor deze schildering. Smit reageert met zijn vraag “Who’s got the power?” op de traditie van de verschillende logo’s op deze muur. Hij stelt de vraag aan passanten en nodigt andere disputen uit tot reactie.", "Het op de muur achtergebleven logo van studenten dispuut Phileas Fogg, tevens gevestigd in de School­ straat, was het startpunt voor deze schildering. Smit reageert met zijn vraag “Who’s got the power?” op de traditie van de verschillende logo’s op deze muur. Hij stelt de vraag aan passanten en nodigt andere disputen uit tot reactie."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.589834365575882, 4.7744282018219337]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Hedof", "Hedof"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "Op de muren van het sanitairhuisje in de nieuwe Passantenhaven toont Hedof de ‘hoofd­ rolspelers’ uit de buurt: zeelieden, recreanten en passerende gezinnen. Het decor van zijn schildering verwijst naar de gebouwen in de stad.", "Op de muren van het sanitairhuisje in de nieuwe Passantenhaven toont Hedof de ‘hoofd­ rolspelers’ uit de buurt: zeelieden, recreanten en passerende gezinnen. Het decor van zijn schildering verwijst naar de gebouwen in de stad."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.592167295210423, 4.7708984147583351]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Staynice", "Staynice"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": [
+            "De bouwschutting naast Station Breda leent zich goed voor een beeldverhaal. Een steeds terug­ kerende serie van tien illustraties visualiseert een dynamische dag in het leven van de treinreiziger.", "De bouwschutting naast Station Breda leent zich goed voor een beeldverhaal. Een steeds terug­ kerende serie van tien illustraties visualiseert een dynamische dag in het leven van de treinreiziger."
+          ]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.594528999999987, 4.7789752999999564]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Teckel KMA", "Teckel KMA"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.59018277245498, 4.7736668544921486]
+        },
+        "IsVisited": false
+      }, {
+        "$type": "VVVOnTheWay.Route.PointOfInterest, VVVOnTheWay",
+        "Title": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["Staynice scouting", "Staynice scouting"]
+        },
+        "Description": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["MISSING", "MISSING"]
+        },
+        "AudioPath": {
+          "$type": "System.String[], mscorlib",
+          "$values": ["null", "null"]
+        },
+        "ImagePath": null,
+        "jsonPosition": {
+          "$type": "System.Double[], mscorlib",
+          "$values": [51.5749025, 4.7595185000000129]
+        },
+        "IsVisited": false
+      }
+    ]
+  }
 }

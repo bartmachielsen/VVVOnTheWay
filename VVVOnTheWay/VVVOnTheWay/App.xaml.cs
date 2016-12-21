@@ -1,53 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
+﻿// Created by Bart Machielsen
+
+#region
+
+using System;
+using System.Diagnostics;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using LocationSystem;
+using VVVOnTheWay.FileIO;
+
+#endregion
 
 namespace VVVOnTheWay
 {
     /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
+    ///     Provides application-specific behavior to supplement the default Application class.
     /// </summary>
     sealed partial class App : Application
     {
         /// <summary>
-        /// Initializes the singleton application object.  This is the first line of authored code
-        /// executed, and as such is the logical equivalent of main() or WinMain().
+        ///     Initializes the singleton application object.  This is the first line of authored code
+        ///     executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         public App()
         {
-            this.InitializeComponent();
-            this.Suspending += OnSuspending;
+            InitializeComponent();
+            Suspending += OnSuspending;
         }
 
         /// <summary>
-        /// Invoked when the application is launched normally by the end user.  Other entry points
-        /// will be used such as when the application is launched to open a specific file.
+        ///     Invoked when the application is launched normally by the end user.  Other entry points
+        ///     will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
-            if (System.Diagnostics.Debugger.IsAttached)
-            {
-                this.DebugSettings.EnableFrameRateCounter = false;
-            }
+            if (Debugger.IsAttached)
+                DebugSettings.EnableFrameRateCounter = false;
 #endif
-            Frame rootFrame = Window.Current.Content as Frame;
+            var rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
@@ -70,33 +65,26 @@ namespace VVVOnTheWay
             if (e.PrelaunchActivated == false)
             {
                 if (rootFrame.Content == null)
-                {
-                    //TestDrivers(); CALL WHEN TESTING!
-                    // When the navigation stack isn't restored navigate to the first page,
-                    // configuring the new page by passing required information as a navigation
-                    // parameter
                     ApplicationStartRouteCheck(rootFrame);
-                    
-                }
                 // Ensure the current window is active
                 Window.Current.Activate();
             }
         }
-        
+
         /// <summary>
-        /// Invoked when Navigation to a certain page fails
+        ///     Invoked when Navigation to a certain page fails
         /// </summary>
         /// <param name="sender">The Frame which failed navigation</param>
         /// <param name="e">Details about the navigation failure</param>
-        void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+        private void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
         {
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }
 
         /// <summary>
-        /// Invoked when application execution is being suspended.  Application state is saved
-        /// without knowing whether the application will be terminated or resumed with the contents
-        /// of memory still intact.
+        ///     Invoked when application execution is being suspended.  Application state is saved
+        ///     without knowing whether the application will be terminated or resumed with the contents
+        ///     of memory still intact.
         /// </summary>
         /// <param name="sender">The source of the suspend request.</param>
         /// <param name="e">Details about the suspend request.</param>
@@ -108,33 +96,26 @@ namespace VVVOnTheWay
         }
 
         /// <summary>
-        /// This method checks if there is an already existing saved route with progress from the user.
+        ///     This method checks if there is an already existing saved route with progress from the user.
         /// </summary>
         /// <param name="rootFrame">The frame to be used to navigate to the next page</param>
         private async void ApplicationStartRouteCheck(Frame rootFrame)
         {
             Route.Route existing = null;
-            if(await FileIO.RouteProgressIO.CheckIfLastSavedRouteExists())
-                existing = await FileIO.RouteProgressIO.LoadLastSavedRouteFromFile();
+            if (await RouteProgressIO.CheckIfLastSavedRouteExists())
+                existing = await RouteProgressIO.LoadLastSavedRouteFromFile();
             if (existing != null)
-            {
-                //Route exists, load the route and navigate to the MapPage
                 rootFrame.Navigate(typeof(MapPage), existing);
-            }
             else
-            {
-                //Route does not exist, go to the PasswordPage and start the application from there
                 rootFrame.Navigate(typeof(PasswordPage));
-            }
         }
-
 
 
         private void TestDrivers()
         {
-           BingMapsWrapperTestDriver.TestBingMapsWrapper();
-           new FileIO.RouteProgressIOTest();
-           new FileIO.FullRouteIOTest();
+            BingMapsWrapperTestDriver.TestBingMapsWrapper();
+            new RouteProgressIOTest();
+            new FullRouteIOTest();
         }
     }
 }
