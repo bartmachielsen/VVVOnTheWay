@@ -41,7 +41,7 @@ namespace VVVOnTheWay.NotificationSystem
             {
                 VibrationDevice.GetDefault().Vibrate(TimeSpan.FromSeconds(5));
             }
-            catch (Exception e)
+            catch
             {
                 Debug.WriteLine(
                     "BRRRRRRRRRRRRRRRRRRRRRRRRRRRR BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
