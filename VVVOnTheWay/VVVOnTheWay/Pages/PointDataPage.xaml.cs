@@ -28,7 +28,7 @@ namespace VVVOnTheWay.Pages
                                  _poi.Description[(int) Settings.Language];
             if (_poi.Description == null) poi.Description = new[] {"No description", "Geen beschrijving"};
             PointPicture.Source = _poi.ImagePath != null
-                ? new BitmapImage(new Uri($"ms-appx:///{_poi.ImagePath}"))
+                ? new BitmapImage(new Uri($"ms-appx:///Assets/POI/{_poi.ImagePath}"))
                 : new BitmapImage(new Uri("ms-appx:///Assets/unavailable-image.png"));
         }
 

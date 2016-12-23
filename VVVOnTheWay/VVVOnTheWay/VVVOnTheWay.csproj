@@ -90,11 +90,6 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Content Include="Assets\blindwalls.PNG" />
-    <Content Include="Assets\BlindWalls\hedof-2.jpg" />
-    <Content Include="Assets\BlindWalls\iwan-smit.jpg" />
-    <Content Include="Assets\BlindWalls\rutger-termohlen.jpg" />
-    <Content Include="Assets\BlindWalls\staynice.jpg" />
-    <Content Include="Assets\BlindWalls\TB_Web_Thumb-150x150.jpg" />
     <Content Include="Assets\guy.png" />
     <Content Include="Assets\HistoricalKilometerRoute.json" />
     <Content Include="Assets\BlindWallsRoute.json" />
@@ -140,6 +135,7 @@
     </Compile>
     <Compile Include="Route\RouteTest.cs" />
     <Compile Include="Route\RouteTestDriver.cs" />
+    <Compile Include="Route\Storage\SaveRoute.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Route\PointOfInterest.cs" />
     <Compile Include="Route\Route.cs" />
@@ -159,6 +155,58 @@
     <Content Include="Assets\play.png" />
     <Content Include="Assets\Point visited.png" />
     <Content Include="Assets\Point.png" />
+    <Content Include="Assets\POI\1162.jpg" />
+    <Content Include="Assets\POI\1378100430130014.jpg" />
+    <Content Include="Assets\POI\266px-Breda_kloosterkazerne.jpg" />
+    <Content Include="Assets\POI\266px-P1000965copySint-Antoniuskathedraal.jpg" />
+    <Content Include="Assets\POI\450px-p1030219oude_stadhuis_breda.jpg" />
+    <Content Include="Assets\POI\akacorleone.jpg" />
+    <Content Include="Assets\POI\aron-vellekoop-leon.jpg" />
+    <Content Include="Assets\POI\Breda_Bibliotheek.jpg" />
+    <Content Include="Assets\POI\bruce-tmc.jpg" />
+    <Content Include="Assets\POI\cranio.jpg" />
+    <Content Include="Assets\POI\damien-poulain-van-coothplein.jpg" />
+    <Content Include="Assets\POI\damien-poulian-boschstraat.jpg" />
+    <Content Include="Assets\POI\dzia.jpg" />
+    <Content Include="Assets\POI\frm.jpg" />
+    <Content Include="Assets\POI\Grote_Markt_Breda_DSCF2843.JPG" />
+    <Content Include="Assets\POI\hedof-2.jpg" />
+    <Content Include="Assets\POI\hedof-3.jpg" />
+    <Content Include="Assets\POI\hedof-oase.jpg" />
+    <Content Include="Assets\POI\hello.jpg" />
+    <Content Include="Assets\POI\ilse-weisfelt.jpg" />
+    <Content Include="Assets\POI\iwan-smit.jpg" />
+    <Content Include="Assets\POI\jeff-canham.jpg" />
+    <Content Include="Assets\POI\job-wouters.jpg" />
+    <Content Include="Assets\POI\johan-moorman.jpg" />
+    <Content Include="Assets\POI\joren-joshua.jpg" />
+    <Content Include="Assets\POI\jukka-hakanen.jpg" />
+    <Content Include="Assets\POI\kratje-beeld.jpg" />
+    <Content Include="Assets\POI\luca-font.jpg" />
+    <Content Include="Assets\POI\m-city.jpg" />
+    <Content Include="Assets\POI\maikki-rantala.jpg" />
+    <Content Include="Assets\POI\mike-perry.jpg" />
+    <Content Include="Assets\POI\nol.jpg" />
+    <Content Include="Assets\POI\noodle-inc.jpg" />
+    <Content Include="Assets\POI\P1010936Chasse_theater.JPG" />
+    <Content Include="Assets\POI\Ridderstraat_Breda_Centrum_DSCF2871.jpg" />
+    <Content Include="Assets\POI\RM10234_Breda_-_Karrestraat_bij_7.jpg" />
+    <Content Include="Assets\POI\rutger-termohlen-collin-van-der-sluijs-super-a.jpg" />
+    <Content Include="Assets\POI\rutger-termohlen.jpg" />
+    <Content Include="Assets\POI\staynice-bloos.jpg" />
+    <Content Include="Assets\POI\staynice-kop.jpg" />
+    <Content Include="Assets\POI\staynice-lunettunnel.jpg" />
+    <Content Include="Assets\POI\staynice.jpg" />
+    <Content Include="Assets\POI\steve-espo-powers.jpg" />
+    <Content Include="Assets\POI\super-a.jpg" />
+    <Content Include="Assets\POI\super-combat-mural.jpg" />
+    <Content Include="Assets\POI\TB_Web_Thumb-150x150.jpg" />
+    <Content Include="Assets\POI\teckel-kma.jpg" />
+    <Content Include="Assets\POI\thomas-jurgen.jpg" />
+    <Content Include="Assets\POI\zenk-one-2012.jpg" />
+    <Content Include="Assets\POI\zenk-one-godevaert.jpg" />
+    <Content Include="Assets\POI\zenk-one-veilingkade.jpg" />
+    <Content Include="Assets\POI\zenk-one.jpg" />
     <Content Include="Assets\settings.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\unavailable-image.png" />
@@ -203,9 +251,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Route\Storage\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
       <Name>Windows Mobile Extensions for the UWP</Name>

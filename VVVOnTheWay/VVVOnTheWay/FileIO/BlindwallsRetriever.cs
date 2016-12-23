@@ -52,7 +52,7 @@ namespace VVVOnTheWay.FileIO
                 var latitude = stringarray[7];
                 var longitude = stringarray[11];
                 poiList.Add(new PointOfInterest(new[] {title, title}, new[] {description, description}, false,
-                    new[] {"null", "null"}, @"Assets\BlindWalls\" + slug + ".jpg",
+                    new[] {"null", "null"}, @"" + slug + ".jpg",
                     new Geopoint(new BasicGeoposition
                     {
                         Latitude = Convert.ToDouble(latitude),
