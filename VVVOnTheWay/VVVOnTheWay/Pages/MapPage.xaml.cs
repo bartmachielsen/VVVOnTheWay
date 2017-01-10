@@ -5,15 +5,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using Windows.Devices.AllJoyn;
 using Windows.Devices.Geolocation;
 using Windows.Storage.Streams;
 using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Popups;
+using Windows.UI.Text;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Maps;
+using Windows.UI.Xaml.Documents;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using LocationSystem;
 using VVVOnTheWay.FileIO;
@@ -39,11 +44,12 @@ namespace VVVOnTheWay
         private MapRouteView _routeView;
         private MapIcon _userIcon;
         private Route.Route route;
+        private bool _added = false;
 
         public MapPage()
         {
             InitializeComponent();
-
+            _added = false;
             Map.MapElementClick += Map_MapElementClick;
         }
 
@@ -289,6 +295,57 @@ namespace VVVOnTheWay
             if (languageAfter == languageBefore) return;
             foreach (var pair in _routeIcons)
                 pair.Value.Title = pair.Key.Title[(int) languageAfter];
+        }
+
+        private void POIListButton_Click(object sender, RoutedEventArgs e)
+        {
+            SplitView.OpenPaneLength = 250;
+            POIListButton.Visibility = Visibility.Collapsed;
+            SettingsButton.Visibility = Visibility.Collapsed;
+            POIStack.Visibility = Visibility.Visible;
+            if (!_added)
+            {
+                foreach (var pair in _routeIcons)
+                {
+                    var b = new Button
+                    {
+                        Content = pair.Key.Title[(int) Settings.Language],
+                        Background = new SolidColorBrush(Colors.White),
+                        FontSize = 14,
+                        FontWeight = FontWeights.Bold
+                    };
+                    b.Click += POIList_Click;
+                    POIStack.Children.Add(b);
+                }
+                _added = true;
+            }
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            SplitView.OpenPaneLength = 85;
+            POIListButton.Visibility = Visibility.Visible;
+            SettingsButton.Visibility = Visibility.Visible;
+            POIStack.Visibility = Visibility.Collapsed;
+        }
+
+        private void CloseOpenButton_Click(object sender, RoutedEventArgs e)
+        {
+            SplitView.IsPaneOpen = true;
+        }
+
+        private async void POIList_Click(object sender, RoutedEventArgs e)
+        {
+            foreach(var pair in _routeIcons)
+            {
+                var b = sender as Button;
+                if (b == null) continue;
+                if (b.Content.ToString() != pair.Key.Title[(int) Settings.Language]) continue;
+                var data = new PointDataPage(pair.Key);
+                await data.ShowAsync();
+            }
+            var g = new PointDataPage(new PointOfInterest());
+            await g.ShowAsync();
         }
     }
 }

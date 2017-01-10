@@ -38,7 +38,7 @@ namespace VVVOnTheWay
 
         private void ValidatePassword(string password)
         {
-            if (password == $"{Settings.Password}" || PasswordBox.Password == "")
+            if (password == $"{Settings.Password}")
                 PasswordCorrect();
             else
                 PasswordFalse();
@@ -46,7 +46,7 @@ namespace VVVOnTheWay
 
         private void PasswordCorrect()
         {
-            PasswordFrame.Navigate(typeof(RouteSelectionPage));
+            PasswordFrame.Navigate(typeof(LanguageSelectionPage));
         }
 
         private void PasswordFalse()

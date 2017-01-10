@@ -21,7 +21,7 @@ namespace VVVOnTheWay
         ///     The correct password that is needed to login,
         ///     must completely match to correctly login.
         /// </summary>
-        public static string Password = "wachtwoord";
+        public static string Password = "4T=yr|A}7#";
 
         /// <summary>
         ///     The path to saved progress, progress of a Route that has not been finished.

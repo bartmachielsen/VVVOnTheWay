@@ -91,6 +91,7 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Content Include="Assets\blindwalls.PNG" />
     <Content Include="Assets\guy.png" />
+    <Content Include="Assets\hamburgermenu.png" />
     <Content Include="Assets\HistoricalKilometerRoute.json" />
     <Content Include="Assets\BlindWallsRoute.json" />
     <None Include="project.json" />
@@ -153,6 +154,7 @@
     <Content Include="Assets\historicalKm.PNG" />
     <Content Include="Assets\Netherlands.png" />
     <Content Include="Assets\play.png" />
+    <Content Include="Assets\poilist.png" />
     <Content Include="Assets\Point visited.png" />
     <Content Include="Assets\Point.png" />
     <Content Include="Assets\POI\1162.jpg" />

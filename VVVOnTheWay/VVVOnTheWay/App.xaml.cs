@@ -107,7 +107,7 @@ namespace VVVOnTheWay
             if (existing != null)
                 rootFrame.Navigate(typeof(MapPage), existing);
             else
-                rootFrame.Navigate(typeof(PasswordPage));
+                rootFrame.Navigate(typeof(RouteSelectionPage), null);
         }
 
 
