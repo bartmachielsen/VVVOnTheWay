@@ -7,6 +7,7 @@ using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Navigation;
 using VVVOnTheWay.Pages;
 
 #endregion
@@ -20,6 +21,7 @@ namespace VVVOnTheWay
     /// </summary>
     public sealed partial class PasswordPage : Page
     {
+        private Route.Route _selectedRoute;
         public PasswordPage()
         {
             InitializeComponent();
@@ -44,9 +46,15 @@ namespace VVVOnTheWay
                 PasswordFalse();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            _selectedRoute = e.Parameter as Route.Route;
+
+        }
+
         private void PasswordCorrect()
         {
-            PasswordFrame.Navigate(typeof(LanguageSelectionPage));
+            PasswordFrame.Navigate(typeof(LanguageSelectionPage), _selectedRoute);
         }
 
         private void PasswordFalse()

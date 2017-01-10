@@ -19,6 +19,7 @@ namespace VVVOnTheWay.Pages
     public sealed partial class PointDataPage : ContentDialog
     {
         private readonly PointOfInterest _poi;
+        private MediaElement _mySong;
 
         public PointDataPage(PointOfInterest poi)
         {
@@ -37,15 +38,15 @@ namespace VVVOnTheWay.Pages
             if (_poi.AudioPath == null) return;
             try
             {
-                var mysong = new MediaElement();
+                _mySong = new MediaElement();
 
                 var folder =
                     await Package.Current.InstalledLocation.GetFolderAsync("Assets");
                 //var file = await folder.GetFileAsync(_poi.AudioPath[(int)Settings.Language]);
                 var file = await folder.GetFileAsync("GroteKlok.mp3");
                 var stream = await file.OpenAsync(FileAccessMode.Read);
-                mysong.SetSource(stream, file.ContentType);
-                mysong.Play();
+                _mySong.SetSource(stream, file.ContentType);
+                _mySong.Play();
             }
             catch(Exception exception)
             {
@@ -55,8 +56,11 @@ namespace VVVOnTheWay.Pages
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
+            _mySong?.Stop();
             Hide();
         }
+
+        
 
         private async void HelpButton_Click(object sender, RoutedEventArgs e)
         {
