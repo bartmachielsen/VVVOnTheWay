@@ -168,6 +168,7 @@ namespace VVVOnTheWay
                     });
                 }, point);
             else
+            {
                 switch (Settings.Language)
                 {
                     case VVVOnTheWay.Language.ENGLISH:
@@ -181,6 +182,7 @@ namespace VVVOnTheWay
                                 "U heeft de route afgerond. U kan nu de telefoon inleveren bij de VVV medewerker."));
                         break;
                 }
+            }
         }
 
         private Point GetNextPointOfInterest(bool pointOfInterest = false, List<Point> skip = null)
