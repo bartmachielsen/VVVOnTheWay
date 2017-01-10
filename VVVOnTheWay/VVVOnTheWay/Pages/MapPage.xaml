@@ -12,6 +12,68 @@
         <Maps:MapControl
             x:Name="Map"
             MapServiceToken="DypxObTyzkWM3QVKqeOV~qPZIp3xC8DUMt_rrBW2qCA~At8UUC81s3n5IDAcdRyQftV2iN4zdJraRdCON4mCrwGC9lZ_YLbBJldJh486D9TR" />
+        <SplitView 
+            x:Name="SplitView"
+            DisplayMode="CompactOverlay"
+            OpenPaneLength="85"
+            IsPaneOpen="False"
+            CompactPaneLength="0"
+            PaneBackground="White"
+            >
+            <SplitView.Content>
+                <Button
+                    Margin="10,10,0,0"
+                    Width="65"
+                    Height="65"
+                    Padding="0"
+                    Background="Transparent"
+                    Click="CloseOpenButton_Click"
+                    VerticalAlignment="Top"
+                    >
+                    <Image Source="..\Assets/hamburgermenu.png" Stretch="Uniform" />
+                </Button>
+            </SplitView.Content>
+            <SplitView.Pane>
+                <StackPanel
+                    Orientation="Vertical"
+                    >
+                    <Button
+                        x:Name="SettingsButton"
+                        Style="{StaticResource RoundButtonStyle}"
+                        Margin="10,10,0,0"
+                        Click="SettingsButton_Click"
+                        >
+                        <Image Source="..\Assets/settings.png" Stretch="Uniform" />
+                    </Button>
+                    <Button
+                        x:Name="POIListButton"
+                        Style="{StaticResource RoundButtonStyle}"
+                        Margin="10,10,0,0"
+                        Click="POIListButton_Click"
+                        >
+                        <Image Source="..\Assets/poilist.png" Stretch="Uniform" />
+                    </Button>
+                    <ScrollViewer
+                        VerticalScrollBarVisibility="Hidden"
+                        Height="620"
+                        >
+                        <StackPanel
+                            Visibility="Collapsed"
+                            x:Name="POIStack"
+                            >
+                            <Button
+                                Content="Back/Terug"
+                                Background="White"
+                                Foreground="Blue"
+                                FontSize="18"
+                                FontWeight="Bold"
+                                Click="BackButton_Click"
+                                />
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="{Binding ElementName=Map, Path=ActualHeight}" />
@@ -27,14 +89,6 @@
                 Margin="0,0,10,10"
                 Click="HelpButton_Click">
                 <Image Source="..\Assets/help.png" Stretch="Uniform" />
-            </Button>
-
-            <Button
-                Style="{StaticResource RoundButtonStyle}"
-                VerticalAlignment="Top"
-                Margin="10,10"
-                Click="SettingsButton_Click">
-                <Image Source="..\Assets/settings.png" Stretch="Uniform" />
             </Button>
         </Grid>
         <StackPanel HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="200">

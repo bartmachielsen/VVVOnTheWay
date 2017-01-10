@@ -41,14 +41,15 @@ namespace VVVOnTheWay.Pages
 
                 var folder =
                     await Package.Current.InstalledLocation.GetFolderAsync("Assets");
-                var file = await folder.GetFileAsync(_poi.AudioPath[(int) Settings.Language]);
+                //var file = await folder.GetFileAsync(_poi.AudioPath[(int)Settings.Language]);
+                var file = await folder.GetFileAsync("GroteKlok.mp3");
                 var stream = await file.OpenAsync(FileAccessMode.Read);
                 mysong.SetSource(stream, file.ContentType);
                 mysong.Play();
             }
-            catch
+            catch(Exception exception)
             {
-                // ignored
+                System.Diagnostics.Debug.WriteLine(exception);
             }
         }
 

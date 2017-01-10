@@ -40,7 +40,7 @@ namespace VVVOnTheWay
                 selectedRoute = await FullRouteIO.LoadRouteAsync(FullRouteIO.HistoricalKilometerFileName);
             else
                 selectedRoute = await FullRouteIO.LoadRouteAsync(FullRouteIO.BlindWallsFileName);
-            RouteSelectionFrame.Navigate(typeof(LanguageSelectionPage), selectedRoute);
+            RouteSelectionFrame.Navigate(typeof(PasswordPage), selectedRoute);
         }
 
         private async void HelpButton_Click(object sender, RoutedEventArgs e)

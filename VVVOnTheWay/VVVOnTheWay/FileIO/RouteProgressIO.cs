@@ -33,7 +33,6 @@ namespace VVVOnTheWay.FileIO
                 new JsonSerializerSettings {TypeNameHandling = TypeNameHandling.All});
             var file = await folder.CreateFileAsync($"{LastSavedRouteFileName}.json", CreationCollisionOption.ReplaceExisting);
             await Windows.Storage.FileIO.WriteTextAsync(file, json);
-
         }
 
         /// <summary>
@@ -46,9 +45,14 @@ namespace VVVOnTheWay.FileIO
             {
                 var lastSavedRouteFile =
                     await ApplicationData.Current.LocalFolder.GetFileAsync($"{LastSavedRouteFileName}.json");
+                string json = await Windows.Storage.FileIO.ReadTextAsync(lastSavedRouteFile);
+                Route.Route r = JsonConvert.DeserializeObject<Route.Route>(json,
+                    new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
+                var interestPoints = r.RoutePoints.FindAll(point => point.GetType().Equals(typeof(Route.PointOfInterest)));
+                if (interestPoints.TrueForAll(point => point.IsVisited)) return false;
                 return true;
             }
-            catch (FileNotFoundException)
+            catch (Exception)
             {
                 return false;
             }

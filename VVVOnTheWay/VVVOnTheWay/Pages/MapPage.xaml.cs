@@ -5,15 +5,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using Windows.Devices.AllJoyn;
 using Windows.Devices.Geolocation;
 using Windows.Storage.Streams;
 using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Popups;
+using Windows.UI.Text;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Maps;
+using Windows.UI.Xaml.Documents;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using LocationSystem;
 using VVVOnTheWay.FileIO;
@@ -39,17 +44,20 @@ namespace VVVOnTheWay
         private MapRouteView _routeView;
         private MapIcon _userIcon;
         private Route.Route route;
+        private bool _added = false;
 
         public MapPage()
         {
             InitializeComponent();
-
+            _added = false;
             Map.MapElementClick += Map_MapElementClick;
         }
 
         private async void Map_MapElementClick(MapControl sender, MapElementClickEventArgs args)
         {
             var clickedIcon = args.MapElements.FirstOrDefault(x => x is MapIcon) as MapIcon;
+            if (!_routeIcons.ContainsValue(clickedIcon))
+                return;
             var poi = _routeIcons.FirstOrDefault(x => x.Value == clickedIcon).Key;
             var g = new PointDataPage(poi);
             await g.ShowAsync();
@@ -123,9 +131,11 @@ namespace VVVOnTheWay
             if (routeResult == null) return;
             if (_routeView != null)
                 Map.Routes.Remove(_routeView);
-            var distance = routeResult.LengthInMeters;
-            if (distance >= 1000.0) textBlock2.Text = Math.Round(distance / 1000.0, 2) + " km";
-            else textBlock2.Text = distance + " m";
+            double distance = routeResult.LengthInMeters;
+            if (distance >= 1000.0) { textBlock2.Text = Math.Round(distance / 1000.0, 2) + " km"; }
+            else { textBlock2.Text = distance + " m"; }
+            textBlock1.Text = (Math.Round(distance/5000) + " : " + Math.Round(distance/1000 %5 /5 *60));
+            
             //@TODO textblock1 check lang 
             _routeView = new MapRouteView(routeResult)
             {
@@ -232,7 +242,8 @@ namespace VVVOnTheWay
                 {
                     Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/guy.png")),
                     Title = Settings.Language == VVVOnTheWay.Language.ENGLISH ? "Your Location" : "Uw locatie",
-                    Location = geoposition.Coordinate.Point
+                    Location = geoposition.Coordinate.Point,
+                    NormalizedAnchorPoint = new Windows.Foundation.Point(0.5, 1.0)
                 };
                 Map.MapElements.Add(_userIcon);
             }
@@ -254,8 +265,9 @@ namespace VVVOnTheWay
                     {
                         Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/Point.png")),
                         Title = point.Title[(int) _language],
-                        Location = poi.Location
-                    };
+                        Location = poi.Location,
+                        NormalizedAnchorPoint = new Windows.Foundation.Point(0.5, 1.0)
+                };
                     Map.MapElements.Add(icon);
                     _routeIcons.Add(point, icon);
                 }
@@ -283,6 +295,57 @@ namespace VVVOnTheWay
             if (languageAfter == languageBefore) return;
             foreach (var pair in _routeIcons)
                 pair.Value.Title = pair.Key.Title[(int) languageAfter];
+        }
+
+        private void POIListButton_Click(object sender, RoutedEventArgs e)
+        {
+            SplitView.OpenPaneLength = 250;
+            POIListButton.Visibility = Visibility.Collapsed;
+            SettingsButton.Visibility = Visibility.Collapsed;
+            POIStack.Visibility = Visibility.Visible;
+            if (!_added)
+            {
+                foreach (var pair in _routeIcons)
+                {
+                    var b = new Button
+                    {
+                        Content = pair.Key.Title[(int) Settings.Language],
+                        Background = new SolidColorBrush(Colors.White),
+                        FontSize = 14,
+                        FontWeight = FontWeights.Bold
+                    };
+                    b.Click += POIList_Click;
+                    POIStack.Children.Add(b);
+                }
+                _added = true;
+            }
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            SplitView.OpenPaneLength = 85;
+            POIListButton.Visibility = Visibility.Visible;
+            SettingsButton.Visibility = Visibility.Visible;
+            POIStack.Visibility = Visibility.Collapsed;
+        }
+
+        private void CloseOpenButton_Click(object sender, RoutedEventArgs e)
+        {
+            SplitView.IsPaneOpen = true;
+        }
+
+        private async void POIList_Click(object sender, RoutedEventArgs e)
+        {
+            foreach(var pair in _routeIcons)
+            {
+                var b = sender as Button;
+                if (b == null) continue;
+                if (b.Content.ToString() != pair.Key.Title[(int) Settings.Language]) continue;
+                var data = new PointDataPage(pair.Key);
+                await data.ShowAsync();
+            }
+            var g = new PointDataPage(new PointOfInterest());
+            await g.ShowAsync();
         }
     }
 }
