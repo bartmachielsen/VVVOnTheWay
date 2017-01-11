@@ -344,8 +344,6 @@ namespace VVVOnTheWay
                 var data = new PointDataPage(pair.Key);
                 await data.ShowAsync();
             }
-            var g = new PointDataPage(new PointOfInterest());
-            await g.ShowAsync();
         }
     }
 }

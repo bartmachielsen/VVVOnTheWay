@@ -43,7 +43,7 @@
                         Margin="10,10,0,0"
                         Click="SettingsButton_Click"
                         >
-                        <Image Source="..\Assets/settings.png" Stretch="Uniform" />
+                        <Image Source="..\Assets/settings.png" Stretch="Uniform" HorizontalAlignment="Left" Width="65" />
                     </Button>
                     <Button
                         x:Name="POIListButton"
